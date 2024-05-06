@@ -1,10 +1,7 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
-import numpy as np
 
-
-IMPURITY_THRESHOLD = 0.05
-FRACTION_OF_DATA_TO__CALC_SPLIT=0.1
+IMPURITY_THRESHOLD=0.2
 
 def preprocess_dataframe(df):
     df.dropna(inplace=True)
@@ -46,8 +43,7 @@ def calculate_impurity(data):
     impurity = 1 - sum((count / len(data)) ** 2 for count in counts.values())
     return impurity
 
-"""
-    def get_best_split(data):
+def get_best_split(data):
     best_gini = float('inf')
     best_condition = None
     features = data.columns[:-1]  # Assuming the last column is the target
@@ -66,31 +62,6 @@ def calculate_impurity(data):
                         best_gini = gini
                         best_condition = condition
     return best_condition
-"""
-
-def get_best_split(data):
-    best_gini = float('inf')
-    best_condition = None
-    sample_data = data.sample(frac=FRACTION_OF_DATA_TO__CALC_SPLIT)  # Use only 10% of data to find splits
-    features = data.columns[:-1]
-    
-    for feature in features:
-        if pd.api.types.is_numeric_dtype(data[feature]):
-            thresholds = np.percentile(sample_data[feature].dropna(), [10, 20, 30, 40, 50, 60, 70, 80, 90])
-            conditions = [Condition(feature, threshold) for threshold in thresholds]
-        else:
-            top_categories = sample_data[feature].value_counts().nlargest(10).index
-            conditions = [Condition(feature, category, is_numeric=False) for category in top_categories]
-        
-        for condition in conditions:
-            left, right = data_split(data, condition)
-            if not left.empty and not right.empty:
-                gini = calc_gini_impurity(left, right)
-                if gini < best_gini:
-                    best_gini = gini
-                    best_condition = condition
-    return best_condition
-
 
 def data_split(data, condition):
     if condition.is_numeric:
@@ -119,7 +90,7 @@ def print_tree(node, depth=0):
 
 
 def build_tree(data):
-    if data.empty or calculate_impurity(data) == IMPURITY_THRESHOLD:
+    if data.empty or calculate_impurity(data) < IMPURITY_THRESHOLD:
         most_common_class = data.iloc[:, -1].mode()[0]  # Get the most common class label
         return Node(condition=None, is_leaf=True, label=most_common_class)  # This node is a leaf with a class label
     best_condition = get_best_split(data)
@@ -159,7 +130,6 @@ def calculate_accuracy(node, data):
 
 
 if __name__ == "__main__":
-    
     print("Decision Tree Classifier")
     path = "C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/adult/adult.csv"
     print(f"Reading data from {path}")
