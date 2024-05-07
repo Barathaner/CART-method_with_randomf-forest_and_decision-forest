@@ -7,6 +7,7 @@ from decision_forest import build_decision_forest,accuracy_with_DF,generalizatio
 import pandas as pd
 import math
 import sys
+import time
 
 # Capture the original print function
 original_print = print
@@ -34,6 +35,7 @@ csvdictionary={
                "studentsuccess":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/studentsuccess/studentsuccess.csv",}
     
 if __name__ == "__main__":
+    starttime = time.time()
     for dataset_name, path in csvdictionary.items():    
         print(f"Reading data from {path}")
         csv = pd.read_csv(path)
@@ -91,3 +93,6 @@ if __name__ == "__main__":
         #generalizationerrorrf=generalization_error_with_cross_val_DF(csv, 10, hyperparametertuningdf)
         accuracyDF=accuracy_with_DF(test_data,hyperparametertuningdf)
         print(f"Accuracy on Test for Decision Forest: {accuracyDF:.2f}")
+
+    endtime = time.time()
+    print(f"Total time taken: {endtime - starttime:.2f} seconds")
