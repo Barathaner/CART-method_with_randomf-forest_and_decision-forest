@@ -1,7 +1,21 @@
 
 import pandas as pd
+import sys
 
+# Capture the original print function
+original_print = print
 
+def custom_print(*args, **kwargs):
+    file_path = kwargs.pop('file', './output.txt')
+    mode = kwargs.pop('mode', 'a')  # Default mode is append ('a')
+
+    # Open the file with the provided path and mode
+    with open(file_path, mode) as f:
+        # Use the captured original print function with file argument
+        original_print(*args, file=f, **kwargs)
+
+# Reassign print to custom_print
+print = custom_print
 IMPURITY_THRESHOLD=0.2
 
 class Condition:
@@ -40,12 +54,14 @@ def calculate_impurity(data):
     impurity = 1 - sum((count / len(data)) ** 2 for count in counts.values())
     return impurity
 
-def get_best_split(data,num_features=None):
+def get_best_split(data,num_features=None,decision_forest_features=None):
     best_gini = float('inf')
     best_condition = None
     if num_features is not None:
         features = data.columns[:-1].tolist()
         features = pd.Series(features).sample(n=num_features).tolist()
+    if decision_forest_features is not None:
+        features=decision_forest_features
     features = data.columns[:-1]  # Assuming the last column is the target
     for feature in features:
         values = data[feature].unique()
@@ -78,17 +94,17 @@ def data_split(data, condition):
 
 
 
-def build_tree(data,num_features=None,impurity_threshold=IMPURITY_THRESHOLD):
+def build_tree(data,num_features=None,impurity_threshold=IMPURITY_THRESHOLD,decision_tree_features=None):
     if data.empty or calculate_impurity(data) < impurity_threshold:
         most_common_class = data.iloc[:, -1].mode()[0]  # Get the most common class label
         return Node(condition=None, is_leaf=True, label=most_common_class)  # This node is a leaf with a class label
-    best_condition = get_best_split(data,num_features)
+    best_condition = get_best_split(data,num_features,decision_tree_features)
     if best_condition is None:
         most_common_class = data.iloc[:, -1].mode()[0]
         return Node(condition=None, is_leaf=True, label=most_common_class)  # No split possible, make it a leaf
     node = Node(best_condition)
     left_data, right_data = data_split(data, best_condition)
-    print(f"Splitting on {best_condition.feature} at {best_condition.value}")
+    #print(f"Splitting on {best_condition.feature} at {best_condition.value}")
     node.left = build_tree(left_data,num_features)
     node.right = build_tree(right_data,num_features)
     return node
@@ -132,3 +148,26 @@ def print_tree(node, depth=0):
     # Recursively print the left and right children
     print_tree(node.left, depth + 1)
     print_tree(node.right, depth + 1)
+
+
+def count_used_features_in_tree(node):
+    features_dict = {}
+    if node.is_leaf_node():
+        return features_dict
+    if node.condition.feature in features_dict:
+        features_dict[node.condition.feature] += 1
+    else:
+        features_dict[node.condition.feature] = 1
+    left_features = count_used_features_in_tree(node.left)
+    right_features = count_used_features_in_tree(node.right)
+    for feature, count in left_features.items():
+        if feature in features_dict:
+            features_dict[feature] += count
+        else:
+            features_dict[feature] = count
+    for feature, count in right_features.items():
+        if feature in features_dict:
+            features_dict[feature] += count
+        else:
+            features_dict[feature] = count
+    return features_dict
