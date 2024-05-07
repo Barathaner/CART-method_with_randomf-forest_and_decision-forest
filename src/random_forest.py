@@ -83,7 +83,9 @@ def hyperparameter_tuning_RF(data, num_folds, num_trees, num_features):
         forestfeaturecounts[key]=featurescount
     # Find the key with the highest accuracy
     best_key = max(accuracies, key=accuracies.get)
-    print("Best configuration:", best_key, "with accuracy:", accuracies[best_key])
+    print("Decision Forest Hyperparameter Tuning accuracies:", accuracies)
+    print("Decision Forest Hyperparameter Tuning FeatureCounts:",forestfeaturecounts)
+    print("Best configuration:", best_key, "with accuracy:", accuracies[best_key], "and feature count:",forestfeaturecounts[best_key])
 
     # Return the forest with the highest accuracy
     return forests[best_key],forestfeaturecounts[best_key]
