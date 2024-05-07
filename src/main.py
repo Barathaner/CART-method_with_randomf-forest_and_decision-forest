@@ -27,9 +27,10 @@ NUM_OF_TREES=5
 NUMBER_OF_FEATURES=2
 IMPURITY_THRESHOLD=0.2
     
-csvdictionary={"car":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/car/car.csv",
+csvdictionary={
                "iris":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv",
                "wdbc":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/wdbc/wdbc.csv",
+               "car":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/car/car.csv",
                "studentsuccess":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/studentsuccess/studentsuccess.csv",}
     
 if __name__ == "__main__":
@@ -58,33 +59,35 @@ if __name__ == "__main__":
 
         # Random Forest
         print("Building random forest for ...",dataset_name)
-        forest,features_count_dict_rf = build_random_forest(train_data, NUMBER_OF_FEATURES, NUM_OF_TREES)
-        print("Counting features for Random Forest:",features_count_dict_rf)
-        print("Calculating accuracy for RF...")
-        accuracy = accuracy_with_RF(test_data,forest)
-        print(f"Accuracy on test data with RF: {accuracy:.2f}")
+        #forest,features_count_dict_rf = build_random_forest(train_data, NUMBER_OF_FEATURES, NUM_OF_TREES)
+        #print("Counting features for Random Forest:",features_count_dict_rf)
+        #print("Calculating accuracy for RF...")
+        #accuracy = accuracy_with_RF(test_data,forest)
+        #print(f"Accuracy on test data with RF: {accuracy:.2f}")
         print("Hyperparameter tuning for Random Forest...")
         hyperparametertuningrf,features_count_dict_rf=hyperparameter_tuning_RF(train_data, 24, [1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100], [1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns))),1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns))),1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns))),1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns))),1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns))),1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns)))])
-        print("Best Configuration: ")
-        print_forest(hyperparametertuningrf)
+        #print("Best Configuration: ")
+        #print_forest(hyperparametertuningrf)
         print("Featurecountdictionary: ",features_count_dict_rf)
         print("Calculating Generalization Error with Cross validation for Random Forest...")
-        generalizationerrorrf=generalization_error_with_cross_val_RF(csv, 10, forest)
-        print(f"Generalization Error with Cross validation for Random Forest: {generalizationerrorrf:.2f}")
+        #generalizationerrorrf=generalization_error_with_cross_val_RF(csv, 10, hyperparametertuningrf)
+        accuracyRF=accuracy_with_RF(test_data,hyperparametertuningrf)
+        print(f"Accuracy on Test for Random Forest: {accuracyRF:.2f}")
 
 
         #Decision Forest
         print("Building decision forest for ...", dataset_name)
-        decision_forest,features_count_dict_df=build_decision_forest(train_data,NUMBER_OF_FEATURES,NUM_OF_TREES)
-        print("Counting features for Decision Forest:",features_count_dict_df)
-        print("Calculating accuracy for DF...")
-        accueracy_DF=accuracy_with_DF(test_data,decision_forest)
-        print(f"Accuracy on test data with Decision Forest: {accueracy_DF:.2f}")
+        #decision_forest,features_count_dict_df=build_decision_forest(train_data,NUMBER_OF_FEATURES,NUM_OF_TREES)
+        #print("Counting features for Decision Forest:",features_count_dict_df)
+        #print("Calculating accuracy for DF...")
+        #accueracy_DF=accuracy_with_DF(test_data,decision_forest)
+        #print(f"Accuracy on test data with Decision Forest: {accueracy_DF:.2f}")
         print("Hyperparameter tuning for Decision Forest...")
         hyperparametertuningdf,featurecountdict=hyperparameter_tuning_DF(train_data, 24, [1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100], [1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns))),1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns))),1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns))),1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns))),1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns))),1,2,int(math.log2(len(train_data.columns))),int(math.sqrt(len(train_data.columns)))])
-        print("Best configuration:")
-        print_forest(hyperparametertuningdf)
+        #print("Best configuration:")
+        #print_forest(hyperparametertuningdf)
         print("featurescountdict: ",featurecountdict)
         print("Calculating Generalization Error with Cross validation for Random Forest...")
-        generalizationerrorrf=generalization_error_with_cross_val_DF(csv, 10, hyperparametertuningdf)
-        print(f"Generalization Error with Cross validation for Random Forest: {generalizationerrorrf:.2f}")
+        #generalizationerrorrf=generalization_error_with_cross_val_DF(csv, 10, hyperparametertuningdf)
+        accuracyDF=accuracy_with_DF(test_data,hyperparametertuningdf)
+        print(f"Accuracy on Test for Decision Forest: {accuracyDF:.2f}")
