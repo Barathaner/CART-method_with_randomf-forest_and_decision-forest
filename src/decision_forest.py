@@ -65,6 +65,7 @@ def hyperparameter_tuning_DF(data, num_folds, num_trees, num_features):
     forestfeaturecounts={}
     for i in range(num_folds):
         print(f"Running test {i + 1}...")
+        print("num_features:",num_features[i],"num_trees:",num_trees[i])
         # Split the data into training and testing sets
         test_data, train_data = train_test_split(data, test_size=0.2, random_state=42)
         # Build the decision forest with the specified number of features and trees
