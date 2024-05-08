@@ -25,10 +25,31 @@ def custom_print(*args, **kwargs):
 # Reassign print to custom_print
 print = custom_print
 
-NUM_OF_TREES=5
-NUMBER_OF_FEATURES=2
-IMPURITY_THRESHOLD=0.2
-    
+def change_delimiter(input_filename, output_filename, old_delimiter=';', new_delimiter=','):
+    """
+    Changes the delimiter of a given file from an old delimiter to a new delimiter.
+
+    :param input_filename: str, the name of the input file to process.
+    :param output_filename: str, the name of the output file to save the processed data.
+    :param old_delimiter: str, the delimiter to replace.
+    :param new_delimiter: str, the delimiter to use as replacement.
+    """
+    try:
+        with open(input_filename, 'r', encoding='utf-8') as file:
+            data = file.read()
+        
+        # Replace the old delimiter with the new one
+        data = data.replace(old_delimiter, new_delimiter)
+        
+        with open(output_filename, 'w', encoding='utf-8') as file:
+            file.write(data)
+        
+        print(f"File '{input_filename}' has been processed and saved as '{output_filename}' with the new delimiter.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+
+
 csvdictionary={
                "iris":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv",
                "wdbc":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/wdbc/wdbc.csv",
