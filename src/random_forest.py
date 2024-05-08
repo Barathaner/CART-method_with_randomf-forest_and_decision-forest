@@ -2,6 +2,8 @@
 from decision_tree import build_tree,predict,count_used_features_in_tree
 import pandas as pd
 from sklearn.model_selection import train_test_split
+from concurrent.futures import ProcessPoolExecutor
+
 # Capture the original print function
 original_print = print
 
@@ -41,24 +43,32 @@ def accuracy_with_RF(data, forest):
     accuracy = correct_predictions / len(data)
     return accuracy
 
+def build_tree_and_count_features(task):
+    data, num_features = task
+    bootstrapped_data = bootstrap(data)
+    tree = build_tree(bootstrapped_data, num_features=num_features)
+    feature_count_dict = count_used_features_in_tree(tree)
+    return tree, feature_count_dict
 
-def build_random_forest(data, num_features,number_of_trees=NUM_OF_TREES):
+def build_random_forest(data, num_features, number_of_trees=10):
     forest = []
-    forest_features_count_dict={}
-    for i in range(number_of_trees):
-        bootstrapped_data = bootstrap(data)
-        tree = build_tree(bootstrapped_data, num_features)
-                # Count the features used in the current tree
-        feature_count_dict = count_used_features_in_tree(tree)
-        
-        # Update the forest feature count dictionary with counts from the current tree
+    forest_features_count_dict = {}
+    tasks = [(data, num_features) for _ in range(number_of_trees)]
+
+    with ProcessPoolExecutor() as executor:
+        # Verwende eine benannte Funktion statt einer Lambda-Funktion für die Map-Funktion
+        results = list(executor.map(build_tree_and_count_features, tasks))
+
+    for tree, feature_count_dict in results:
+        forest.append(tree)
         for feature, count in feature_count_dict.items():
             if feature in forest_features_count_dict:
                 forest_features_count_dict[feature] += count
             else:
-                forest_features_count_dict[feature] = count      
-        forest.append(tree)
-    return forest,forest_features_count_dict
+                forest_features_count_dict[feature] = count
+
+    return forest, forest_features_count_dict
+
 
 
 def hyperparameter_tuning_RF(data, num_folds, num_trees, num_features):

@@ -65,8 +65,8 @@ def get_best_split(data,num_features=None,decision_forest_features=None):
     features = data.columns[:-1]  # Assuming the last column is the target
     for feature in features:
         values = data[feature].unique()
-        sorted_data = data.sort_values(by=feature)
         if pd.api.types.is_numeric_dtype(data[feature]):
+            sorted_data = data.sort_values(by=feature)
             values = (sorted_data[feature].shift(2)+sorted_data[feature].shift(1) + sorted_data[feature]).dropna() / 3
         for value in values:
             if pd.api.types.is_numeric_dtype(data[feature]):

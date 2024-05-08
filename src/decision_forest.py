@@ -1,7 +1,8 @@
 from decision_tree import build_tree,predict,count_used_features_in_tree,print_tree
 from sklearn.model_selection import train_test_split
 import pandas as pd
-
+import random
+from concurrent.futures import ProcessPoolExecutor
 # Capture the original print function
 original_print = print
 
@@ -17,24 +18,34 @@ def custom_print(*args, **kwargs):
 # Reassign print to custom_print
 print = custom_print
 
-def build_decision_forest( data, num_features, number_of_trees):
+def build_decision_forest(data, num_features, number_of_trees):
     forest = []
-    forest_features_count_dict={}
-    for i in range(number_of_trees):
-        features = data.columns[:-1].tolist()
-        features = pd.Series(features).sample(n=num_features).tolist()
-        tree = build_tree(data=data, num_features=num_features,decision_tree_features=features)
-        # Count the features used in the current tree
-        feature_count_dict = count_used_features_in_tree(tree)
-        
-        # Update the forest feature count dictionary with counts from the current tree
+    forest_features_count_dict = {}
+    
+    # Erzeuge eine Liste von Tupeln für jeden Baum, wobei jedes Tupel die Daten und eine zufällige Feature-Auswahl enthält
+    tasks = [(data, num_features, pd.Series(data.columns[:-1]).sample(n=random.randint(1, num_features)).tolist()) for _ in range(number_of_trees)]
+    
+    # Verwenden eines Prozesspools, um die Bäume parallel zu erstellen
+    with ProcessPoolExecutor() as executor:
+        results = executor.map(build_tree_wrapper, tasks)
+
+    # Sammle die Ergebnisse und aktualisiere das Forest-Feature-Count-Dictionary
+    for tree, feature_count_dict in results:
+        forest.append(tree)
         for feature, count in feature_count_dict.items():
             if feature in forest_features_count_dict:
                 forest_features_count_dict[feature] += count
             else:
-                forest_features_count_dict[feature] = count        
-        forest.append(tree)
-    return forest,forest_features_count_dict
+                forest_features_count_dict[feature] = count
+
+    return forest, forest_features_count_dict
+
+def build_tree_wrapper(args):
+    # Diese Funktion wird benötigt, um die Daten und Parameter korrekt an build_tree zu übergeben
+    data, num_features, features = args
+    tree = build_tree(data=data, num_features=num_features, decision_tree_features=features)
+    feature_count_dict = count_used_features_in_tree(tree)
+    return tree, feature_count_dict
 
 def predict_data_with_DF(data, forest):
     predictions = []
