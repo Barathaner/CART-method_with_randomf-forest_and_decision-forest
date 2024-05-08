@@ -108,11 +108,11 @@ def get_best_split(data, num_features=None, decision_forest_features=None):
     features = data.columns[:-1].tolist()
     if num_features is not None:
         features = pd.Series(features).sample(n=num_features).tolist()
-        print("Features considered for the split: ", features)
+    #    print("Features considered for the split: ", features)
     if decision_forest_features is not None:
         features = decision_forest_features
-    print("Features considered for the split: ", features)
-    print("Number of features considered: ", num_features) 
+    #print("Features considered for the split: ", features)
+    #print("Number of features considered: ", num_features) 
     for feature in features:
         values = data[feature].unique()
         if pd.api.types.is_numeric_dtype(data[feature]):

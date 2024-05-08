@@ -1,0 +1,259 @@
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building random forest for ... iris
+Hyperparameter tuning for Random Forest...
+Running test 1...
+num_features: 1 num_trees: 1
+Features considered for the split:  ['sepal width']
+Features considered for the split:  ['sepal width']
+Number of features considered:  1
+Features considered for the split:  ['petal width']
+Features considered for the split:  ['petal width']
+Number of features considered:  1
+Features considered for the split:  ['sepal length']
+Features considered for the split:  ['sepal length']
+Number of features considered:  1
+Features considered for the split:  ['petal length']
+Features considered for the split:  ['petal length']
+Number of features considered:  1
+Running test 2...
+num_features: 2 num_trees: 10
+Features considered for the split:  ['petal length', 'sepal width']
+Features considered for the split:  ['petal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'sepal width']
+Features considered for the split:  ['sepal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal width']
+Features considered for the split:  ['sepal width', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'sepal length']
+Features considered for the split:  ['sepal width', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal length']
+Features considered for the split:  ['petal length', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal width']
+Features considered for the split:  ['petal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'petal width']
+Features considered for the split:  ['petal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal width']
+Features considered for the split:  ['sepal width', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'sepal width']
+Features considered for the split:  ['sepal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal width']
+Features considered for the split:  ['sepal width', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal width']
+Features considered for the split:  ['sepal width', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'petal length']
+Features considered for the split:  ['petal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal width']
+Features considered for the split:  ['sepal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal length']
+Features considered for the split:  ['sepal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal width']
+Features considered for the split:  ['sepal length', 'petal width']
+Features considered for the split:  ['petal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'petal width']
+Features considered for the split:  ['petal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal width']
+Features considered for the split:  ['sepal length', 'petal width']
+Features considered for the split:  ['sepal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'petal length']
+Features considered for the split:  ['petal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal length']
+Features considered for the split:  ['petal width', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal length']
+Features considered for the split:  ['sepal width', 'petal length']
+Number of features considered:  2
+Running test 3...
+num_features: 2 num_trees: 25
+Features considered for the split:  ['petal length', 'sepal length']
+Features considered for the split:  ['petal length', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'sepal width']
+Features considered for the split:  ['sepal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal length']
+Features considered for the split:  ['petal width', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'petal length']
+Features considered for the split:  ['petal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal length']
+Features considered for the split:  ['petal length', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'sepal length']
+Features considered for the split:  ['sepal width', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal width']
+Features considered for the split:  ['sepal width', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal width']
+Features considered for the split:  ['sepal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal length']
+Features considered for the split:  ['petal length', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal width']
+Features considered for the split:  ['petal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal length']
+Features considered for the split:  ['sepal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal width']
+Features considered for the split:  ['sepal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'petal width']
+Features considered for the split:  ['petal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'sepal length']
+Features considered for the split:  ['sepal width', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal width']
+Features considered for the split:  ['petal width', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal width']
+Features considered for the split:  ['petal width', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal length']
+Features considered for the split:  ['petal length', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal width']
+Features considered for the split:  ['petal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal length']
+Features considered for the split:  ['sepal length', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal length']
+Features considered for the split:  ['sepal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal width']
+Features considered for the split:  ['sepal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'petal width']
+Features considered for the split:  ['petal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'sepal width']
+Features considered for the split:  ['sepal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal length']
+Features considered for the split:  ['sepal length', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal length']
+Features considered for the split:  ['sepal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal width']
+Features considered for the split:  ['petal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal length']
+Features considered for the split:  ['petal length', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal width']
+Features considered for the split:  ['petal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal length']
+Features considered for the split:  ['sepal length', 'petal length']
+Features considered for the split:  ['petal length', 'petal width']
+Features considered for the split:  ['petal length', 'petal width']
+Number of features considered:  2
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal width']
+Features considered for the split:  ['sepal width', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal width']
+Features considered for the split:  ['petal width', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal width']
+Features considered for the split:  ['sepal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'sepal length']
+Features considered for the split:  ['sepal width', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal length']
+Features considered for the split:  ['petal length', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'petal width']
+Features considered for the split:  ['petal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal width']
+Features considered for the split:  ['petal width', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'petal length']
+Features considered for the split:  ['petal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal length']
+Features considered for the split:  ['petal width', 'sepal length']
+
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal length']
+Features considered for the split:  ['petal length', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal width']
+Features considered for the split:  ['petal width', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal length']
+Features considered for the split:  ['petal width', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal width']
+Features considered for the split:  ['sepal width', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal width']
+Features considered for the split:  ['petal width', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal width']
+Features considered for the split:  ['petal width', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal width']
+Features considered for the split:  ['sepal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal width']
+Features considered for the split:  ['petal width', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'sepal width']
+Features considered for the split:  ['petal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'sepal width']
+Features considered for the split:  ['sepal length', 'sepal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal width', 'petal length']
+Features considered for the split:  ['sepal width', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['petal length', 'petal width']
+Features considered for the split:  ['petal length', 'petal width']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'sepal width']
+Features considered for the split:  ['sepal length', 'sepal width']
+Number of features considered:  2
+ ['petal width', 'sepal length']
+Features considered for the split:  ['petal width', 'sepal length']
+Number of features considered:  2
+Features considered for the split:  ['sepal length', 'petal length']
+Features considered for the split:  ['sepal length', 'petal length']
+Number of features considered:  2
+Features considered for the split:  ['petal width', 'sepal width']
+Features considered for the split:  ['petal width', 'sepal width']
+Number of features considered:  2
+Running test 4...
+num_features: 2 num_trees: 50
