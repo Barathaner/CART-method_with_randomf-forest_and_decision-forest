@@ -85,7 +85,6 @@ if __name__ == "__main__":
         print("Building random forest for ...",dataset_name)
         print("Hyperparameter tuning for Random Forest...")
         hyperparametertuningrf,features_count_dict_rf=hyperparameter_tuning_RF(csv, 24, [1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100], [1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1))])
-        print("Featurecountdictionary of best random forest: ",features_count_dict_rf)
         #print("Best Configuration: ")
         #print_forest(hyperparametertuningrf)
         random_Tree=hyperparametertuningrf[0]
@@ -99,7 +98,6 @@ if __name__ == "__main__":
         print("Building decision forest for ...", dataset_name)
         print("Hyperparameter tuning for Decision Forest...")
         hyperparametertuningdf,featurecountdict=hyperparameter_tuning_DF(csv, 24, [1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100], [1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1))])
-        print("Featurecountdictionary of best decision forest: ",featurecountdict)
         random_Tree=hyperparametertuningdf[0]
         dot = visualize_tree(random_Tree)
         # Save the dot source in a file and render it as a PNG image
