@@ -1,5 +1,6 @@
 import pandas as pd
 import sys
+import math
 
 # Capture the original print function for redirection purposes.
 original_print = print
@@ -106,9 +107,15 @@ def get_best_split(data, num_features=None, decision_forest_features=None):
     best_gini = float('inf')
     best_condition = None
     features = None
-    if num_features is not None:
+    if num_features is not None and num_features > 0:
         features = data.columns[:-1].tolist()
         features = pd.Series(features).sample(n=num_features).tolist()
+        
+    
+    #!!!!!!!!!weird number just for testing it out like it said it in the assignment. this has no use in computation.!!!!!!!!!!!!!!
+    if num_features is not None and num_features == -1:
+        features = data.columns[:-1].tolist()
+        features = pd.Series(features).sample(n=int(math.sqrt(len(features)))).tolist()
     #    print("Features considered for the split: ", features)
     if decision_forest_features is not None:
         features = decision_forest_features

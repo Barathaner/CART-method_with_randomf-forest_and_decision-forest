@@ -80,17 +80,18 @@ if __name__ == "__main__":
         # Save the dot source in a file and render it as a PNG image
         dot.render('tree_diagram', format='png', cleanup=True)  # 'cleanup=True' will remove the dot source file after rendering"""
         
-
-        # Random Forest
-        print("Building random forest for ...",dataset_name)
-        print("Hyperparameter tuning for Random Forest...")
         num_trees = [1, 10, 25, 50, 75, 100]
-        num_features = [1, 2, int(math.log2(len(csv.columns)-1)), int(math.sqrt(len(csv.columns)-1))]
+        # Random Forest
+        """print("Building random forest for ...",dataset_name)
+        print("Hyperparameter tuning for Random Forest...")
+
+        #-1 is signal for the function that changes each node to have a different number of features
+        num_features = [1, 2, int(math.log2(len(csv.columns)-1)), -1]
 
         if len(csv.columns)-1 > 8:
             hyperparametertuningrf, features_count_dict_rf,bestacc = hyperparameter_tuning_RF(csv, num_trees, num_features)
         else:
-            simple_features = [1, 2, 3, len(csv.columns)-1]  # Simpler scenario with fewer features
+            simple_features = [1, 2, 3, len(csv.columns)-1,-1]  # Simpler scenario with fewer features
             hyperparametertuningrf, features_count_dict_rf,bestacc = hyperparameter_tuning_RF(csv, num_trees, simple_features)
         #print("Best Configuration: ")
         #print_forest(hyperparametertuningrf)
@@ -99,16 +100,17 @@ if __name__ == "__main__":
         # Save the dot source in a file and render it as a PNG image
         name = f"tree_diagram_random_forest_{dataset_name}"
         dot.render(name, format='png', cleanup=True)  # 'cleanup=True' will remove the dot source file after rendering
-
+"""
         #Decision Forest
         print("Building decision forest for ...", dataset_name)
         print("Hyperparameter tuning for Decision Forest...")
         
-        num_features = [1, 2, int(math.log2(len(csv.columns)-1)), random.randint(1, len(csv.columns))-1]
+        num_features = [1, 2, int(math.log2(len(csv.columns)-1)), 0]
+        #0 is signal for the function that changes each tree to have a different number of features like the function from the assignment
         if len(csv.columns)-1 > 8:
             hyperparametertuningdf, features_count_dict_df,bestacc = hyperparameter_tuning_DF(csv, num_trees, num_features)
         else:
-            simple_features = [1, 2, 3, len(csv.columns)-1]  # Simpler scenario with fewer features
+            simple_features = [1, 2, 3, len(csv.columns)-1,0]  # Simpler scenario with fewer features
             hyperparametertuningdf, features_count_dict_df,bestacc = hyperparameter_tuning_DF(csv, num_trees, simple_features)
         random_Tree=hyperparametertuningdf[0]
         dot = visualize_tree(random_Tree)

@@ -116,6 +116,8 @@ def hyperparameter_tuning_RF(data, num_trees, num_features):
     # Generate all combinations of tree counts and feature counts
     for trees, features in itertools.product(num_trees, num_features):
         print(f"Testing configuration with {trees} trees and {features} features.")
+        if features == -1:
+            print("Using the function int(math.sqrt(len(features))) for each node to have a different number of features.")
         forest, features_count = build_random_forest(train_data, features, trees)
         accuracy = accuracy_with_RF(test_data, forest)
         

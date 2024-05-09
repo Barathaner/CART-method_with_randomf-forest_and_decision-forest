@@ -32,7 +32,13 @@ def build_decision_forest(data, num_features, number_of_trees):
     """
     forest = []
     forest_features_count_dict = {}
-    tasks = [(data, None, pd.Series(data.columns[:-1]).sample(n=random.randint(1, num_features)).tolist()) for _ in range(number_of_trees)]
+
+        #!!!!!!!!!!!!!!!!!!weird numer just to test out the function in the assignment. this has no computational advantage!!!!!!!!!!!!!!!!!!!!!!
+    if num_features == 0:
+        tasks = [(data, None, pd.Series(data.columns[:-1]).sample(n=random.randint(1, random.randint(1, max(1,len(data.columns)-1)))).tolist()) for _ in range(number_of_trees)]
+    else:
+        tasks = [(data, None, pd.Series(data.columns[:-1]).sample(n=random.randint(1, max(1,num_features))).tolist()) for _ in range(number_of_trees)]
+
     with ProcessPoolExecutor() as executor:
         results = executor.map(build_tree_wrapper, tasks)
     for tree, feature_count_dict in results:
@@ -114,10 +120,11 @@ def hyperparameter_tuning_DF(data, num_trees, num_features):
     # Generate all combinations of tree counts and feature counts
     for trees, features in itertools.product(num_trees, num_features):
         print(f"Testing configuration with {trees} trees and {features} features.")
+        if features == 0:
+            print("Using the function random.randint(1, max(1,len(data.columns)-1))) for each tree")
         forest, features_count = build_decision_forest(train_data, features, trees)
         accuracy = accuracy_with_DF(test_data, forest)
         key = f"{trees} trees, {features} features"
-
         accuracies[key] = accuracy
         forests[key] = forest
         features_count = dict(sorted(features_count.items(), key=lambda item: item[1], reverse=True))
