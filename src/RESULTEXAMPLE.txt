@@ -1,0 +1,412 @@
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building random forest for ... iris
+Hyperparameter tuning for Random Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.77, Feature counts: {'sepal width': 3, 'petal length': 2, 'sepal length': 1}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.94, Feature counts: {'petal length': 2}
+Testing configuration with 1 trees and 3 features.
+Configuration: 1 trees, 3 features, Accuracy: 0.93, Feature counts: {'petal width': 2}
+Testing configuration with 1 trees and 4 features.
+Configuration: 1 trees, 4 features, Accuracy: 0.94, Feature counts: {'petal width': 2}
+Testing configuration with 1 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 1 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal width': 1, 'petal length': 1}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.89, Feature counts: {'sepal width': 12, 'petal width': 11, 'sepal length': 7, 'petal length': 7}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 0.95, Feature counts: {'petal length': 12, 'petal width': 7, 'sepal width': 1, 'sepal length': 1}
+Testing configuration with 10 trees and 3 features.
+Configuration: 10 trees, 3 features, Accuracy: 0.96, Feature counts: {'petal length': 11, 'petal width': 9}
+Testing configuration with 10 trees and 4 features.
+Configuration: 10 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 11, 'petal length': 8, 'sepal length': 1}
+Testing configuration with 10 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 10 trees, -1 features, Accuracy: 0.96, Feature counts: {'petal width': 11, 'petal length': 7, 'sepal width': 3, 'sepal length': 3}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal length': 34, 'petal length': 27, 'sepal width': 26, 'petal width': 20}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 0.95, Feature counts: {'petal width': 26, 'petal length': 20, 'sepal length': 10, 'sepal width': 1}
+Testing configuration with 25 trees and 3 features.
+Configuration: 25 trees, 3 features, Accuracy: 0.94, Feature counts: {'petal length': 22, 'petal width': 22, 'sepal width': 3, 'sepal length': 3}
+Testing configuration with 25 trees and 4 features.
+Configuration: 25 trees, 4 features, Accuracy: 0.94, Feature counts: {'petal width': 28, 'petal length': 18, 'sepal length': 3, 'sepal width': 1}
+Testing configuration with 25 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 25 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal width': 27, 'petal length': 15, 'sepal length': 11, 'sepal width': 4}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.93, Feature counts: {'petal length': 46, 'petal width': 44, 'sepal length': 35, 'sepal width': 32}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.95, Feature counts: {'petal length': 49, 'petal width': 42, 'sepal length': 23, 'sepal width': 9}
+Testing configuration with 50 trees and 3 features.
+Configuration: 50 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 47, 'petal length': 42, 'sepal length': 9, 'sepal width': 4}
+Testing configuration with 50 trees and 4 features.
+Configuration: 50 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 49, 'petal length': 39, 'sepal length': 9, 'sepal width': 3}
+Testing configuration with 50 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 50 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal width': 50, 'petal length': 41, 'sepal length': 19, 'sepal width': 7}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.93, Feature counts: {'petal length': 68, 'petal width': 64, 'sepal width': 61, 'sepal length': 56}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 0.96, Feature counts: {'petal width': 74, 'petal length': 63, 'sepal length': 27, 'sepal width': 11}
+Testing configuration with 75 trees and 3 features.
+Configuration: 75 trees, 3 features, Accuracy: 0.93, Feature counts: {'petal length': 75, 'petal width': 58, 'sepal length': 12, 'sepal width': 5}
+Testing configuration with 75 trees and 4 features.
+Configuration: 75 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 69, 'petal length': 67, 'sepal length': 13, 'sepal width': 1}
+Testing configuration with 75 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 75 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal length': 71, 'petal width': 60, 'sepal length': 26, 'sepal width': 15}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.93, Feature counts: {'petal width': 94, 'sepal length': 89, 'petal length': 86, 'sepal width': 82}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 0.93, Feature counts: {'petal length': 91, 'petal width': 88, 'sepal length': 38, 'sepal width': 17}
+Testing configuration with 100 trees and 3 features.
+Configuration: 100 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 89, 'petal length': 84, 'sepal length': 16, 'sepal width': 12}
+Testing configuration with 100 trees and 4 features.
+Configuration: 100 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 104, 'petal length': 77, 'sepal length': 11, 'sepal width': 8}
+Testing configuration with 100 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 100 trees, -1 features, Accuracy: 0.94, Feature counts: {'petal width': 88, 'petal length': 86, 'sepal length': 41, 'sepal width': 13}
+Best configuration: 10 trees, 3 features
+Highest accuracy: 0.9583333333333334
+Feature counts for best configuration: {'petal length': 11, 'petal width': 9}
+Building decision forest for ... iris
+Hyperparameter tuning for Decision Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.62, Feature counts: {'sepal length': 8}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.95, Feature counts: {'petal width': 2}
+Testing configuration with 1 trees and 3 features.
+Configuration: 1 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 2}
+Testing configuration with 1 trees and 4 features.
+Configuration: 1 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 2}
+Testing configuration with 1 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 1 trees, 0 features, Accuracy: 0.55, Feature counts: {'sepal width': 10}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.65, Feature counts: {'sepal length': 40, 'sepal width': 20, 'petal length': 6, 'petal width': 2}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 0.90, Feature counts: {'sepal width': 34, 'sepal length': 11, 'petal width': 6, 'petal length': 6}
+Testing configuration with 10 trees and 3 features.
+Configuration: 10 trees, 3 features, Accuracy: 0.96, Feature counts: {'sepal width': 22, 'sepal length': 12, 'petal width': 9, 'petal length': 4}
+Testing configuration with 10 trees and 4 features.
+Configuration: 10 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 16, 'petal length': 4, 'sepal width': 1}
+Testing configuration with 10 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 10 trees, 0 features, Accuracy: 0.90, Feature counts: {'sepal length': 24, 'sepal width': 20, 'petal width': 6, 'petal length': 6}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal width': 60, 'sepal length': 48, 'petal length': 18, 'petal width': 14}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal width': 45, 'petal length': 33, 'petal width': 15, 'sepal length': 11}
+Testing configuration with 25 trees and 3 features.
+Configuration: 25 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 31, 'sepal width': 20, 'sepal length': 16, 'petal length': 14}
+Testing configuration with 25 trees and 4 features.
+Configuration: 25 trees, 4 features, Accuracy: 0.93, Feature counts: {'sepal length': 27, 'petal length': 26, 'petal width': 21, 'sepal width': 15}
+Testing configuration with 25 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 25 trees, 0 features, Accuracy: 0.95, Feature counts: {'sepal width': 32, 'petal width': 24, 'sepal length': 24, 'petal length': 18}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.85, Feature counts: {'sepal width': 140, 'sepal length': 120, 'petal width': 34, 'petal length': 12}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.93, Feature counts: {'petal length': 70, 'sepal width': 56, 'sepal length': 41, 'petal width': 29}
+Testing configuration with 50 trees and 3 features.
+Configuration: 50 trees, 3 features, Accuracy: 0.96, Feature counts: {'petal length': 58, 'petal width': 44, 'sepal width': 36, 'sepal length': 27}
+Testing configuration with 50 trees and 4 features.
+Configuration: 50 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 50, 'sepal width': 41, 'petal length': 40, 'sepal length': 38}
+Testing configuration with 50 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 50 trees, 0 features, Accuracy: 0.93, Feature counts: {'sepal width': 70, 'sepal length': 51, 'petal length': 46, 'petal width': 39}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal width': 190, 'sepal length': 128, 'petal length': 66, 'petal width': 36}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal width': 119, 'sepal length': 105, 'petal width': 62, 'petal length': 45}
+Testing configuration with 75 trees and 3 features.
+Configuration: 75 trees, 3 features, Accuracy: 0.93, Feature counts: {'petal length': 79, 'sepal width': 69, 'petal width': 64, 'sepal length': 53}
+Testing configuration with 75 trees and 4 features.
+Configuration: 75 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 93, 'petal length': 56, 'sepal width': 25, 'sepal length': 16}
+Testing configuration with 75 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 75 trees, 0 features, Accuracy: 0.93, Feature counts: {'sepal width': 117, 'sepal length': 88, 'petal length': 78, 'petal width': 49}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal width': 230, 'sepal length': 208, 'petal length': 63, 'petal width': 60}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal length': 153, 'sepal width': 124, 'petal length': 81, 'petal width': 72}
+Testing configuration with 100 trees and 3 features.
+Configuration: 100 trees, 3 features, Accuracy: 0.93, Feature counts: {'sepal length': 101, 'petal length': 90, 'sepal width': 88, 'petal width': 86}
+Testing configuration with 100 trees and 4 features.
+Configuration: 100 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 106, 'sepal width': 93, 'petal length': 78, 'sepal length': 62}
+Testing configuration with 100 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 100 trees, 0 features, Accuracy: 0.93, Feature counts: {'sepal width': 120, 'sepal length': 119, 'petal length': 117, 'petal width': 62}
+Best configuration: 10 trees, 3 features
+Highest accuracy: 0.9583333333333334
+Feature counts for best configuration: {'sepal width': 22, 'sepal length': 12, 'petal width': 9, 'petal length': 4}
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/wdbc/wdbc.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building random forest for ... wdbc
+Hyperparameter tuning for Random Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.89, Feature counts: {'area3': 1, 'compactness1': 1, 'concave_points2': 1, 'area2': 1, 'radius3': 1}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.90, Feature counts: {'concave_points1': 1, 'area1': 1, 'perimeter1': 1, 'perimeter3': 1, 'concavity2': 1, 'concavity1': 1}
+Testing configuration with 1 trees and 4 features.
+Configuration: 1 trees, 4 features, Accuracy: 0.88, Feature counts: {'radius2': 1, 'area2': 1, 'perimeter3': 1, 'area3': 1}
+Testing configuration with 1 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 1 trees, -1 features, Accuracy: 0.91, Feature counts: {'radius2': 1, 'concavity1': 1, 'perimeter3': 1, 'radius3': 1}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.93, Feature counts: {'radius3': 6, 'texture1': 5, 'symmetry1': 5, 'perimeter2': 4, 'compactness3': 4, 'smoothness1': 4, 'symmetry2': 4, 'area1': 4, 'concave_points2': 3, 'smoothness3': 3, 'perimeter3': 3, 'concavity1': 3, 'concavity3': 3, 'radius1': 3, 'concave_points1': 3, 'texture2': 2, 'fractal_dimension1': 2, 'radius2': 2, 'area3': 2, 'compactness1': 2, 'concave_points3': 2, 'texture3': 2, 'area2': 2, 'symmetry3': 2, 'concavity2': 2, 'perimeter1': 1, 'fractal_dimension3': 1, 'smoothness2': 1}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 0.91, Feature counts: {'fractal_dimension3': 4, 'area2': 4, 'perimeter3': 3, 'symmetry1': 3, 'perimeter1': 3, 'radius1': 3, 'area3': 3, 'concave_points1': 3, 'concavity2': 2, 'area1': 2, 'texture1': 2, 'concavity1': 2, 'smoothness2': 2, 'radius3': 2, 'fractal_dimension1': 2, 'compactness2': 1, 'texture3': 1, 'compactness3': 1, 'texture2': 1, 'concavity3': 1, 'smoothness1': 1, 'symmetry3': 1, 'compactness1': 1, 'smoothness3': 1, 'concave_points2': 1, 'fractal_dimension2': 1, 'concave_points3': 1, 'perimeter2': 1}
+Testing configuration with 10 trees and 4 features.
+Configuration: 10 trees, 4 features, Accuracy: 0.92, Feature counts: {'perimeter3': 5, 'perimeter1': 4, 'concavity3': 4, 'concave_points3': 3, 'area3': 3, 'radius1': 3, 'radius3': 3, 'smoothness3': 3, 'area1': 3, 'concave_points1': 2, 'fractal_dimension3': 2, 'concavity1': 2, 'fractal_dimension2': 1, 'smoothness1': 1, 'compactness1': 1, 'symmetry3': 1, 'perimeter2': 1, 'compactness3': 1}
+Testing configuration with 10 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 10 trees, -1 features, Accuracy: 0.91, Feature counts: {'radius3': 4, 'area3': 4, 'concavity3': 4, 'perimeter2': 3, 'compactness3': 3, 'radius1': 3, 'fractal_dimension3': 2, 'perimeter3': 2, 'smoothness3': 2, 'concave_points1': 2, 'concavity2': 1, 'concavity1': 1, 'perimeter1': 1, 'compactness2': 1, 'area2': 1, 'symmetry1': 1, 'area1': 1, 'fractal_dimension2': 1, 'symmetry3': 1}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.95, Feature counts: {'fractal_dimension1': 16, 'perimeter3': 13, 'perimeter2': 11, 'smoothness2': 10, 'symmetry2': 10, 'concavity1': 9, 'concave_points1': 9, 'fractal_dimension2': 9, 'smoothness3': 9, 'texture1': 9, 'symmetry3': 8, 'fractal_dimension3': 8, 'radius3': 8, 'radius2': 7, 'concavity3': 7, 'texture2': 7, 'texture3': 7, 'smoothness1': 7, 'compactness1': 6, 'perimeter1': 6, 'concavity2': 6, 'concave_points2': 6, 'compactness2': 6, 'radius1': 6, 'area1': 5, 'area3': 5, 'concave_points3': 5, 'compactness3': 5, 'symmetry1': 3, 'area2': 3}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 0.92, Feature counts: {'radius3': 11, 'radius1': 11, 'concave_points3': 11, 'concavity1': 9, 'area1': 9, 'radius2': 8, 'area3': 7, 'concave_points1': 7, 'fractal_dimension2': 6, 'texture3': 5, 'texture1': 5, 'perimeter1': 5, 'texture2': 5, 'area2': 5, 'fractal_dimension3': 4, 'compactness1': 4, 'smoothness3': 4, 'compactness3': 4, 'fractal_dimension1': 4, 'concavity2': 4, 'perimeter2': 4, 'symmetry2': 4, 'concave_points2': 4, 'perimeter3': 3, 'compactness2': 3, 'smoothness1': 2, 'symmetry3': 2, 'symmetry1': 2, 'smoothness2': 2, 'concavity3': 2}
+Testing configuration with 25 trees and 4 features.
+Configuration: 25 trees, 4 features, Accuracy: 0.94, Feature counts: {'concave_points3': 11, 'area1': 9, 'radius3': 9, 'radius1': 8, 'area3': 7, 'perimeter3': 6, 'concavity3': 6, 'concavity1': 5, 'fractal_dimension3': 5, 'texture2': 4, 'area2': 4, 'radius2': 3, 'texture3': 3, 'concave_points1': 3, 'concavity2': 3, 'compactness3': 3, 'compactness2': 3, 'compactness1': 3, 'perimeter1': 3, 'concave_points2': 2, 'symmetry2': 2, 'smoothness3': 2, 'smoothness1': 2, 'symmetry1': 1, 'perimeter2': 1, 'texture1': 1, 'fractal_dimension2': 1}
+Testing configuration with 25 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 25 trees, -1 features, Accuracy: 0.93, Feature counts: {'perimeter3': 16, 'concavity1': 9, 'area3': 7, 'fractal_dimension3': 7, 'compactness1': 6, 'area1': 6, 'concavity3': 5, 'concave_points3': 5, 'perimeter1': 4, 'radius3': 4, 'symmetry2': 4, 'texture3': 3, 'area2': 3, 'radius1': 3, 'fractal_dimension1': 2, 'perimeter2': 2, 'smoothness1': 2, 'texture1': 2, 'fractal_dimension2': 2, 'concave_points1': 2, 'smoothness3': 1, 'radius2': 1, 'smoothness2': 1, 'symmetry3': 1, 'compactness2': 1}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.94, Feature counts: {'compactness1': 22, 'radius1': 19, 'smoothness2': 19, 'perimeter2': 17, 'concave_points3': 17, 'texture1': 17, 'fractal_dimension3': 16, 'concavity3': 16, 'concave_points1': 16, 'perimeter1': 16, 'concavity2': 15, 'symmetry3': 15, 'radius2': 15, 'area2': 14, 'area3': 14, 'perimeter3': 14, 'fractal_dimension2': 13, 'concavity1': 13, 'symmetry1': 13, 'radius3': 12, 'area1': 12, 'smoothness1': 11, 'fractal_dimension1': 11, 'symmetry2': 10, 'compactness3': 10, 'smoothness3': 9, 'texture3': 9, 'texture2': 9, 'compactness2': 6, 'concave_points2': 5}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.94, Feature counts: {'concave_points3': 23, 'radius3': 21, 'concavity1': 17, 'perimeter2': 16, 'area1': 16, 'concave_points1': 16, 'compactness3': 15, 'perimeter3': 15, 'symmetry2': 13, 'area3': 13, 'radius1': 12, 'radius2': 12, 'perimeter1': 12, 'area2': 11, 'symmetry3': 10, 'fractal_dimension3': 10, 'concavity3': 10, 'compactness1': 9, 'smoothness2': 8, 'smoothness1': 8, 'fractal_dimension1': 8, 'texture1': 8, 'concavity2': 8, 'texture2': 7, 'smoothness3': 6, 'texture3': 6, 'concave_points2': 5, 'compactness2': 5, 'symmetry1': 3, 'fractal_dimension2': 3}
+Testing configuration with 50 trees and 4 features.
+Configuration: 50 trees, 4 features, Accuracy: 0.93, Feature counts: {'perimeter3': 23, 'area3': 15, 'concave_points3': 15, 'perimeter1': 14, 'radius3': 13, 'concave_points1': 13, 'area2': 12, 'area1': 12, 'compactness3': 10, 'concavity1': 10, 'radius1': 9, 'concavity3': 8, 'compactness1': 8, 'symmetry3': 8, 'texture1': 6, 'texture3': 6, 'perimeter2': 6, 'fractal_dimension3': 5, 'symmetry1': 4, 'fractal_dimension1': 4, 'smoothness1': 4, 'symmetry2': 4, 'radius2': 3, 'concavity2': 3, 'compactness2': 3, 'smoothness2': 3, 'texture2': 2, 'smoothness3': 2, 'fractal_dimension2': 1, 'concave_points2': 1}
+Testing configuration with 50 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 50 trees, -1 features, Accuracy: 0.93, Feature counts: {'perimeter3': 21, 'area3': 20, 'concavity3': 15, 'concave_points3': 13, 'perimeter1': 13, 'radius3': 12, 'area1': 10, 'symmetry2': 8, 'concave_points1': 8, 'area2': 8, 'compactness3': 8, 'texture1': 7, 'smoothness3': 7, 'concave_points2': 7, 'radius1': 6, 'concavity1': 5, 'fractal_dimension3': 5, 'smoothness1': 4, 'radius2': 4, 'symmetry1': 4, 'fractal_dimension1': 4, 'concavity2': 4, 'compactness2': 3, 'symmetry3': 3, 'texture3': 3, 'compactness1': 3, 'smoothness2': 2}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.93, Feature counts: {'fractal_dimension3': 33, 'area1': 31, 'perimeter2': 29, 'concave_points2': 27, 'area2': 27, 'fractal_dimension2': 26, 'perimeter1': 26, 'perimeter3': 25, 'radius3': 25, 'symmetry1': 24, 'texture2': 23, 'concavity2': 23, 'compactness1': 23, 'radius2': 22, 'compactness3': 21, 'texture3': 21, 'smoothness2': 21, 'symmetry2': 20, 'symmetry3': 19, 'smoothness3': 19, 'compactness2': 18, 'area3': 18, 'concave_points3': 17, 'fractal_dimension1': 16, 'concave_points1': 16, 'concavity1': 16, 'smoothness1': 15, 'texture1': 15, 'concavity3': 15, 'radius1': 14}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 0.94, Feature counts: {'radius1': 28, 'concave_points1': 28, 'area3': 24, 'concave_points3': 24, 'concavity1': 23, 'texture3': 20, 'radius2': 20, 'perimeter3': 20, 'smoothness3': 20, 'area2': 19, 'symmetry1': 19, 'perimeter1': 18, 'texture1': 18, 'radius3': 17, 'compactness1': 16, 'concavity3': 16, 'concave_points2': 16, 'fractal_dimension1': 15, 'compactness3': 14, 'compactness2': 13, 'fractal_dimension3': 13, 'area1': 13, 'smoothness1': 11, 'perimeter2': 11, 'fractal_dimension2': 10, 'concavity2': 9, 'symmetry2': 9, 'smoothness2': 8, 'symmetry3': 6, 'texture2': 4}
+Testing configuration with 75 trees and 4 features.
+Configuration: 75 trees, 4 features, Accuracy: 0.93, Feature counts: {'perimeter3': 39, 'radius3': 27, 'area3': 21, 'concavity3': 19, 'perimeter1': 19, 'radius2': 18, 'concavity1': 18, 'concave_points3': 17, 'concave_points1': 13, 'smoothness3': 13, 'radius1': 12, 'compactness1': 12, 'area2': 11, 'compactness3': 9, 'texture3': 8, 'area1': 8, 'fractal_dimension2': 7, 'fractal_dimension3': 7, 'symmetry1': 7, 'concave_points2': 7, 'symmetry2': 6, 'texture1': 6, 'fractal_dimension1': 5, 'symmetry3': 5, 'smoothness1': 4, 'concavity2': 3, 'smoothness2': 3, 'perimeter2': 2, 'texture2': 2, 'compactness2': 2}
+Testing configuration with 75 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 75 trees, -1 features, Accuracy: 0.93, Feature counts: {'radius3': 28, 'perimeter3': 25, 'area3': 23, 'concave_points3': 20, 'area2': 17, 'concavity3': 17, 'concavity1': 16, 'smoothness3': 16, 'radius1': 15, 'compactness3': 14, 'area1': 12, 'perimeter1': 12, 'concave_points1': 12, 'radius2': 9, 'symmetry3': 8, 'texture2': 6, 'perimeter2': 6, 'fractal_dimension1': 5, 'compactness1': 5, 'fractal_dimension3': 5, 'symmetry1': 5, 'texture1': 5, 'smoothness1': 4, 'compactness2': 4, 'symmetry2': 4, 'texture3': 3, 'smoothness2': 3, 'concave_points2': 3, 'concavity2': 3, 'fractal_dimension2': 1}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.92, Feature counts: {'area2': 41, 'symmetry1': 37, 'fractal_dimension1': 35, 'radius1': 35, 'fractal_dimension2': 33, 'area1': 32, 'smoothness3': 32, 'smoothness2': 31, 'compactness2': 31, 'perimeter1': 31, 'perimeter2': 31, 'area3': 30, 'radius3': 30, 'texture2': 30, 'symmetry2': 30, 'radius2': 29, 'texture3': 28, 'compactness1': 28, 'smoothness1': 27, 'symmetry3': 27, 'concave_points2': 26, 'perimeter3': 26, 'fractal_dimension3': 26, 'concave_points1': 26, 'texture1': 24, 'concavity1': 23, 'concave_points3': 22, 'concavity3': 21, 'concavity2': 20, 'compactness3': 19}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 0.93, Feature counts: {'area3': 45, 'perimeter3': 31, 'perimeter1': 31, 'perimeter2': 29, 'concavity3': 28, 'concavity1': 28, 'radius3': 27, 'radius1': 25, 'texture1': 25, 'concave_points1': 24, 'area2': 24, 'concavity2': 22, 'texture3': 21, 'texture2': 20, 'fractal_dimension3': 20, 'compactness2': 19, 'radius2': 19, 'compactness1': 18, 'concave_points3': 18, 'area1': 17, 'smoothness2': 16, 'symmetry3': 15, 'symmetry2': 15, 'fractal_dimension1': 14, 'concave_points2': 13, 'symmetry1': 13, 'compactness3': 12, 'smoothness3': 10, 'smoothness1': 9, 'fractal_dimension2': 6}
+Testing configuration with 100 trees and 4 features.
+Configuration: 100 trees, 4 features, Accuracy: 0.93, Feature counts: {'perimeter3': 32, 'radius3': 30, 'concave_points3': 27, 'concavity1': 25, 'area3': 25, 'concavity3': 24, 'area2': 24, 'concave_points1': 22, 'perimeter1': 22, 'fractal_dimension3': 21, 'radius1': 20, 'area1': 19, 'perimeter2': 16, 'compactness1': 13, 'concavity2': 12, 'texture3': 12, 'texture1': 11, 'compactness3': 11, 'concave_points2': 11, 'radius2': 10, 'fractal_dimension1': 10, 'smoothness3': 9, 'symmetry3': 8, 'compactness2': 8, 'symmetry2': 7, 'texture2': 6, 'smoothness1': 5, 'fractal_dimension2': 4, 'symmetry1': 3, 'smoothness2': 3}
+Testing configuration with 100 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 100 trees, -1 features, Accuracy: 0.93, Feature counts: {'area3': 41, 'perimeter3': 39, 'concave_points3': 31, 'concavity3': 24, 'radius3': 22, 'area1': 21, 'smoothness3': 21, 'area2': 20, 'concave_points1': 20, 'perimeter1': 19, 'concavity1': 18, 'compactness3': 18, 'radius1': 15, 'perimeter2': 14, 'radius2': 11, 'texture1': 9, 'concave_points2': 8, 'fractal_dimension3': 7, 'compactness2': 7, 'texture3': 7, 'compactness1': 6, 'fractal_dimension1': 6, 'symmetry2': 6, 'concavity2': 5, 'smoothness2': 5, 'symmetry3': 4, 'fractal_dimension2': 3, 'texture2': 1, 'symmetry1': 1}
+Best configuration: 25 trees, 1 features
+Highest accuracy: 0.9494505494505494
+Feature counts for best configuration: {'fractal_dimension1': 16, 'perimeter3': 13, 'perimeter2': 11, 'smoothness2': 10, 'symmetry2': 10, 'concavity1': 9, 'concave_points1': 9, 'fractal_dimension2': 9, 'smoothness3': 9, 'texture1': 9, 'symmetry3': 8, 'fractal_dimension3': 8, 'radius3': 8, 'radius2': 7, 'concavity3': 7, 'texture2': 7, 'texture3': 7, 'smoothness1': 7, 'compactness1': 6, 'perimeter1': 6, 'concavity2': 6, 'concave_points2': 6, 'compactness2': 6, 'radius1': 6, 'area1': 5, 'area3': 5, 'concave_points3': 5, 'compactness3': 5, 'symmetry1': 3, 'area2': 3}
+Building decision forest for ... wdbc
+Hyperparameter tuning for Decision Forest...
+Testing configuration with 1 trees and 7 features.
+Configuration: 1 trees, 7 features, Accuracy: 0.90, Feature counts: {'radius3': 2, 'fractal_dimension3': 1, 'concave_points2': 1, 'radius1': 1}
+Testing configuration with 1 trees and 15 features.
+Configuration: 1 trees, 15 features, Accuracy: 0.51, Feature counts: {'fractal_dimension1': 54}
+Testing configuration with 1 trees and 22 features.
+Configuration: 1 trees, 22 features, Accuracy: 0.90, Feature counts: {'perimeter3': 1, 'concave_points3': 1, 'smoothness3': 1, 'radius2': 1}
+Testing configuration with 1 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 1 trees, 0 features, Accuracy: 0.90, Feature counts: {'area3': 1, 'concave_points3': 1, 'smoothness3': 1}
+Testing configuration with 10 trees and 7 features.
+Configuration: 10 trees, 7 features, Accuracy: 0.93, Feature counts: {'texture2': 59, 'fractal_dimension2': 50, 'compactness2': 41, 'concave_points2': 19, 'concave_points3': 16, 'smoothness1': 8, 'concavity1': 6, 'concavity3': 5, 'perimeter3': 4, 'radius2': 4, 'texture1': 3, 'area1': 3, 'symmetry2': 3, 'radius3': 2, 'radius1': 1}
+Testing configuration with 10 trees and 15 features.
+Configuration: 10 trees, 15 features, Accuracy: 0.94, Feature counts: {'perimeter2': 29, 'compactness2': 18, 'concave_points2': 10, 'area1': 7, 'texture3': 7, 'radius2': 5, 'symmetry1': 5, 'area2': 4, 'concavity1': 4, 'compactness3': 3, 'smoothness3': 3, 'compactness1': 3, 'area3': 3, 'concavity3': 2, 'perimeter3': 2, 'fractal_dimension2': 2, 'radius3': 1, 'perimeter1': 1, 'texture2': 1, 'radius1': 1, 'fractal_dimension3': 1}
+Testing configuration with 10 trees and 22 features.
+Configuration: 10 trees, 22 features, Accuracy: 0.93, Feature counts: {'perimeter3': 9, 'area3': 5, 'concavity1': 4, 'area2': 4, 'smoothness3': 4, 'compactness3': 3, 'concave_points3': 3, 'smoothness1': 2, 'area1': 2, 'concavity3': 2, 'compactness2': 1, 'texture3': 1, 'radius3': 1, 'concave_points1': 1, 'compactness1': 1, 'concavity2': 1, 'fractal_dimension3': 1, 'perimeter2': 1, 'radius1': 1, 'smoothness2': 1, 'symmetry2': 1}
+Testing configuration with 10 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 10 trees, 0 features, Accuracy: 0.93, Feature counts: {'compactness2': 15, 'texture1': 14, 'concavity2': 11, 'concave_points3': 10, 'smoothness1': 10, 'radius3': 10, 'area3': 9, 'symmetry2': 7, 'area1': 4, 'perimeter3': 4, 'radius2': 4, 'smoothness3': 3, 'fractal_dimension2': 3, 'symmetry1': 3, 'texture2': 3, 'concavity3': 2, 'compactness3': 2, 'radius1': 1}
+Testing configuration with 25 trees and 7 features.
+Configuration: 25 trees, 7 features, Accuracy: 0.92, Feature counts: {'fractal_dimension3': 71, 'symmetry2': 52, 'texture1': 42, 'compactness3': 21, 'fractal_dimension1': 20, 'compactness1': 18, 'concavity2': 18, 'fractal_dimension2': 18, 'concavity3': 12, 'area1': 11, 'perimeter1': 10, 'area2': 9, 'smoothness1': 9, 'area3': 8, 'smoothness2': 8, 'compactness2': 7, 'perimeter3': 6, 'smoothness3': 6, 'perimeter2': 6, 'symmetry3': 4, 'radius1': 4, 'texture3': 3, 'concavity1': 3, 'symmetry1': 3, 'radius2': 2, 'concave_points3': 1, 'texture2': 1}
+Testing configuration with 25 trees and 15 features.
+Configuration: 25 trees, 15 features, Accuracy: 0.93, Feature counts: {'symmetry1': 23, 'area2': 23, 'texture2': 21, 'symmetry2': 20, 'concave_points3': 16, 'area3': 14, 'fractal_dimension2': 13, 'area1': 13, 'concavity1': 12, 'fractal_dimension3': 8, 'texture3': 7, 'concave_points2': 7, 'smoothness1': 6, 'smoothness3': 5, 'concave_points1': 5, 'radius3': 4, 'radius1': 4, 'compactness3': 4, 'perimeter3': 3, 'compactness1': 3, 'texture1': 3, 'compactness2': 2, 'radius2': 2, 'smoothness2': 2, 'concavity3': 2, 'perimeter1': 2, 'symmetry3': 2, 'concavity2': 1, 'fractal_dimension1': 1, 'perimeter2': 1}
+Testing configuration with 25 trees and 22 features.
+Configuration: 25 trees, 22 features, Accuracy: 0.91, Feature counts: {'smoothness2': 56, 'perimeter1': 15, 'radius2': 14, 'concave_points1': 13, 'perimeter3': 11, 'smoothness3': 10, 'radius1': 8, 'compactness3': 7, 'concavity1': 7, 'perimeter2': 6, 'area2': 6, 'compactness1': 5, 'concavity2': 5, 'area3': 4, 'area1': 4, 'symmetry1': 4, 'smoothness1': 3, 'concave_points3': 3, 'fractal_dimension3': 3, 'compactness2': 2, 'texture1': 2, 'concavity3': 2, 'radius3': 1, 'fractal_dimension2': 1, 'concave_points2': 1, 'symmetry2': 1, 'texture3': 1, 'fractal_dimension1': 1, 'texture2': 1}
+Testing configuration with 25 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 25 trees, 0 features, Accuracy: 0.91, Feature counts: {'symmetry2': 50, 'smoothness1': 47, 'concave_points2': 34, 'compactness2': 13, 'concave_points3': 12, 'concavity3': 11, 'perimeter3': 11, 'smoothness3': 10, 'area3': 8, 'radius3': 7, 'symmetry1': 7, 'perimeter1': 6, 'perimeter2': 5, 'compactness3': 5, 'area2': 5, 'concavity1': 4, 'texture1': 3, 'compactness1': 3, 'area1': 2, 'smoothness2': 2, 'symmetry3': 2, 'radius2': 2, 'fractal_dimension1': 2, 'radius1': 1, 'texture3': 1, 'fractal_dimension2': 1, 'fractal_dimension3': 1}
+Testing configuration with 50 trees and 7 features.
+Configuration: 50 trees, 7 features, Accuracy: 0.93, Feature counts: {'texture1': 55, 'smoothness2': 52, 'compactness2': 46, 'concavity3': 44, 'concavity1': 38, 'perimeter2': 26, 'area2': 20, 'concave_points3': 20, 'perimeter3': 17, 'symmetry3': 17, 'fractal_dimension1': 17, 'symmetry1': 17, 'radius1': 16, 'texture3': 16, 'radius3': 16, 'concave_points1': 15, 'texture2': 15, 'compactness3': 14, 'concavity2': 14, 'fractal_dimension3': 13, 'perimeter1': 12, 'symmetry2': 12, 'smoothness3': 12, 'radius2': 9, 'area1': 8, 'area3': 8, 'concave_points2': 7, 'compactness1': 5, 'fractal_dimension2': 5, 'smoothness1': 5}
+Testing configuration with 50 trees and 15 features.
+Configuration: 50 trees, 15 features, Accuracy: 0.93, Feature counts: {'compactness3': 60, 'texture1': 47, 'perimeter2': 40, 'perimeter3': 22, 'concave_points1': 22, 'concave_points3': 21, 'area3': 17, 'area1': 12, 'compactness1': 12, 'symmetry1': 12, 'fractal_dimension3': 11, 'area2': 10, 'smoothness3': 10, 'concavity1': 9, 'concavity3': 8, 'texture3': 8, 'smoothness1': 8, 'radius3': 7, 'fractal_dimension1': 7, 'compactness2': 7, 'radius2': 6, 'radius1': 5, 'perimeter1': 4, 'concavity2': 4, 'texture2': 3, 'symmetry3': 2, 'smoothness2': 2, 'fractal_dimension2': 1, 'concave_points2': 1}
+Testing configuration with 50 trees and 22 features.
+Configuration: 50 trees, 22 features, Accuracy: 0.92, Feature counts: {'smoothness3': 31, 'perimeter3': 26, 'area3': 25, 'symmetry2': 18, 'compactness3': 16, 'concave_points3': 16, 'concavity3': 13, 'texture3': 13, 'radius3': 12, 'radius2': 12, 'perimeter2': 11, 'smoothness1': 9, 'compactness2': 9, 'perimeter1': 8, 'fractal_dimension3': 7, 'concave_points1': 7, 'area2': 7, 'area1': 7, 'concavity2': 6, 'concavity1': 6, 'symmetry1': 6, 'compactness1': 6, 'fractal_dimension1': 4, 'texture1': 3, 'concave_points2': 2, 'smoothness2': 2, 'radius1': 2, 'symmetry3': 1}
+Testing configuration with 50 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 50 trees, 0 features, Accuracy: 0.93, Feature counts: {'fractal_dimension1': 135, 'texture1': 56, 'compactness2': 55, 'fractal_dimension3': 52, 'compactness1': 50, 'smoothness1': 50, 'smoothness3': 46, 'perimeter1': 36, 'compactness3': 35, 'smoothness2': 29, 'area2': 24, 'perimeter2': 16, 'concave_points1': 14, 'area3': 13, 'concavity3': 13, 'symmetry2': 13, 'concave_points3': 12, 'area1': 10, 'concavity1': 10, 'concave_points2': 10, 'radius1': 9, 'symmetry3': 7, 'fractal_dimension2': 7, 'texture2': 7, 'radius2': 6, 'texture3': 5, 'symmetry1': 5, 'perimeter3': 5, 'radius3': 4, 'concavity2': 1}
+Testing configuration with 75 trees and 7 features.
+Configuration: 75 trees, 7 features, Accuracy: 0.94, Feature counts: {'fractal_dimension1': 135, 'symmetry3': 112, 'smoothness3': 85, 'compactness3': 68, 'compactness2': 49, 'perimeter2': 46, 'texture3': 42, 'concavity2': 41, 'area1': 35, 'texture1': 28, 'radius1': 28, 'fractal_dimension3': 28, 'concavity1': 27, 'texture2': 27, 'concave_points3': 26, 'area3': 25, 'symmetry2': 24, 'compactness1': 23, 'fractal_dimension2': 23, 'perimeter3': 21, 'concavity3': 21, 'radius3': 20, 'symmetry1': 16, 'radius2': 15, 'perimeter1': 14, 'smoothness2': 12, 'concave_points1': 12, 'area2': 10, 'concave_points2': 9, 'smoothness1': 4}
+Testing configuration with 75 trees and 15 features.
+Configuration: 75 trees, 15 features, Accuracy: 0.92, Feature counts: {'compactness2': 57, 'symmetry3': 37, 'concave_points3': 36, 'texture2': 33, 'radius3': 32, 'smoothness2': 29, 'fractal_dimension3': 27, 'area3': 26, 'compactness1': 25, 'perimeter3': 24, 'smoothness3': 23, 'perimeter2': 23, 'texture3': 22, 'radius1': 18, 'compactness3': 18, 'concavity1': 18, 'concavity3': 16, 'smoothness1': 16, 'area2': 15, 'radius2': 12, 'texture1': 11, 'area1': 11, 'perimeter1': 10, 'concave_points2': 10, 'fractal_dimension1': 7, 'concavity2': 5, 'concave_points1': 5, 'fractal_dimension2': 3, 'symmetry2': 3, 'symmetry1': 2}
+Testing configuration with 75 trees and 22 features.
+Configuration: 75 trees, 22 features, Accuracy: 0.92, Feature counts: {'smoothness1': 59, 'fractal_dimension3': 56, 'concavity3': 43, 'compactness1': 39, 'perimeter3': 35, 'radius2': 31, 'smoothness3': 30, 'area3': 29, 'concave_points3': 21, 'radius1': 20, 'radius3': 18, 'perimeter1': 17, 'concavity1': 16, 'texture3': 16, 'perimeter2': 15, 'texture2': 15, 'texture1': 14, 'compactness3': 13, 'fractal_dimension1': 12, 'area1': 12, 'concave_points1': 8, 'compactness2': 7, 'symmetry2': 5, 'fractal_dimension2': 4, 'area2': 4, 'symmetry1': 2, 'smoothness2': 2, 'concavity2': 1, 'concave_points2': 1}
+Testing configuration with 75 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 75 trees, 0 features, Accuracy: 0.92, Feature counts: {'texture2': 70, 'fractal_dimension1': 68, 'fractal_dimension2': 64, 'symmetry1': 57, 'concavity2': 49, 'compactness1': 43, 'concave_points3': 37, 'perimeter3': 33, 'compactness2': 33, 'concavity1': 30, 'radius3': 29, 'smoothness1': 28, 'radius2': 28, 'symmetry2': 24, 'area1': 22, 'smoothness2': 21, 'area3': 21, 'concave_points1': 20, 'compactness3': 20, 'area2': 19, 'texture3': 17, 'perimeter2': 16, 'symmetry3': 16, 'smoothness3': 13, 'radius1': 12, 'fractal_dimension3': 10, 'concavity3': 7, 'texture1': 4, 'perimeter1': 2, 'concave_points2': 2}
+Testing configuration with 100 trees and 7 features.
+Configuration: 100 trees, 7 features, Accuracy: 0.94, Feature counts: {'texture1': 142, 'fractal_dimension2': 111, 'fractal_dimension1': 84, 'radius1': 78, 'concavity3': 62, 'smoothness1': 61, 'concavity1': 53, 'symmetry3': 50, 'compactness3': 47, 'compactness2': 45, 'symmetry2': 36, 'area3': 35, 'radius3': 35, 'area2': 34, 'radius2': 33, 'concavity2': 32, 'compactness1': 31, 'fractal_dimension3': 28, 'smoothness2': 27, 'smoothness3': 26, 'area1': 26, 'perimeter1': 26, 'perimeter2': 23, 'concave_points3': 20, 'symmetry1': 19, 'perimeter3': 16, 'concave_points1': 14, 'concave_points2': 13, 'texture3': 12, 'texture2': 11}
+Testing configuration with 100 trees and 15 features.
+Configuration: 100 trees, 15 features, Accuracy: 0.92, Feature counts: {'symmetry3': 97, 'fractal_dimension1': 82, 'texture2': 67, 'fractal_dimension3': 64, 'symmetry1': 42, 'concave_points3': 41, 'concavity3': 40, 'compactness1': 39, 'compactness3': 38, 'radius1': 37, 'concavity1': 37, 'perimeter3': 34, 'area3': 32, 'smoothness3': 32, 'concave_points1': 31, 'area1': 29, 'fractal_dimension2': 28, 'radius3': 26, 'perimeter2': 23, 'area2': 22, 'texture1': 20, 'smoothness1': 18, 'concavity2': 16, 'perimeter1': 15, 'smoothness2': 15, 'compactness2': 11, 'symmetry2': 11, 'concave_points2': 7, 'texture3': 5, 'radius2': 3}
+Testing configuration with 100 trees and 22 features.
+Configuration: 100 trees, 22 features, Accuracy: 0.92, Feature counts: {'fractal_dimension2': 93, 'texture2': 78, 'compactness2': 60, 'concave_points3': 44, 'fractal_dimension3': 39, 'area3': 39, 'perimeter2': 39, 'concave_points1': 35, 'perimeter3': 32, 'smoothness3': 31, 'texture1': 31, 'radius1': 30, 'concavity1': 26, 'compactness3': 24, 'texture3': 23, 'area1': 22, 'concavity2': 22, 'radius3': 21, 'symmetry2': 19, 'compactness1': 19, 'concavity3': 19, 'smoothness1': 17, 'concave_points2': 15, 'radius2': 11, 'symmetry1': 8, 'perimeter1': 8, 'symmetry3': 7, 'area2': 6, 'fractal_dimension1': 5, 'smoothness2': 2}
+Testing configuration with 100 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 100 trees, 0 features, Accuracy: 0.92, Feature counts: {'texture2': 134, 'symmetry2': 106, 'smoothness2': 73, 'fractal_dimension2': 54, 'concave_points1': 50, 'perimeter3': 49, 'radius1': 47, 'compactness3': 47, 'texture1': 47, 'area2': 41, 'fractal_dimension1': 38, 'smoothness3': 33, 'radius3': 33, 'concavity3': 29, 'concave_points3': 28, 'area3': 26, 'area1': 23, 'fractal_dimension3': 21, 'concavity2': 21, 'compactness1': 21, 'symmetry3': 18, 'symmetry1': 16, 'concave_points2': 14, 'perimeter2': 12, 'concavity1': 12, 'compactness2': 10, 'radius2': 9, 'texture3': 8, 'perimeter1': 7, 'smoothness1': 5}
+Best configuration: 10 trees, 15 features
+Highest accuracy: 0.9428571428571428
+Feature counts for best configuration: {'perimeter2': 29, 'compactness2': 18, 'concave_points2': 10, 'area1': 7, 'texture3': 7, 'radius2': 5, 'symmetry1': 5, 'area2': 4, 'concavity1': 4, 'compactness3': 3, 'smoothness3': 3, 'compactness1': 3, 'area3': 3, 'concavity3': 2, 'perimeter3': 2, 'fractal_dimension2': 2, 'radius3': 1, 'perimeter1': 1, 'texture2': 1, 'radius1': 1, 'fractal_dimension3': 1}
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/car/car.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building random forest for ... car
+Hyperparameter tuning for Random Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.72, Feature counts: {'lug_boot': 8, 'persons': 8, 'safety': 6, 'buying': 5, 'maint': 4, 'doors': 4}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.82, Feature counts: {'maint': 10, 'lug_boot': 8, 'persons': 7, 'doors': 7, 'safety': 5, 'buying': 5}
+Testing configuration with 1 trees and 3 features.
+Configuration: 1 trees, 3 features, Accuracy: 0.86, Feature counts: {'maint': 10, 'buying': 6, 'persons': 4, 'safety': 4, 'doors': 4, 'lug_boot': 4}
+Testing configuration with 1 trees and 6 features.
+Configuration: 1 trees, 6 features, Accuracy: 0.87, Feature counts: {'lug_boot': 7, 'safety': 6, 'buying': 6, 'maint': 5, 'doors': 5, 'persons': 2}
+Testing configuration with 1 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 1 trees, -1 features, Accuracy: 0.85, Feature counts: {'doors': 8, 'maint': 7, 'buying': 6, 'persons': 5, 'lug_boot': 4, 'safety': 2}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.83, Feature counts: {'doors': 44, 'persons': 39, 'buying': 39, 'maint': 38, 'safety': 37, 'lug_boot': 32}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 0.87, Feature counts: {'maint': 78, 'safety': 75, 'buying': 75, 'doors': 65, 'persons': 63, 'lug_boot': 48}
+Testing configuration with 10 trees and 3 features.
+Configuration: 10 trees, 3 features, Accuracy: 0.90, Feature counts: {'maint': 91, 'doors': 80, 'safety': 73, 'lug_boot': 73, 'buying': 67, 'persons': 66}
+Testing configuration with 10 trees and 6 features.
+Configuration: 10 trees, 6 features, Accuracy: 0.92, Feature counts: {'maint': 70, 'buying': 64, 'lug_boot': 54, 'doors': 49, 'safety': 35, 'persons': 26}
+Testing configuration with 10 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 10 trees, -1 features, Accuracy: 0.87, Feature counts: {'doors': 90, 'maint': 84, 'buying': 83, 'safety': 77, 'persons': 60, 'lug_boot': 59}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.80, Feature counts: {'safety': 128, 'maint': 117, 'buying': 117, 'persons': 111, 'lug_boot': 95, 'doors': 93}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 0.88, Feature counts: {'buying': 196, 'maint': 196, 'safety': 192, 'persons': 189, 'doors': 184, 'lug_boot': 162}
+Testing configuration with 25 trees and 3 features.
+Configuration: 25 trees, 3 features, Accuracy: 0.91, Feature counts: {'doors': 211, 'maint': 208, 'buying': 187, 'safety': 176, 'lug_boot': 165, 'persons': 130}
+Testing configuration with 25 trees and 6 features.
+Configuration: 25 trees, 6 features, Accuracy: 0.93, Feature counts: {'maint': 170, 'lug_boot': 147, 'buying': 143, 'doors': 118, 'safety': 101, 'persons': 57}
+Testing configuration with 25 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 25 trees, -1 features, Accuracy: 0.88, Feature counts: {'maint': 214, 'buying': 194, 'doors': 183, 'safety': 175, 'persons': 165, 'lug_boot': 136}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.77, Feature counts: {'safety': 229, 'persons': 220, 'doors': 216, 'maint': 207, 'buying': 205, 'lug_boot': 186}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.89, Feature counts: {'maint': 472, 'doors': 416, 'buying': 413, 'safety': 392, 'persons': 366, 'lug_boot': 314}
+Testing configuration with 50 trees and 3 features.
+Configuration: 50 trees, 3 features, Accuracy: 0.91, Feature counts: {'maint': 442, 'doors': 393, 'buying': 356, 'safety': 320, 'lug_boot': 298, 'persons': 276}
+Testing configuration with 50 trees and 6 features.
+Configuration: 50 trees, 6 features, Accuracy: 0.93, Feature counts: {'maint': 326, 'buying': 311, 'doors': 269, 'lug_boot': 269, 'safety': 200, 'persons': 120}
+Testing configuration with 50 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 50 trees, -1 features, Accuracy: 0.89, Feature counts: {'maint': 405, 'buying': 378, 'doors': 374, 'persons': 351, 'lug_boot': 343, 'safety': 312}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.78, Feature counts: {'safety': 345, 'buying': 327, 'persons': 313, 'maint': 306, 'doors': 299, 'lug_boot': 294}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 0.89, Feature counts: {'doors': 628, 'maint': 626, 'safety': 593, 'persons': 554, 'buying': 551, 'lug_boot': 469}
+Testing configuration with 75 trees and 3 features.
+Configuration: 75 trees, 3 features, Accuracy: 0.92, Feature counts: {'maint': 643, 'buying': 580, 'doors': 537, 'safety': 460, 'lug_boot': 457, 'persons': 424}
+Testing configuration with 75 trees and 6 features.
+Configuration: 75 trees, 6 features, Accuracy: 0.93, Feature counts: {'maint': 492, 'buying': 434, 'lug_boot': 420, 'doors': 376, 'safety': 322, 'persons': 170}
+Testing configuration with 75 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 75 trees, -1 features, Accuracy: 0.90, Feature counts: {'maint': 625, 'doors': 609, 'buying': 588, 'persons': 549, 'safety': 545, 'lug_boot': 507}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.83, Feature counts: {'maint': 463, 'persons': 453, 'safety': 449, 'doors': 447, 'buying': 432, 'lug_boot': 368}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 0.88, Feature counts: {'maint': 841, 'doors': 786, 'buying': 780, 'persons': 733, 'safety': 664, 'lug_boot': 630}
+Testing configuration with 100 trees and 3 features.
+Configuration: 100 trees, 3 features, Accuracy: 0.92, Feature counts: {'maint': 790, 'buying': 747, 'doors': 738, 'safety': 646, 'lug_boot': 584, 'persons': 540}
+Testing configuration with 100 trees and 6 features.
+Configuration: 100 trees, 6 features, Accuracy: 0.93, Feature counts: {'maint': 688, 'buying': 602, 'lug_boot': 590, 'doors': 536, 'safety': 380, 'persons': 246}
+Testing configuration with 100 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 100 trees, -1 features, Accuracy: 0.89, Feature counts: {'maint': 799, 'buying': 789, 'doors': 773, 'safety': 731, 'persons': 689, 'lug_boot': 618}
+Best configuration: 50 trees, 6 features
+Highest accuracy: 0.934876989869754
+Feature counts for best configuration: {'maint': 326, 'buying': 311, 'doors': 269, 'lug_boot': 269, 'safety': 200, 'persons': 120}
+Building decision forest for ... car
+Hyperparameter tuning for Decision Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.71, Feature counts: {'maint': 3}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.71, Feature counts: {'doors': 3}
+Testing configuration with 1 trees and 3 features.
+Configuration: 1 trees, 3 features, Accuracy: 0.71, Feature counts: {'doors': 3}
+Testing configuration with 1 trees and 6 features.
+Configuration: 1 trees, 6 features, Accuracy: 0.70, Feature counts: {'safety': 3, 'lug_boot': 3}
+Testing configuration with 1 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 1 trees, 0 features, Accuracy: 0.63, Feature counts: {'doors': 16, 'persons': 9, 'maint': 7}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.71, Feature counts: {'persons': 8, 'lug_boot': 4, 'doors': 3, 'buying': 3, 'maint': 3, 'safety': 2}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 0.71, Feature counts: {'doors': 30, 'maint': 17, 'safety': 11, 'lug_boot': 9, 'persons': 5, 'buying': 4}
+Testing configuration with 10 trees and 3 features.
+Configuration: 10 trees, 3 features, Accuracy: 0.74, Feature counts: {'doors': 52, 'persons': 28, 'lug_boot': 23, 'buying': 12, 'maint': 9, 'safety': 7}
+Testing configuration with 10 trees and 6 features.
+Configuration: 10 trees, 6 features, Accuracy: 0.87, Feature counts: {'doors': 174, 'maint': 104, 'lug_boot': 90, 'persons': 82, 'buying': 60, 'safety': 26}
+Testing configuration with 10 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 10 trees, 0 features, Accuracy: 0.71, Feature counts: {'doors': 100, 'maint': 76, 'buying': 34, 'persons': 31, 'lug_boot': 27, 'safety': 21}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.71, Feature counts: {'maint': 15, 'safety': 12, 'buying': 12, 'lug_boot': 10, 'persons': 8, 'doors': 3}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 0.71, Feature counts: {'doors': 75, 'lug_boot': 39, 'buying': 16, 'safety': 15, 'persons': 15, 'maint': 14}
+Testing configuration with 25 trees and 3 features.
+Configuration: 25 trees, 3 features, Accuracy: 0.71, Feature counts: {'doors': 112, 'lug_boot': 64, 'maint': 55, 'persons': 54, 'buying': 50, 'safety': 18}
+Testing configuration with 25 trees and 6 features.
+Configuration: 25 trees, 6 features, Accuracy: 0.77, Feature counts: {'doors': 310, 'lug_boot': 217, 'maint': 195, 'persons': 114, 'buying': 113, 'safety': 71}
+Testing configuration with 25 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 25 trees, 0 features, Accuracy: 0.71, Feature counts: {'maint': 109, 'doors': 102, 'persons': 98, 'buying': 59, 'lug_boot': 40, 'safety': 35}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.71, Feature counts: {'doors': 27, 'maint': 24, 'persons': 20, 'lug_boot': 18, 'buying': 18, 'safety': 16}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.71, Feature counts: {'maint': 65, 'doors': 47, 'lug_boot': 43, 'buying': 37, 'safety': 36, 'persons': 29}
+Testing configuration with 50 trees and 3 features.
+Configuration: 50 trees, 3 features, Accuracy: 0.71, Feature counts: {'doors': 268, 'maint': 179, 'lug_boot': 139, 'persons': 97, 'buying': 66, 'safety': 53}
+Testing configuration with 50 trees and 6 features.
+Configuration: 50 trees, 6 features, Accuracy: 0.82, Feature counts: {'doors': 627, 'maint': 406, 'lug_boot': 324, 'persons': 213, 'buying': 169, 'safety': 130}
+Testing configuration with 50 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 50 trees, 0 features, Accuracy: 0.71, Feature counts: {'doors': 271, 'maint': 214, 'lug_boot': 149, 'persons': 145, 'buying': 127, 'safety': 55}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.71, Feature counts: {'maint': 39, 'persons': 36, 'doors': 30, 'buying': 27, 'lug_boot': 26, 'safety': 24}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 0.71, Feature counts: {'doors': 138, 'maint': 78, 'buying': 71, 'persons': 65, 'lug_boot': 60, 'safety': 58}
+Testing configuration with 75 trees and 3 features.
+Configuration: 75 trees, 3 features, Accuracy: 0.71, Feature counts: {'doors': 330, 'maint': 238, 'lug_boot': 138, 'persons': 116, 'safety': 102, 'buying': 84}
+Testing configuration with 75 trees and 6 features.
+Configuration: 75 trees, 6 features, Accuracy: 0.71, Feature counts: {'doors': 699, 'maint': 421, 'lug_boot': 356, 'persons': 272, 'buying': 176, 'safety': 169}
+Testing configuration with 75 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 75 trees, 0 features, Accuracy: 0.71, Feature counts: {'doors': 476, 'maint': 285, 'persons': 218, 'lug_boot': 180, 'buying': 149, 'safety': 117}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.71, Feature counts: {'buying': 63, 'doors': 48, 'safety': 36, 'maint': 36, 'lug_boot': 36, 'persons': 30}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 0.71, Feature counts: {'doors': 130, 'maint': 103, 'persons': 87, 'lug_boot': 83, 'buying': 79, 'safety': 65}
+Testing configuration with 100 trees and 3 features.
+Configuration: 100 trees, 3 features, Accuracy: 0.71, Feature counts: {'doors': 437, 'maint': 222, 'lug_boot': 174, 'buying': 122, 'persons': 121, 'safety': 103}
+Testing configuration with 100 trees and 6 features.
+Configuration: 100 trees, 6 features, Accuracy: 0.83, Feature counts: {'doors': 1032, 'lug_boot': 672, 'maint': 653, 'persons': 524, 'buying': 434, 'safety': 270}
+Testing configuration with 100 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 100 trees, 0 features, Accuracy: 0.71, Feature counts: {'doors': 831, 'lug_boot': 418, 'maint': 354, 'persons': 332, 'buying': 249, 'safety': 183}
+Best configuration: 10 trees, 6 features
+Highest accuracy: 0.8748191027496383
+Feature counts for best configuration: {'doors': 174, 'maint': 104, 'lug_boot': 90, 'persons': 82, 'buying': 60, 'safety': 26}
+Total time taken: 1465.33 seconds
