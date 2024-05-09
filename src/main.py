@@ -105,7 +105,7 @@ if __name__ == "__main__":
         print("Building decision forest for ...", dataset_name)
         print("Hyperparameter tuning for Decision Forest...")
         
-        num_features = [1, 2, int(math.log2(len(csv.columns)-1)), 0]
+        num_features = [int((len(csv.columns)-1)/4), int((len(csv.columns)-1)/2), int(3*(len(csv.columns)-1)/4), 0]
         #0 is signal for the function that changes each tree to have a different number of features like the function from the assignment
         if len(csv.columns)-1 > 8:
             hyperparametertuningdf, features_count_dict_df,bestacc = hyperparameter_tuning_DF(csv, num_trees, num_features)
