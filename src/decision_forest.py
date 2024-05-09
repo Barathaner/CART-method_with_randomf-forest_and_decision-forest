@@ -121,6 +121,7 @@ def hyperparameter_tuning_DF(data, num_trees, num_features):
         accuracies[key] = accuracy
         forests[key] = forest
         feature_counts[key] = features_count
+        feature_counts = dict(sorted(feature_counts.items(), key=lambda item: sum(item[1].values()), reverse=True))
 
         print(f"Configuration: {key}, Accuracy: {accuracy:.2f}, Feature counts: {features_count}")
 
