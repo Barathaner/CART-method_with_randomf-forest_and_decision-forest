@@ -156,7 +156,7 @@ def build_tree(data, num_features=None, impurity_threshold=IMPURITY_THRESHOLD, d
     Returns:
         The root node of the decision tree.
     """
-    if data.empty or calculate_impurity(data) < impurity_threshold:
+    if data.empty or calculate_impurity(data) == 0:
         most_common_class = data.iloc[:, -1].mode()[0]
         return Node(condition=None, is_leaf=True, label=most_common_class)
     best_condition = get_best_split(data, num_features, decision_tree_features)

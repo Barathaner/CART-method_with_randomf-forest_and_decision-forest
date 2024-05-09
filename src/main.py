@@ -90,7 +90,7 @@ if __name__ == "__main__":
         if len(csv.columns)-1 > 8:
             hyperparametertuningrf, features_count_dict_rf,bestacc = hyperparameter_tuning_RF(csv, num_trees, num_features)
         else:
-            simple_features = [1, 2, 3, 4]  # Simpler scenario with fewer features
+            simple_features = [1, 2, 3, len(csv.columns)-1]  # Simpler scenario with fewer features
             hyperparametertuningrf, features_count_dict_rf,bestacc = hyperparameter_tuning_RF(csv, num_trees, simple_features)
         #print("Best Configuration: ")
         #print_forest(hyperparametertuningrf)
@@ -104,10 +104,11 @@ if __name__ == "__main__":
         print("Building decision forest for ...", dataset_name)
         print("Hyperparameter tuning for Decision Forest...")
         
+        num_features = [1, 2, int(math.log2(len(csv.columns)-1)), random.randint(1, len(csv.columns))-1]
         if len(csv.columns)-1 > 8:
             hyperparametertuningdf, features_count_dict_df,bestacc = hyperparameter_tuning_DF(csv, num_trees, num_features)
         else:
-            simple_features = [1, 2, 3, 4]  # Simpler scenario with fewer features
+            simple_features = [1, 2, 3, len(csv.columns)-1]  # Simpler scenario with fewer features
             hyperparametertuningdf, features_count_dict_df,bestacc = hyperparameter_tuning_DF(csv, num_trees, simple_features)
         random_Tree=hyperparametertuningdf[0]
         dot = visualize_tree(random_Tree)

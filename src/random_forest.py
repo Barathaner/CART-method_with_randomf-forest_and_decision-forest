@@ -117,16 +117,16 @@ def hyperparameter_tuning_RF(data, num_trees, num_features):
     for trees, features in itertools.product(num_trees, num_features):
         print(f"Testing configuration with {trees} trees and {features} features.")
         forest, features_count = build_random_forest(train_data, features, trees)
-
         accuracy = accuracy_with_RF(test_data, forest)
+        
         key = f"{trees} trees, {features} features"
 
         accuracies[key] = accuracy
         forests[key] = forest
+        features_count = dict(sorted(features_count.items(), key=lambda item: item[1], reverse=True))
         feature_counts[key] = features_count
 
-        feature_counts = dict(sorted(feature_counts.items(), key=lambda item: sum(item[1].values()), reverse=True))
-        print(f"Configuration: {key}, Accuracy: {accuracy:.2f}, Feature counts: {feature_counts}")
+        print(f"Configuration: {key}, Accuracy: {accuracy:.2f}, Feature counts: {features_count}")
 
     # Determine the best performing configuration
     best_key = max(accuracies, key=accuracies.get)
