@@ -82,7 +82,7 @@ if __name__ == "__main__":
         
         num_trees = [1, 10, 25, 50, 75, 100]
         # Random Forest
-        """print("Building random forest for ...",dataset_name)
+        print("Building random forest for ...",dataset_name)
         print("Hyperparameter tuning for Random Forest...")
 
         #-1 is signal for the function that changes each node to have a different number of features
@@ -100,7 +100,7 @@ if __name__ == "__main__":
         # Save the dot source in a file and render it as a PNG image
         name = f"tree_diagram_random_forest_{dataset_name}"
         dot.render(name, format='png', cleanup=True)  # 'cleanup=True' will remove the dot source file after rendering
-"""
+
         #Decision Forest
         print("Building decision forest for ...", dataset_name)
         print("Hyperparameter tuning for Decision Forest...")
