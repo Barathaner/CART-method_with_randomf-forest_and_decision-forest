@@ -4,31 +4,47 @@ Splitting data into training and testing sets...
 Building decision forest for ... iris
 Hyperparameter tuning for Decision Forest...
 Testing configuration with 1 trees and 1 features.
-Configuration: 1 trees, 1 features, Accuracy: 0.62, Feature counts: {'sepal length': 8}
+Configuration: 1 trees, 1 features, Accuracy: 0.55, Feature counts: {'sepal width': 10}
 Testing configuration with 1 trees and 2 features.
-Configuration: 1 trees, 2 features, Accuracy: 0.62, Feature counts: {'sepal length': 8}
+Configuration: 1 trees, 2 features, Accuracy: 0.94, Feature counts: {'petal length': 3}
 Testing configuration with 1 trees and 3 features.
-Configuration: 1 trees, 3 features, Accuracy: 0.94, Feature counts: {'petal length': 3}
+Configuration: 1 trees, 3 features, Accuracy: 0.62, Feature counts: {'sepal length': 8}
 Testing configuration with 1 trees and 4 features.
-Configuration: 1 trees, 4 features, Accuracy: 0.94, Feature counts: {'petal length': 3}
+Configuration: 1 trees, 4 features, Accuracy: 0.55, Feature counts: {'sepal width': 10}
 Testing configuration with 1 trees and 0 features.
 Using the function random.randint(1, max(1,len(data.columns)-1))) for each tree
 Configuration: 1 trees, 0 features, Accuracy: 0.94, Feature counts: {'petal length': 3}
 Testing configuration with 10 trees and 1 features.
-Configuration: 10 trees, 1 features, Accuracy: 0.94, Feature counts: {'petal length': 15, 'sepal length': 8, 'petal width': 8}
+Configuration: 10 trees, 1 features, Accuracy: 0.90, Feature counts: {'sepal width': 30, 'sepal length': 16, 'petal length': 9, 'petal width': 4}
 Testing configuration with 10 trees and 2 features.
-Configuration: 10 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal length': 24, 'petal length': 12, 'petal width': 6}
+Configuration: 10 trees, 2 features, Accuracy: 0.95, Feature counts: {'petal width': 12, 'sepal length': 11, 'petal length': 6, 'sepal width': 4}
 Testing configuration with 10 trees and 3 features.
-Configuration: 10 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 12, 'sepal width': 12, 'petal length': 5, 'sepal length': 4}
+Configuration: 10 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 15, 'sepal length': 8, 'petal length': 3, 'sepal width': 1}
 Testing configuration with 10 trees and 4 features.
-Configuration: 10 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 13, 'petal length': 10}
+Configuration: 10 trees, 4 features, Accuracy: 0.93, Feature counts: {'sepal width': 19, 'sepal length': 14, 'petal length': 8, 'petal width': 6}
 Testing configuration with 10 trees and 0 features.
 Using the function random.randint(1, max(1,len(data.columns)-1))) for each tree
-Configuration: 10 trees, 0 features, Accuracy: 0.93, Feature counts: {'sepal width': 28, 'petal length': 9, 'sepal length': 7, 'petal width': 4}
+Configuration: 10 trees, 0 features, Accuracy: 0.95, Feature counts: {'petal length': 13, 'petal width': 10, 'sepal width': 1}
 Testing configuration with 25 trees and 1 features.
-Configuration: 25 trees, 1 features, Accuracy: 0.85, Feature counts: {'sepal width': 70, 'sepal length': 56, 'petal width': 14, 'petal length': 12}
+Configuration: 25 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal length': 56, 'sepal width': 50, 'petal length': 21, 'petal width': 12}
 Testing configuration with 25 trees and 2 features.
-Configuration: 25 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal width': 73, 'sepal length': 36, 'petal length': 16, 'petal width': 14}
+Configuration: 25 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal width': 58, 'sepal length': 30, 'petal length': 25, 'petal width': 13}
 Testing configuration with 25 trees and 3 features.
-Configuration: 25 trees, 3 features, Accuracy: 0.95, Feature counts: {'sepal width': 35, 'petal width': 23, 'petal length': 19, 'sepal length': 16}
+Configuration: 25 trees, 3 features, Accuracy: 0.93, Feature counts: {'sepal length': 29, 'petal length': 28, 'sepal width': 27, 'petal width': 14}
 Testing configuration with 25 trees and 4 features.
+Configuration: 25 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 28, 'sepal width': 26, 'petal length': 15, 'sepal length': 15}
+Testing configuration with 25 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1))) for each tree
+Configuration: 25 trees, 0 features, Accuracy: 0.95, Feature counts: {'sepal length': 32, 'petal width': 25, 'petal length': 22, 'sepal width': 3}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.85, Feature counts: {'sepal width': 150, 'sepal length': 128, 'petal width': 24, 'petal length': 21}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal width': 130, 'sepal length': 76, 'petal width': 33, 'petal length': 28}
+Testing configuration with 50 trees and 3 features.
+Configuration: 50 trees, 3 features, Accuracy: 0.95, Feature counts: {'sepal width': 55, 'petal length': 46, 'sepal length': 44, 'petal width': 42}
+Testing configuration with 50 trees and 4 features.
+Configuration: 50 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 53, 'petal length': 42, 'sepal length': 30, 'sepal width': 20}
+Testing configuration with 50 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1))) for each tree
+Configuration: 50 trees, 0 features, Accuracy: 0.93, Feature counts: {'sepal length': 80, 'sepal width': 79, 'petal width': 38, 'petal length': 34}
+Testing configuration with 75 trees and 1 features.

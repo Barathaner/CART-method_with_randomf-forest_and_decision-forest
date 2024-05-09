@@ -121,7 +121,7 @@ def hyperparameter_tuning_DF(data, num_trees, num_features):
     for trees, features in itertools.product(num_trees, num_features):
         print(f"Testing configuration with {trees} trees and {features} features.")
         if features == 0:
-            print("Using the function random.randint(1, max(1,len(data.columns)-1))) for each tree")
+            print("Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree")
         forest, features_count = build_decision_forest(train_data, features, trees)
         accuracy = accuracy_with_DF(test_data, forest)
         key = f"{trees} trees, {features} features"
