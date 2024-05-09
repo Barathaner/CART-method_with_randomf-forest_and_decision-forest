@@ -2,7 +2,8 @@ from decision_tree import build_tree, predict, count_used_features_in_tree
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from concurrent.futures import ProcessPoolExecutor
-
+import matplotlib.pyplot as plt
+import itertools
 # Capture the original print function
 original_print = print
 
@@ -95,34 +96,45 @@ def build_random_forest(data, num_features, number_of_trees=10):
                 forest_features_count_dict[feature] = count
     return forest, forest_features_count_dict
 
-def hyperparameter_tuning_RF(data, num_folds, num_trees, num_features):
-    """Performs hyperparameter tuning for a random forest.
+def hyperparameter_tuning_RF(data, num_trees, num_features):
+    """
+    Performs hyperparameter tuning for a random forest by testing all combinations of tree counts and feature counts.
+    
     Args:
-        data (DataFrame): The dataset to use.
-        num_folds (int): Number of configurations to test.
-        num_trees (list): List of tree counts to test.
-        num_features (list): List of feature counts to test.
+        data (DataFrame): The dataset to use for building the forest.
+        num_trees (list of int): List of the number of trees to use in the forest.
+        num_features (list of int): List of the number of features to consider when splitting at each node.
+    
     Returns:
-        tuple: The best performing forest and its feature count dictionary.
+        tuple: The best performing forest and its feature count dictionary, along with its accuracy.
     """
     accuracies = {}
     forests = {}
-    forestfeaturecounts = {}
+    feature_counts = {}
     test_data, train_data = train_test_split(data, test_size=0.2, random_state=42)
-    for i in range(num_folds):
-        print(f"Running test {i + 1}...")
-        print("num_features:", num_features[i], "num_trees:", num_trees[i])
-        forest, featurescount = build_random_forest(train_data, num_features[i], num_trees[i])
+
+    # Generate all combinations of tree counts and feature counts
+    for trees, features in itertools.product(num_trees, num_features):
+        print(f"Testing configuration with {trees} trees and {features} features.")
+        forest, features_count = build_random_forest(train_data, features, trees)
+        feature_count= dict(sorted(feature_count.items(), key=lambda item: item[1], reverse=True))
+
         accuracy = accuracy_with_RF(test_data, forest)
-        key = f"test:{i} num_features:{num_features[i]} num_trees:{num_trees[i]}"
+        key = f"{trees} trees, {features} features"
+
         accuracies[key] = accuracy
         forests[key] = forest
-        forestfeaturecounts[key] = featurescount
+        feature_counts[key] = features_count
+
+        print(f"Configuration: {key}, Accuracy: {accuracy:.2f}, Feature counts: {features_count}")
+
+    # Determine the best performing configuration
     best_key = max(accuracies, key=accuracies.get)
-    print("Random Forest Hyperparameter Tuning accuracies:", accuracies)
-    print("Random Forest Hyperparameter Tuning FeatureCounts:", forestfeaturecounts)
-    print("Best configuration:", best_key, "with accuracy:", accuracies[best_key], "and feature count:", forestfeaturecounts[best_key])
-    return forests[best_key], forestfeaturecounts[best_key]
+    print("Best configuration:", best_key)
+    print("Highest accuracy:", accuracies[best_key])
+    print("Feature counts for best configuration:", feature_counts[best_key])
+
+    return forests[best_key], feature_counts[best_key], accuracies[best_key]
 
 def generalization_error_with_cross_val_RF(data, num_folds, random_forest):
     """Calculates the generalization error of the random forest using cross-validation.

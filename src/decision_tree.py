@@ -105,8 +105,9 @@ def get_best_split(data, num_features=None, decision_forest_features=None):
     """
     best_gini = float('inf')
     best_condition = None
-    features = data.columns[:-1].tolist()
+    features = None
     if num_features is not None:
+        features = data.columns[:-1].tolist()
         features = pd.Series(features).sample(n=num_features).tolist()
     #    print("Features considered for the split: ", features)
     if decision_forest_features is not None:
@@ -164,8 +165,8 @@ def build_tree(data, num_features=None, impurity_threshold=IMPURITY_THRESHOLD, d
         return Node(condition=None, is_leaf=True, label=most_common_class)
     node = Node(best_condition)
     left_data, right_data = data_split(data, best_condition)
-    node.left = build_tree(left_data, num_features)
-    node.right = build_tree(right_data, num_features)
+    node.left = build_tree(data=left_data, num_features=num_features,decision_tree_features=decision_tree_features)
+    node.right = build_tree(data=right_data, num_features=num_features,decision_tree_features=decision_tree_features)
     return node
 
 def predict(node, instance):

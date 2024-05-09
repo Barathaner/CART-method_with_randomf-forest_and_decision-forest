@@ -66,10 +66,10 @@ if __name__ == "__main__":
         csv = preprocess_dataframe(csv)
         print("Splitting data into training and testing sets...")
         """print("Building tree...")
-        root = build_tree(csv)
+        root = build_tree(data=csv, num_features=1)
         print("Printing tree...")
         print_tree(root)
-        accuracy = calculate_accuracy(root, test_data)
+        accuracy = calculate_accuracy(root, csv)
         print(f"Accuracy on test data: {accuracy:.2f}")
         print("Counting features...")
         features_count_dict=count_used_features_in_tree(root)
@@ -78,13 +78,20 @@ if __name__ == "__main__":
         # Assuming the tree has been built and stored in 'root'
         dot = visualize_tree(root)
         # Save the dot source in a file and render it as a PNG image
-        dot.render('tree_diagram', format='png', cleanup=True)  # 'cleanup=True' will remove the dot source file after rendering
-        """
+        dot.render('tree_diagram', format='png', cleanup=True)  # 'cleanup=True' will remove the dot source file after rendering"""
+        
 
         # Random Forest
         print("Building random forest for ...",dataset_name)
         print("Hyperparameter tuning for Random Forest...")
-        hyperparametertuningrf,features_count_dict_rf=hyperparameter_tuning_RF(csv, 24, [1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100], [1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1))])
+        num_trees = [1, 10, 25, 50, 75, 100]
+        num_features = [1, 2, int(math.log2(len(csv.columns)-1)), int(math.sqrt(len(csv.columns)-1))]
+
+        if len(csv.columns)-1 > 8:
+            hyperparametertuningrf, features_count_dict_rf,bestacc = hyperparameter_tuning_RF(csv, num_trees, num_features)
+        else:
+            simple_features = [1, 2, 3, 4]  # Simpler scenario with fewer features
+            hyperparametertuningrf, features_count_dict_rf,bestacc = hyperparameter_tuning_RF(csv, num_trees, simple_features)
         #print("Best Configuration: ")
         #print_forest(hyperparametertuningrf)
         random_Tree=hyperparametertuningrf[0]
@@ -93,11 +100,15 @@ if __name__ == "__main__":
         name = f"tree_diagram_random_forest_{dataset_name}"
         dot.render(name, format='png', cleanup=True)  # 'cleanup=True' will remove the dot source file after rendering
 
-
         #Decision Forest
         print("Building decision forest for ...", dataset_name)
         print("Hyperparameter tuning for Decision Forest...")
-        hyperparametertuningdf,featurecountdict=hyperparameter_tuning_DF(csv, 24, [1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100,1,10,25,50,75,100], [1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1)),1,2,int(math.log2(len(csv.columns)-1)),int(math.sqrt(len(csv.columns)-1))])
+        
+        if len(csv.columns)-1 > 8:
+            hyperparametertuningdf, features_count_dict_df,bestacc = hyperparameter_tuning_DF(csv, num_trees, num_features)
+        else:
+            simple_features = [1, 2, 3, 4]  # Simpler scenario with fewer features
+            hyperparametertuningdf, features_count_dict_df,bestacc = hyperparameter_tuning_DF(csv, num_trees, simple_features)
         random_Tree=hyperparametertuningdf[0]
         dot = visualize_tree(random_Tree)
         # Save the dot source in a file and render it as a PNG image

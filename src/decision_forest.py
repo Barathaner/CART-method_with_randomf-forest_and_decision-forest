@@ -2,6 +2,7 @@ from decision_tree import build_tree, predict, count_used_features_in_tree, prin
 from sklearn.model_selection import train_test_split
 import pandas as pd
 import random
+import itertools
 from concurrent.futures import ProcessPoolExecutor
 # Capture the original print function
 original_print = print
@@ -31,7 +32,7 @@ def build_decision_forest(data, num_features, number_of_trees):
     """
     forest = []
     forest_features_count_dict = {}
-    tasks = [(data, num_features, pd.Series(data.columns[:-1]).sample(n=random.randint(1, num_features)).tolist()) for _ in range(number_of_trees)]
+    tasks = [(data, None, pd.Series(data.columns[:-1]).sample(n=random.randint(1, num_features)).tolist()) for _ in range(number_of_trees)]
     with ProcessPoolExecutor() as executor:
         results = executor.map(build_tree_wrapper, tasks)
     for tree, feature_count_dict in results:
@@ -51,7 +52,8 @@ def build_tree_wrapper(args):
         tuple: A tuple containing the built tree and its feature count dictionary.
     """
     data, num_features, features = args
-    tree = build_tree(data=data, num_features=num_features, decision_tree_features=features)
+    #print(f"Building tree with features: {features}")
+    tree = build_tree(data=data, num_features=None, decision_tree_features=features)
     feature_count_dict = count_used_features_in_tree(tree)
     return tree, feature_count_dict
 
@@ -92,34 +94,43 @@ def accuracy_with_DF(data, forest):
     accuracy = correct_predictions / len(data)
     return accuracy
 
-def hyperparameter_tuning_DF(data, num_folds, num_trees, num_features):
-    """Performs hyperparameter tuning for a decision forest.
+def hyperparameter_tuning_DF(data, num_trees, num_features):
+    """
+    Performs hyperparameter tuning for a decision forest by testing all combinations of tree counts and feature counts.
+    
     Args:
-        data (DataFrame): The dataset to use for tuning.
-        num_folds (int): Number of different settings to test.
-        num_trees (list): List of tree counts to test.
-        num_features (list): List of feature counts to test.
+        data (DataFrame): The dataset to use for building the forest.
+        num_trees (list of int): List of the number of trees to use in the forest.
+        num_features (list of int): List of the number of features to consider when splitting at each node.
+    
     Returns:
-        tuple: The best forest and its feature counts dictionary based on accuracy.
+        tuple: The best performing forest and its feature count dictionary, along with its accuracy.
     """
     accuracies = {}
-    forests = {}  # Dictionary to store each forest
-    forestfeaturecounts = {}
+    forests = {}
+    feature_counts = {}
     test_data, train_data = train_test_split(data, test_size=0.2, random_state=42)
-    for i in range(num_folds):
-        print(f"Running test {i + 1}...")
-        print("num_features:", num_features[i], "num_trees:", num_trees[i])
-        forest, forestfeatures = build_decision_forest(train_data, num_features[i], num_trees[i])
+
+    # Generate all combinations of tree counts and feature counts
+    for trees, features in itertools.product(num_trees, num_features):
+        print(f"Testing configuration with {trees} trees and {features} features.")
+        forest, features_count = build_decision_forest(train_data, features, trees)
         accuracy = accuracy_with_DF(test_data, forest)
-        key = f"test:{i} num_features:{num_features[i]} num_trees:{num_trees[i]}"
+        key = f"{trees} trees, {features} features"
+
         accuracies[key] = accuracy
         forests[key] = forest
-        forestfeaturecounts[key] = forestfeatures
+        feature_counts[key] = features_count
+
+        print(f"Configuration: {key}, Accuracy: {accuracy:.2f}, Feature counts: {features_count}")
+
+    # Determine the best performing configuration
     best_key = max(accuracies, key=accuracies.get)
-    print("Decision Forest Hyperparameter Tuning accuracies:", accuracies)
-    print("Decision Forest Hyperparameter Tuning FeatureCounts:", forestfeaturecounts)
-    print("Best configuration:", best_key, "with accuracy:", accuracies[best_key], "and feature count:", forestfeaturecounts[best_key])
-    return forests[best_key], forestfeaturecounts[best_key]
+    print("Best configuration:", best_key)
+    print("Highest accuracy:", accuracies[best_key])
+    print("Feature counts for best configuration:", feature_counts[best_key])
+
+    return forests[best_key], feature_counts[best_key], accuracies[best_key]
 
 def generalization_error_with_cross_val_DF(data, num_folds, random_forest):
     """Calculates the generalization error of a decision forest using cross-validation.

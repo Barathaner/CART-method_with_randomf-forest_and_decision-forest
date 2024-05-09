@@ -1,0 +1,77 @@
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building tree...
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building tree...
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building tree...
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building tree...
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building tree...
+Printing tree...
+[sepal length < 5.400000000000001]
+    [sepal length < 4.833333333333333]
+        [Leaf node: Class Iris-setosa]
+        [sepal length < 4.933333333333334]
+            [Leaf node: Class Iris-setosa]
+            [sepal length < 5.033333333333333]
+                [Leaf node: Class Iris-setosa]
+                [sepal length < 5.133333333333333]
+                    [Leaf node: Class Iris-setosa]
+                    [sepal length < 5.233333333333333]
+                        [Leaf node: Class Iris-setosa]
+                        [sepal length < 5.366666666666667]
+                            [Leaf node: Class Iris-setosa]
+                            [Leaf node: Class Iris-setosa]
+    [sepal length < 6.133333333333333]
+        [sepal length < 5.733333333333333]
+            [sepal length < 5.533333333333334]
+                [Leaf node: Class Iris-versicolor]
+                [sepal length < 5.633333333333333]
+                    [Leaf node: Class Iris-versicolor]
+                    [Leaf node: Class Iris-versicolor]
+            [sepal length < 5.833333333333333]
+                [Leaf node: Class Iris-versicolor]
+                [sepal length < 6.033333333333334]
+                    [sepal length < 5.900000000000001]
+                        [Leaf node: Class Iris-versicolor]
+                        [Leaf node: Class Iris-versicolor]
+                    [Leaf node: Class Iris-versicolor]
+        [sepal length < 7.1000000000000005]
+            [sepal length < 6.533333333333334]
+                [sepal length < 6.233333333333333]
+                    [Leaf node: Class Iris-versicolor]
+                    [sepal length < 6.400000000000001]
+                        [sepal length < 6.333333333333333]
+                            [Leaf node: Class Iris-virginica]
+                            [Leaf node: Class Iris-virginica]
+                        [Leaf node: Class Iris-virginica]
+                [sepal length < 6.633333333333333]
+                    [Leaf node: Class Iris-versicolor]
+                    [sepal length < 6.900000000000001]
+                        [sepal length < 6.833333333333333]
+                            [sepal length < 6.733333333333333]
+                                [Leaf node: Class Iris-virginica]
+                                [Leaf node: Class Iris-virginica]
+                            [Leaf node: Class Iris-virginica]
+                        [Leaf node: Class Iris-versicolor]
+            [Leaf node: Class Iris-virginica]
+Accuracy on test data: 0.76
+Counting features...
+{'sepal length': 23}
+Visualizing the tree...
+Total time taken: 32.31 seconds
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building tree...
