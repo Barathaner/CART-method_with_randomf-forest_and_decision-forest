@@ -51,12 +51,12 @@ def change_delimiter(input_filename, output_filename, old_delimiter=';', new_del
 
 
 csvdictionary={
-               #"iris":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv",
-               #"wdbc":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/wdbc/wdbc.csv",
+               "iris":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv",
+               "wdbc":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/wdbc/wdbc.csv",
                #"car":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/car/car.csv",
                #"npha":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/nationalpoll/NPHA-doctor-visits.csv",
-               #"mushroom":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/mushroom/agaricus-lepiota.csv",
-               "studentsuccess":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/studentsuccess/studentsuccess.csv"
+               "mushroom":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/mushroom/agaricus-lepiota.csv",
+               #"studentsuccess":"C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/studentsuccess/studentsuccess.csv"
                }
     
 if __name__ == "__main__":

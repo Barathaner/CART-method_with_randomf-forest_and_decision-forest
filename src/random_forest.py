@@ -117,6 +117,7 @@ def hyperparameter_tuning_RF(data, num_trees, num_features):
     for trees, features in itertools.product(num_trees, num_features):
         print(f"Testing configuration with {trees} trees and {features} features.")
         if features == -1:
+            # Adjusting feature count based on a specific rule (square root of the number of features)
             print("Using the function int(math.sqrt(len(features))) for each node to have a different number of features.")
         forest, features_count = build_random_forest(train_data, features, trees)
         accuracy = accuracy_with_RF(test_data, forest)
@@ -135,6 +136,17 @@ def hyperparameter_tuning_RF(data, num_trees, num_features):
     print("Best configuration:", best_key)
     print("Highest accuracy:", accuracies[best_key])
     print("Feature counts for best configuration:", feature_counts[best_key])
+
+    # Creating a DataFrame to store the results
+    results_df = pd.DataFrame({
+        "Number of Trees": [int(k.split(' ')[0]) for k in accuracies.keys()],
+        "Number of Features": [int(k.split(' ')[2]) for k in accuracies.keys()],
+        "Accuracy": list(accuracies.values()),
+        "Feature Counts": list(feature_counts.values())
+    })
+    
+    # Printing the DataFrame in LaTeX format
+    print(results_df.to_latex(index=False))
 
     return forests[best_key], feature_counts[best_key], accuracies[best_key]
 

@@ -136,6 +136,17 @@ def hyperparameter_tuning_DF(data, num_trees, num_features):
     print("Best configuration:", best_key)
     print("Highest accuracy:", accuracies[best_key])
     print("Feature counts for best configuration:", feature_counts[best_key])
+        # Creating a DataFrame to store the results
+    results_df = pd.DataFrame({
+        "Number of Trees": [int(k.split(' ')[0]) for k in accuracies.keys()],
+        "Number of Features": [int(k.split(' ')[2]) for k in accuracies.keys()],
+        "Accuracy": list(accuracies.values()),
+        "Feature Counts": list(feature_counts.values())
+    })
+    
+    
+    # Printing the DataFrame in LaTeX format
+    print(results_df.to_latex(index=False))
 
     return forests[best_key], feature_counts[best_key], accuracies[best_key]
 

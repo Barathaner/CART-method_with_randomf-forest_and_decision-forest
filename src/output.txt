@@ -189,3 +189,754 @@ Configuration: 1 trees, 9 features, Accuracy: 0.58, Feature counts: {'Previous q
 Testing configuration with 1 trees and 18 features.
 Configuration: 1 trees, 18 features, Accuracy: 0.59, Feature counts: {'Unemployment rate': 41, 'Age at enrollment': 31, 'Previous qualification (grade)': 27, "Mother's occupation": 21, "Father's occupation": 18, 'Curricular units 1st sem (enrolled)': 16, "Mother's qualification": 16, "Father's qualification": 14, 'Curricular units 1st sem (approved)': 11, 'Curricular units 2nd sem (without evaluations)': 9, 'Displaced': 8, 'Scholarship holder': 5, 'Curricular units 1st sem (credited)': 5, 'Debtor': 4, 'Curricular units 2nd sem (credited)': 2, 'Previous qualification': 1}
 Testing configuration with 1 trees and 27 features.
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building random forest for ... iris
+Hyperparameter tuning for Random Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.59, Feature counts: {'sepal length': 4, 'sepal width': 2}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.75, Feature counts: {'petal width': 1, 'sepal length': 1}
+Testing configuration with 1 trees and 3 features.
+Configuration: 1 trees, 3 features, Accuracy: 0.90, Feature counts: {'petal length': 1, 'petal width': 1}
+Testing configuration with 1 trees and 4 features.
+Configuration: 1 trees, 4 features, Accuracy: 0.82, Feature counts: {'petal length': 1, 'sepal width': 1}
+Testing configuration with 1 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 1 trees, -1 features, Accuracy: 0.82, Feature counts: {'petal length': 1, 'sepal width': 1}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.88, Feature counts: {'petal width': 9, 'petal length': 9, 'sepal width': 8, 'sepal length': 8}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 0.95, Feature counts: {'petal width': 10, 'petal length': 9, 'sepal length': 2}
+Testing configuration with 10 trees and 3 features.
+Configuration: 10 trees, 3 features, Accuracy: 0.96, Feature counts: {'petal length': 10, 'petal width': 8, 'sepal length': 3}
+Testing configuration with 10 trees and 4 features.
+Configuration: 10 trees, 4 features, Accuracy: 0.96, Feature counts: {'petal length': 10, 'petal width': 8, 'sepal width': 2}
+Testing configuration with 10 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 10 trees, -1 features, Accuracy: 0.94, Feature counts: {'petal width': 9, 'petal length': 7, 'sepal length': 4, 'sepal width': 3}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.92, Feature counts: {'petal width': 33, 'sepal width': 28, 'sepal length': 26, 'petal length': 15}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 0.93, Feature counts: {'petal width': 24, 'petal length': 20, 'sepal length': 9, 'sepal width': 4}
+Testing configuration with 25 trees and 3 features.
+Configuration: 25 trees, 3 features, Accuracy: 0.94, Feature counts: {'petal length': 25, 'petal width': 20, 'sepal length': 4, 'sepal width': 3}
+Testing configuration with 25 trees and 4 features.
+Configuration: 25 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 29, 'petal length': 17, 'sepal length': 3, 'sepal width': 1}
+Testing configuration with 25 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 25 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal width': 22, 'petal length': 22, 'sepal length': 8, 'sepal width': 6}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.95, Feature counts: {'petal length': 45, 'petal width': 44, 'sepal width': 28, 'sepal length': 26}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.95, Feature counts: {'petal width': 56, 'petal length': 37, 'sepal length': 21, 'sepal width': 7}
+Testing configuration with 50 trees and 3 features.
+Configuration: 50 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 45, 'petal length': 45, 'sepal length': 11, 'sepal width': 2}
+Testing configuration with 50 trees and 4 features.
+Configuration: 50 trees, 4 features, Accuracy: 0.94, Feature counts: {'petal length': 47, 'petal width': 42, 'sepal length': 6, 'sepal width': 6}
+Testing configuration with 50 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 50 trees, -1 features, Accuracy: 0.94, Feature counts: {'petal width': 51, 'petal length': 35, 'sepal length': 26, 'sepal width': 9}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.94, Feature counts: {'petal width': 72, 'petal length': 63, 'sepal width': 60, 'sepal length': 51}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 0.94, Feature counts: {'petal width': 70, 'petal length': 69, 'sepal length': 19, 'sepal width': 10}
+Testing configuration with 75 trees and 3 features.
+Configuration: 75 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 71, 'petal length': 63, 'sepal length': 11, 'sepal width': 7}
+Testing configuration with 75 trees and 4 features.
+Configuration: 75 trees, 4 features, Accuracy: 0.94, Feature counts: {'petal width': 70, 'petal length': 57, 'sepal length': 19, 'sepal width': 4}
+Testing configuration with 75 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 75 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal width': 70, 'petal length': 62, 'sepal length': 27, 'sepal width': 13}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.94, Feature counts: {'petal length': 87, 'sepal length': 86, 'sepal width': 83, 'petal width': 75}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 0.93, Feature counts: {'petal width': 88, 'petal length': 81, 'sepal length': 40, 'sepal width': 16}
+Testing configuration with 100 trees and 3 features.
+Configuration: 100 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 101, 'petal length': 85, 'sepal length': 11, 'sepal width': 8}
+Testing configuration with 100 trees and 4 features.
+Configuration: 100 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal length': 87, 'petal width': 85, 'sepal length': 17, 'sepal width': 11}
+Testing configuration with 100 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 100 trees, -1 features, Accuracy: 0.94, Feature counts: {'petal width': 94, 'petal length': 89, 'sepal length': 46, 'sepal width': 16}
+Best configuration: 10 trees, 3 features
+Highest accuracy: 0.9583333333333334
+Feature counts for best configuration: {'petal length': 10, 'petal width': 8, 'sepal length': 3}
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building random forest for ... iris
+Hyperparameter tuning for Random Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.87, Feature counts: {'sepal length': 1, 'sepal width': 1, 'petal length': 1}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.90, Feature counts: {'sepal length': 1, 'petal length': 1, 'petal width': 1}
+Testing configuration with 1 trees and 3 features.
+Configuration: 1 trees, 3 features, Accuracy: 0.92, Feature counts: {'petal width': 1, 'petal length': 1}
+Testing configuration with 1 trees and 4 features.
+Configuration: 1 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal length': 1, 'petal width': 1}
+Testing configuration with 1 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 1 trees, -1 features, Accuracy: 0.84, Feature counts: {'petal width': 1, 'sepal length': 1}
+Testing configuration with 10 trees and 1 features.
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building random forest for ... iris
+Hyperparameter tuning for Random Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.85, Feature counts: {'sepal width': 1, 'sepal length': 1, 'petal width': 1, 'petal length': 1}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.93, Feature counts: {'petal width': 2}
+Testing configuration with 1 trees and 3 features.
+Configuration: 1 trees, 3 features, Accuracy: 0.87, Feature counts: {'petal width': 1, 'sepal length': 1}
+Testing configuration with 1 trees and 4 features.
+Configuration: 1 trees, 4 features, Accuracy: 0.82, Feature counts: {'petal length': 1, 'sepal width': 1}
+Testing configuration with 1 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 1 trees, -1 features, Accuracy: 0.94, Feature counts: {'petal width': 1, 'petal length': 1}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.94, Feature counts: {'sepal length': 12, 'petal length': 8, 'petal width': 6, 'sepal width': 4}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 0.95, Feature counts: {'petal length': 10, 'petal width': 10}
+Testing configuration with 10 trees and 3 features.
+Configuration: 10 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 11, 'sepal length': 4, 'petal length': 4, 'sepal width': 1}
+Testing configuration with 10 trees and 4 features.
+Configuration: 10 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal length': 12, 'petal width': 7, 'sepal length': 1}
+Testing configuration with 10 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 10 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal width': 12, 'petal length': 5, 'sepal length': 4, 'sepal width': 1}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.93, Feature counts: {'petal width': 26, 'sepal width': 23, 'petal length': 20, 'sepal length': 10}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 0.94, Feature counts: {'petal width': 23, 'petal length': 20, 'sepal length': 8, 'sepal width': 6}
+Testing configuration with 25 trees and 3 features.
+Configuration: 25 trees, 3 features, Accuracy: 0.96, Feature counts: {'petal width': 25, 'petal length': 19, 'sepal length': 7}
+Testing configuration with 25 trees and 4 features.
+Configuration: 25 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal length': 30, 'petal width': 16, 'sepal width': 2, 'sepal length': 2}
+Testing configuration with 25 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 25 trees, -1 features, Accuracy: 0.94, Feature counts: {'petal length': 24, 'petal width': 22, 'sepal length': 10, 'sepal width': 2}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.94, Feature counts: {'petal width': 49, 'sepal length': 44, 'sepal width': 42, 'petal length': 36}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.95, Feature counts: {'petal width': 45, 'petal length': 38, 'sepal length': 24, 'sepal width': 7}
+Testing configuration with 50 trees and 3 features.
+Configuration: 50 trees, 3 features, Accuracy: 0.93, Feature counts: {'petal length': 46, 'petal width': 45, 'sepal length': 7, 'sepal width': 3}
+Testing configuration with 50 trees and 4 features.
+Configuration: 50 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 46, 'petal length': 43, 'sepal width': 6, 'sepal length': 5}
+Testing configuration with 50 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 50 trees, -1 features, Accuracy: 0.94, Feature counts: {'petal length': 48, 'petal width': 44, 'sepal length': 17, 'sepal width': 5}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal length': 76, 'sepal width': 63, 'petal width': 63, 'petal length': 60}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 0.93, Feature counts: {'petal length': 73, 'petal width': 68, 'sepal length': 20, 'sepal width': 4}
+Testing configuration with 75 trees and 3 features.
+Configuration: 75 trees, 3 features, Accuracy: 0.94, Feature counts: {'petal length': 68, 'petal width': 64, 'sepal length': 14, 'sepal width': 5}
+Testing configuration with 75 trees and 4 features.
+Configuration: 75 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 73, 'petal length': 57, 'sepal length': 14, 'sepal width': 6}
+Testing configuration with 75 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 75 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal length': 71, 'petal width': 60, 'sepal length': 36, 'sepal width': 6}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal length': 99, 'petal length': 94, 'petal width': 87, 'sepal width': 80}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 0.93, Feature counts: {'petal width': 102, 'petal length': 82, 'sepal length': 32, 'sepal width': 10}
+Testing configuration with 100 trees and 3 features.
+Configuration: 100 trees, 3 features, Accuracy: 0.94, Feature counts: {'petal length': 94, 'petal width': 89, 'sepal length': 13, 'sepal width': 8}
+Testing configuration with 100 trees and 4 features.
+Configuration: 100 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 92, 'petal length': 88, 'sepal length': 15, 'sepal width': 5}
+Testing configuration with 100 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 100 trees, -1 features, Accuracy: 0.94, Feature counts: {'petal width': 95, 'petal length': 89, 'sepal length': 43, 'sepal width': 12}
+Best configuration: 25 trees, 3 features
+Highest accuracy: 0.9583333333333334
+Feature counts for best configuration: {'petal width': 25, 'petal length': 19, 'sepal length': 7}
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/iris/iris.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building random forest for ... iris
+Hyperparameter tuning for Random Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.82, Feature counts: {'sepal width': 2, 'petal length': 2, 'sepal length': 2}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.82, Feature counts: {'petal length': 1, 'sepal width': 1}
+Testing configuration with 1 trees and 3 features.
+Configuration: 1 trees, 3 features, Accuracy: 0.77, Feature counts: {'petal length': 1, 'sepal length': 1}
+Testing configuration with 1 trees and 4 features.
+Configuration: 1 trees, 4 features, Accuracy: 0.93, Feature counts: {'petal length': 2}
+Testing configuration with 1 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 1 trees, -1 features, Accuracy: 0.82, Feature counts: {'petal length': 1, 'sepal width': 1}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.94, Feature counts: {'sepal length': 9, 'petal width': 9, 'petal length': 6, 'sepal width': 5}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 0.89, Feature counts: {'petal length': 11, 'sepal length': 7, 'petal width': 7, 'sepal width': 2}
+Testing configuration with 10 trees and 3 features.
+Configuration: 10 trees, 3 features, Accuracy: 0.94, Feature counts: {'petal length': 9, 'petal width': 9, 'sepal length': 1, 'sepal width': 1}
+Testing configuration with 10 trees and 4 features.
+Configuration: 10 trees, 4 features, Accuracy: 0.93, Feature counts: {'petal width': 11, 'petal length': 8, 'sepal length': 1}
+Testing configuration with 10 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 10 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal width': 10, 'petal length': 10, 'sepal length': 2}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.92, Feature counts: {'sepal width': 29, 'petal width': 26, 'petal length': 19, 'sepal length': 18}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 0.93, Feature counts: {'petal width': 23, 'petal length': 23, 'sepal length': 4, 'sepal width': 3}
+Testing configuration with 25 trees and 3 features.
+Configuration: 25 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 25, 'petal length': 22, 'sepal length': 2, 'sepal width': 2}
+Testing configuration with 25 trees and 4 features.
+Configuration: 25 trees, 4 features, Accuracy: 0.93, Feature counts: {'petal width': 22, 'petal length': 20, 'sepal length': 6, 'sepal width': 2}
+Testing configuration with 25 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 25 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal length': 28, 'petal width': 22, 'sepal length': 7}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.92, Feature counts: {'sepal length': 59, 'sepal width': 48, 'petal length': 43, 'petal width': 33}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.93, Feature counts: {'petal width': 47, 'petal length': 40, 'sepal length': 23, 'sepal width': 8}
+Testing configuration with 50 trees and 3 features.
+Configuration: 50 trees, 3 features, Accuracy: 0.94, Feature counts: {'petal length': 46, 'petal width': 44, 'sepal length': 9, 'sepal width': 1}
+Testing configuration with 50 trees and 4 features.
+Configuration: 50 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal length': 49, 'petal width': 39, 'sepal length': 8, 'sepal width': 4}
+Testing configuration with 50 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 50 trees, -1 features, Accuracy: 0.95, Feature counts: {'petal width': 53, 'petal length': 44, 'sepal length': 16, 'sepal width': 5}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal length': 79, 'sepal width': 76, 'petal width': 72, 'petal length': 68}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 0.96, Feature counts: {'petal length': 68, 'petal width': 67, 'sepal length': 26, 'sepal width': 11}
+Testing configuration with 75 trees and 3 features.
+Configuration: 75 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal width': 78, 'petal length': 62, 'sepal length': 9, 'sepal width': 5}
+Testing configuration with 75 trees and 4 features.
+Configuration: 75 trees, 4 features, Accuracy: 0.96, Feature counts: {'petal width': 80, 'petal length': 59, 'sepal length': 6, 'sepal width': 5}
+Testing configuration with 75 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 75 trees, -1 features, Accuracy: 0.93, Feature counts: {'petal length': 79, 'petal width': 56, 'sepal length': 27, 'sepal width': 15}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.93, Feature counts: {'petal length': 100, 'sepal width': 92, 'sepal length': 90, 'petal width': 80}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 0.95, Feature counts: {'petal width': 99, 'petal length': 80, 'sepal length': 37, 'sepal width': 11}
+Testing configuration with 100 trees and 3 features.
+Configuration: 100 trees, 3 features, Accuracy: 0.95, Feature counts: {'petal length': 94, 'petal width': 86, 'sepal length': 17, 'sepal width': 6}
+Testing configuration with 100 trees and 4 features.
+Configuration: 100 trees, 4 features, Accuracy: 0.93, Feature counts: {'petal width': 92, 'petal length': 83, 'sepal length': 20, 'sepal width': 5}
+Testing configuration with 100 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 100 trees, -1 features, Accuracy: 0.93, Feature counts: {'petal length': 86, 'petal width': 85, 'sepal length': 50, 'sepal width': 16}
+Best configuration: 75 trees, 2 features
+Highest accuracy: 0.9583333333333334
+Feature counts for best configuration: {'petal length': 68, 'petal width': 67, 'sepal length': 26, 'sepal width': 11}
+\begin{tabular}{rrrl}
+\toprule
+Number of Trees & Number of Features & Accuracy & Feature Counts \\
+\midrule
+1 & 1 & 0.825000 & {'sepal width': 2, 'petal length': 2, 'sepal length': 2} \\
+1 & 2 & 0.816667 & {'petal length': 1, 'sepal width': 1} \\
+1 & 3 & 0.766667 & {'petal length': 1, 'sepal length': 1} \\
+1 & 4 & 0.925000 & {'petal length': 2} \\
+1 & -1 & 0.825000 & {'petal length': 1, 'sepal width': 1} \\
+10 & 1 & 0.941667 & {'sepal length': 9, 'petal width': 9, 'petal length': 6, 'sepal width': 5} \\
+10 & 2 & 0.891667 & {'petal length': 11, 'sepal length': 7, 'petal width': 7, 'sepal width': 2} \\
+10 & 3 & 0.941667 & {'petal length': 9, 'petal width': 9, 'sepal length': 1, 'sepal width': 1} \\
+10 & 4 & 0.925000 & {'petal width': 11, 'petal length': 8, 'sepal length': 1} \\
+10 & -1 & 0.950000 & {'petal width': 10, 'petal length': 10, 'sepal length': 2} \\
+25 & 1 & 0.916667 & {'sepal width': 29, 'petal width': 26, 'petal length': 19, 'sepal length': 18} \\
+25 & 2 & 0.933333 & {'petal width': 23, 'petal length': 23, 'sepal length': 4, 'sepal width': 3} \\
+25 & 3 & 0.950000 & {'petal width': 25, 'petal length': 22, 'sepal length': 2, 'sepal width': 2} \\
+25 & 4 & 0.933333 & {'petal width': 22, 'petal length': 20, 'sepal length': 6, 'sepal width': 2} \\
+25 & -1 & 0.950000 & {'petal length': 28, 'petal width': 22, 'sepal length': 7} \\
+50 & 1 & 0.916667 & {'sepal length': 59, 'sepal width': 48, 'petal length': 43, 'petal width': 33} \\
+50 & 2 & 0.933333 & {'petal width': 47, 'petal length': 40, 'sepal length': 23, 'sepal width': 8} \\
+50 & 3 & 0.941667 & {'petal length': 46, 'petal width': 44, 'sepal length': 9, 'sepal width': 1} \\
+50 & 4 & 0.950000 & {'petal length': 49, 'petal width': 39, 'sepal length': 8, 'sepal width': 4} \\
+50 & -1 & 0.950000 & {'petal width': 53, 'petal length': 44, 'sepal length': 16, 'sepal width': 5} \\
+75 & 1 & 0.933333 & {'sepal length': 79, 'sepal width': 76, 'petal width': 72, 'petal length': 68} \\
+75 & 2 & 0.958333 & {'petal length': 68, 'petal width': 67, 'sepal length': 26, 'sepal width': 11} \\
+75 & 3 & 0.950000 & {'petal width': 78, 'petal length': 62, 'sepal length': 9, 'sepal width': 5} \\
+75 & 4 & 0.958333 & {'petal width': 80, 'petal length': 59, 'sepal length': 6, 'sepal width': 5} \\
+75 & -1 & 0.933333 & {'petal length': 79, 'petal width': 56, 'sepal length': 27, 'sepal width': 15} \\
+100 & 1 & 0.925000 & {'petal length': 100, 'sepal width': 92, 'sepal length': 90, 'petal width': 80} \\
+100 & 2 & 0.950000 & {'petal width': 99, 'petal length': 80, 'sepal length': 37, 'sepal width': 11} \\
+100 & 3 & 0.950000 & {'petal length': 94, 'petal width': 86, 'sepal length': 17, 'sepal width': 6} \\
+100 & 4 & 0.933333 & {'petal width': 92, 'petal length': 83, 'sepal length': 20, 'sepal width': 5} \\
+100 & -1 & 0.933333 & {'petal length': 86, 'petal width': 85, 'sepal length': 50, 'sepal width': 16} \\
+\bottomrule
+\end{tabular}
+
+Building decision forest for ... iris
+Hyperparameter tuning for Decision Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.95, Feature counts: {'petal width': 2}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.65, Feature counts: {'sepal width': 4, 'sepal length': 3}
+Testing configuration with 1 trees and 3 features.
+Configuration: 1 trees, 3 features, Accuracy: 0.94, Feature counts: {'petal length': 3}
+Testing configuration with 1 trees and 4 features.
+Configuration: 1 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 2}
+Testing configuration with 1 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 1 trees, 0 features, Accuracy: 0.62, Feature counts: {'sepal length': 8}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.72, Feature counts: {'sepal width': 50, 'petal width': 6, 'petal length': 6}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 0.88, Feature counts: {'sepal length': 24, 'sepal width': 14, 'petal width': 8, 'petal length': 3}
+Testing configuration with 10 trees and 3 features.
+Configuration: 10 trees, 3 features, Accuracy: 0.93, Feature counts: {'sepal width': 20, 'petal length': 13, 'sepal length': 8, 'petal width': 5}
+Testing configuration with 10 trees and 4 features.
+Configuration: 10 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 11, 'sepal length': 8, 'petal length': 7, 'sepal width': 3}
+Testing configuration with 10 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 10 trees, 0 features, Accuracy: 0.93, Feature counts: {'sepal length': 16, 'sepal width': 10, 'petal length': 9, 'petal width': 8}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal length': 56, 'sepal width': 40, 'petal width': 22, 'petal length': 9}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal width': 45, 'sepal length': 35, 'petal length': 23, 'petal width': 16}
+Testing configuration with 25 trees and 3 features.
+Configuration: 25 trees, 3 features, Accuracy: 0.93, Feature counts: {'sepal width': 44, 'sepal length': 29, 'petal width': 22, 'petal length': 14}
+Testing configuration with 25 trees and 4 features.
+Configuration: 25 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal length': 28, 'sepal length': 23, 'petal width': 21, 'sepal width': 6}
+Testing configuration with 25 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 25 trees, 0 features, Accuracy: 0.95, Feature counts: {'sepal length': 43, 'sepal width': 35, 'petal width': 24, 'petal length': 10}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal width': 160, 'sepal length': 56, 'petal length': 36, 'petal width': 30}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal length': 86, 'sepal width': 60, 'petal length': 41, 'petal width': 33}
+Testing configuration with 50 trees and 3 features.
+Configuration: 50 trees, 3 features, Accuracy: 0.95, Feature counts: {'sepal width': 60, 'sepal length': 51, 'petal width': 49, 'petal length': 34}
+Testing configuration with 50 trees and 4 features.
+Configuration: 50 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 49, 'petal length': 49, 'sepal width': 34, 'sepal length': 10}
+Testing configuration with 50 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 50 trees, 0 features, Accuracy: 0.93, Feature counts: {'sepal length': 85, 'sepal width': 48, 'petal width': 39, 'petal length': 37}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.93, Feature counts: {'sepal width': 240, 'sepal length': 96, 'petal length': 63, 'petal width': 36}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal width': 152, 'petal length': 73, 'sepal length': 70, 'petal width': 49}
+Testing configuration with 75 trees and 3 features.
+Configuration: 75 trees, 3 features, Accuracy: 0.93, Feature counts: {'sepal length': 127, 'sepal width': 107, 'petal width': 60, 'petal length': 51}
+Testing configuration with 75 trees and 4 features.
+Configuration: 75 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 75, 'sepal length': 66, 'petal length': 62, 'sepal width': 48}
+Testing configuration with 75 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 75 trees, 0 features, Accuracy: 0.93, Feature counts: {'sepal width': 118, 'sepal length': 105, 'petal length': 77, 'petal width': 41}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.88, Feature counts: {'sepal width': 240, 'sepal length': 208, 'petal length': 87, 'petal width': 42}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 0.93, Feature counts: {'sepal width': 149, 'sepal length': 135, 'petal width': 84, 'petal length': 68}
+Testing configuration with 100 trees and 3 features.
+Configuration: 100 trees, 3 features, Accuracy: 0.93, Feature counts: {'sepal width': 156, 'petal length': 88, 'petal width': 82, 'sepal length': 82}
+Testing configuration with 100 trees and 4 features.
+Configuration: 100 trees, 4 features, Accuracy: 0.95, Feature counts: {'petal width': 111, 'sepal width': 92, 'petal length': 65, 'sepal length': 65}
+Testing configuration with 100 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 100 trees, 0 features, Accuracy: 0.93, Feature counts: {'sepal width': 167, 'petal width': 89, 'petal length': 77, 'sepal length': 74}
+Best configuration: 1 trees, 1 features
+Highest accuracy: 0.95
+Feature counts for best configuration: {'petal width': 2}
+\begin{tabular}{rrrl}
+\toprule
+Number of Trees & Number of Features & Accuracy & Feature Counts \\
+\midrule
+1 & 1 & 0.950000 & {'petal width': 2} \\
+1 & 2 & 0.650000 & {'sepal width': 4, 'sepal length': 3} \\
+1 & 3 & 0.941667 & {'petal length': 3} \\
+1 & 4 & 0.950000 & {'petal width': 2} \\
+1 & 0 & 0.625000 & {'sepal length': 8} \\
+10 & 1 & 0.716667 & {'sepal width': 50, 'petal width': 6, 'petal length': 6} \\
+10 & 2 & 0.883333 & {'sepal length': 24, 'sepal width': 14, 'petal width': 8, 'petal length': 3} \\
+10 & 3 & 0.925000 & {'sepal width': 20, 'petal length': 13, 'sepal length': 8, 'petal width': 5} \\
+10 & 4 & 0.950000 & {'petal width': 11, 'sepal length': 8, 'petal length': 7, 'sepal width': 3} \\
+10 & 0 & 0.925000 & {'sepal length': 16, 'sepal width': 10, 'petal length': 9, 'petal width': 8} \\
+25 & 1 & 0.933333 & {'sepal length': 56, 'sepal width': 40, 'petal width': 22, 'petal length': 9} \\
+25 & 2 & 0.925000 & {'sepal width': 45, 'sepal length': 35, 'petal length': 23, 'petal width': 16} \\
+25 & 3 & 0.933333 & {'sepal width': 44, 'sepal length': 29, 'petal width': 22, 'petal length': 14} \\
+25 & 4 & 0.950000 & {'petal length': 28, 'sepal length': 23, 'petal width': 21, 'sepal width': 6} \\
+25 & 0 & 0.950000 & {'sepal length': 43, 'sepal width': 35, 'petal width': 24, 'petal length': 10} \\
+50 & 1 & 0.925000 & {'sepal width': 160, 'sepal length': 56, 'petal length': 36, 'petal width': 30} \\
+50 & 2 & 0.925000 & {'sepal length': 86, 'sepal width': 60, 'petal length': 41, 'petal width': 33} \\
+50 & 3 & 0.950000 & {'sepal width': 60, 'sepal length': 51, 'petal width': 49, 'petal length': 34} \\
+50 & 4 & 0.950000 & {'petal width': 49, 'petal length': 49, 'sepal width': 34, 'sepal length': 10} \\
+50 & 0 & 0.933333 & {'sepal length': 85, 'sepal width': 48, 'petal width': 39, 'petal length': 37} \\
+75 & 1 & 0.925000 & {'sepal width': 240, 'sepal length': 96, 'petal length': 63, 'petal width': 36} \\
+75 & 2 & 0.925000 & {'sepal width': 152, 'petal length': 73, 'sepal length': 70, 'petal width': 49} \\
+75 & 3 & 0.933333 & {'sepal length': 127, 'sepal width': 107, 'petal width': 60, 'petal length': 51} \\
+75 & 4 & 0.950000 & {'petal width': 75, 'sepal length': 66, 'petal length': 62, 'sepal width': 48} \\
+75 & 0 & 0.925000 & {'sepal width': 118, 'sepal length': 105, 'petal length': 77, 'petal width': 41} \\
+100 & 1 & 0.875000 & {'sepal width': 240, 'sepal length': 208, 'petal length': 87, 'petal width': 42} \\
+100 & 2 & 0.933333 & {'sepal width': 149, 'sepal length': 135, 'petal width': 84, 'petal length': 68} \\
+100 & 3 & 0.933333 & {'sepal width': 156, 'petal length': 88, 'petal width': 82, 'sepal length': 82} \\
+100 & 4 & 0.950000 & {'petal width': 111, 'sepal width': 92, 'petal length': 65, 'sepal length': 65} \\
+100 & 0 & 0.925000 & {'sepal width': 167, 'petal width': 89, 'petal length': 77, 'sepal length': 74} \\
+\bottomrule
+\end{tabular}
+
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/wdbc/wdbc.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building random forest for ... wdbc
+Hyperparameter tuning for Random Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.85, Feature counts: {'compactness2': 2, 'fractal_dimension3': 1, 'radius1': 1, 'compactness1': 1, 'area1': 1, 'symmetry3': 1}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.89, Feature counts: {'area2': 1, 'perimeter1': 1, 'radius2': 1, 'smoothness3': 1}
+Testing configuration with 1 trees and 4 features.
+Configuration: 1 trees, 4 features, Accuracy: 0.89, Feature counts: {'radius3': 1, 'smoothness3': 1, 'area3': 1, 'smoothness2': 1}
+Testing configuration with 1 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 1 trees, -1 features, Accuracy: 0.88, Feature counts: {'radius3': 1, 'concavity3': 1, 'smoothness3': 1}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.92, Feature counts: {'symmetry2': 6, 'area1': 6, 'smoothness3': 5, 'perimeter2': 5, 'compactness1': 5, 'compactness2': 4, 'smoothness1': 4, 'concavity1': 4, 'perimeter1': 4, 'perimeter3': 4, 'texture1': 4, 'fractal_dimension2': 4, 'radius2': 4, 'symmetry1': 3, 'texture3': 3, 'symmetry3': 3, 'concave_points1': 3, 'fractal_dimension3': 3, 'smoothness2': 3, 'concavity3': 3, 'concave_points2': 2, 'area3': 2, 'compactness3': 2, 'fractal_dimension1': 2, 'texture2': 1, 'radius1': 1, 'concave_points3': 1, 'area2': 1, 'radius3': 1, 'concavity2': 1}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 0.91, Feature counts: {'radius3': 7, 'symmetry3': 5, 'radius1': 5, 'concavity2': 5, 'perimeter2': 4, 'concave_points2': 4, 'concave_points1': 4, 'concavity1': 4, 'compactness1': 4, 'texture3': 4, 'symmetry2': 3, 'fractal_dimension3': 3, 'texture1': 3, 'fractal_dimension1': 3, 'compactness2': 2, 'smoothness3': 2, 'area3': 2, 'perimeter1': 2, 'concavity3': 2, 'smoothness2': 1, 'area2': 1, 'area1': 1, 'compactness3': 1, 'radius2': 1, 'symmetry1': 1, 'concave_points3': 1, 'fractal_dimension2': 1}
+Testing configuration with 10 trees and 4 features.
+Configuration: 10 trees, 4 features, Accuracy: 0.91, Feature counts: {'area3': 5, 'perimeter3': 4, 'compactness3': 3, 'area2': 3, 'concave_points3': 3, 'area1': 2, 'radius1': 2, 'radius2': 2, 'radius3': 2, 'concavity1': 1, 'compactness1': 1, 'compactness2': 1, 'fractal_dimension3': 1, 'concavity2': 1, 'perimeter2': 1, 'symmetry3': 1, 'smoothness3': 1, 'symmetry1': 1, 'texture3': 1, 'concave_points2': 1, 'concave_points1': 1, 'smoothness2': 1}
+Testing configuration with 10 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 10 trees, -1 features, Accuracy: 0.92, Feature counts: {'radius3': 5, 'perimeter3': 4, 'concave_points3': 4, 'radius2': 3, 'perimeter1': 3, 'smoothness1': 2, 'fractal_dimension2': 2, 'radius1': 2, 'texture2': 2, 'fractal_dimension1': 1, 'area1': 1, 'compactness3': 1, 'area3': 1, 'symmetry2': 1, 'area2': 1, 'concavity3': 1, 'symmetry3': 1, 'concave_points1': 1, 'smoothness2': 1, 'texture1': 1}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.92, Feature counts: {'radius2': 12, 'compactness3': 11, 'smoothness1': 11, 'perimeter2': 11, 'perimeter1': 10, 'concave_points3': 9, 'area2': 9, 'symmetry1': 8, 'area1': 8, 'area3': 8, 'symmetry3': 8, 'concave_points1': 8, 'texture1': 7, 'fractal_dimension3': 7, 'smoothness2': 6, 'radius1': 6, 'concave_points2': 6, 'fractal_dimension1': 6, 'compactness2': 6, 'fractal_dimension2': 5, 'texture2': 5, 'compactness1': 5, 'concavity1': 5, 'smoothness3': 5, 'concavity3': 5, 'perimeter3': 5, 'radius3': 4, 'symmetry2': 4, 'concavity2': 4, 'texture3': 3}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 0.94, Feature counts: {'area3': 10, 'area2': 9, 'radius1': 9, 'concavity3': 8, 'concavity2': 7, 'area1': 7, 'concave_points3': 7, 'radius3': 7, 'concave_points2': 7, 'compactness1': 7, 'concavity1': 7, 'texture2': 6, 'fractal_dimension3': 6, 'smoothness3': 6, 'perimeter3': 6, 'compactness3': 5, 'smoothness1': 5, 'radius2': 5, 'texture1': 5, 'symmetry3': 5, 'perimeter1': 5, 'texture3': 4, 'perimeter2': 4, 'concave_points1': 4, 'fractal_dimension2': 3, 'fractal_dimension1': 3, 'symmetry2': 3, 'smoothness2': 3, 'compactness2': 2}
+Testing configuration with 25 trees and 4 features.
+Configuration: 25 trees, 4 features, Accuracy: 0.92, Feature counts: {'concave_points3': 10, 'radius3': 9, 'area3': 9, 'perimeter3': 8, 'fractal_dimension3': 8, 'smoothness3': 7, 'compactness3': 6, 'concavity1': 5, 'compactness1': 5, 'perimeter1': 5, 'compactness2': 3, 'symmetry2': 3, 'radius1': 3, 'perimeter2': 3, 'fractal_dimension2': 3, 'radius2': 3, 'area2': 3, 'concavity3': 2, 'area1': 2, 'smoothness2': 2, 'fractal_dimension1': 2, 'smoothness1': 2, 'texture1': 2, 'texture3': 2, 'concave_points1': 1, 'symmetry3': 1, 'symmetry1': 1, 'concave_points2': 1}
+Testing configuration with 25 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 25 trees, -1 features, Accuracy: 0.91, Feature counts: {'area3': 10, 'concave_points3': 8, 'radius3': 8, 'radius1': 7, 'compactness3': 7, 'concavity1': 7, 'concavity3': 7, 'fractal_dimension3': 6, 'perimeter2': 5, 'area2': 4, 'perimeter1': 4, 'radius2': 4, 'fractal_dimension2': 3, 'compactness1': 3, 'area1': 3, 'concave_points1': 3, 'perimeter3': 3, 'texture2': 2, 'smoothness3': 2, 'texture3': 2, 'fractal_dimension1': 2, 'symmetry2': 1, 'concave_points2': 1, 'smoothness2': 1}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.93, Feature counts: {'fractal_dimension2': 23, 'perimeter3': 21, 'concavity3': 20, 'area1': 19, 'concavity2': 19, 'compactness2': 19, 'fractal_dimension1': 18, 'perimeter2': 18, 'radius1': 18, 'compactness1': 17, 'texture2': 17, 'smoothness3': 16, 'compactness3': 16, 'concave_points2': 15, 'symmetry2': 15, 'fractal_dimension3': 15, 'radius2': 15, 'texture3': 14, 'smoothness2': 14, 'texture1': 13, 'perimeter1': 13, 'concave_points3': 13, 'radius3': 12, 'symmetry3': 12, 'area3': 12, 'smoothness1': 12, 'concavity1': 11, 'symmetry1': 10, 'area2': 10, 'concave_points1': 6}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 0.94, Feature counts: {'concave_points3': 21, 'perimeter3': 19, 'radius1': 16, 'area1': 16, 'perimeter1': 16, 'radius2': 16, 'area3': 15, 'concave_points1': 15, 'area2': 13, 'concavity3': 11, 'fractal_dimension3': 11, 'smoothness1': 11, 'fractal_dimension1': 10, 'compactness1': 10, 'radius3': 10, 'compactness3': 9, 'texture3': 9, 'smoothness3': 9, 'texture1': 8, 'perimeter2': 8, 'compactness2': 8, 'symmetry2': 7, 'concavity1': 7, 'concave_points2': 7, 'symmetry1': 6, 'texture2': 6, 'concavity2': 6, 'symmetry3': 6, 'fractal_dimension2': 3, 'smoothness2': 2}
+Testing configuration with 50 trees and 4 features.
+Configuration: 50 trees, 4 features, Accuracy: 0.92, Feature counts: {'perimeter3': 24, 'radius3': 16, 'area3': 16, 'fractal_dimension3': 12, 'concave_points3': 11, 'area1': 10, 'radius1': 10, 'perimeter2': 9, 'area2': 9, 'compactness1': 8, 'perimeter1': 8, 'concave_points1': 8, 'compactness3': 7, 'compactness2': 7, 'concavity3': 7, 'texture3': 7, 'radius2': 7, 'concave_points2': 7, 'smoothness3': 6, 'concavity2': 6, 'concavity1': 6, 'fractal_dimension1': 5, 'symmetry2': 4, 'symmetry1': 4, 'texture2': 3, 'symmetry3': 2, 'smoothness1': 1, 'texture1': 1, 'fractal_dimension2': 1}
+Testing configuration with 50 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 50 trees, -1 features, Accuracy: 0.93, Feature counts: {'perimeter3': 20, 'radius3': 20, 'area3': 14, 'concavity1': 12, 'compactness3': 12, 'concave_points3': 11, 'concavity3': 11, 'perimeter1': 11, 'fractal_dimension3': 10, 'area2': 9, 'concave_points1': 9, 'radius2': 8, 'smoothness3': 8, 'radius1': 7, 'area1': 6, 'perimeter2': 6, 'symmetry3': 5, 'concave_points2': 4, 'fractal_dimension2': 3, 'texture3': 3, 'concavity2': 3, 'texture1': 2, 'compactness1': 2, 'fractal_dimension1': 1, 'symmetry1': 1, 'smoothness2': 1, 'symmetry2': 1, 'smoothness1': 1}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.93, Feature counts: {'concave_points3': 33, 'smoothness2': 33, 'symmetry1': 29, 'radius3': 27, 'area3': 27, 'texture2': 27, 'radius2': 26, 'concavity2': 26, 'perimeter3': 26, 'fractal_dimension2': 24, 'area2': 24, 'concave_points1': 24, 'perimeter2': 24, 'smoothness1': 23, 'concavity1': 22, 'compactness2': 22, 'fractal_dimension1': 22, 'radius1': 21, 'texture3': 21, 'area1': 21, 'texture1': 21, 'smoothness3': 21, 'fractal_dimension3': 21, 'perimeter1': 20, 'symmetry2': 20, 'symmetry3': 19, 'concavity3': 18, 'compactness1': 16, 'compactness3': 16, 'concave_points2': 16}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 0.93, Feature counts: {'perimeter3': 35, 'area3': 25, 'concave_points3': 25, 'radius1': 24, 'concavity1': 23, 'smoothness3': 21, 'radius3': 20, 'perimeter1': 20, 'compactness3': 19, 'concavity2': 17, 'compactness1': 16, 'area2': 16, 'fractal_dimension3': 15, 'concave_points2': 15, 'concavity3': 14, 'concave_points1': 14, 'fractal_dimension1': 13, 'symmetry3': 12, 'area1': 12, 'perimeter2': 12, 'radius2': 12, 'symmetry1': 11, 'texture1': 11, 'symmetry2': 10, 'smoothness1': 10, 'texture3': 10, 'smoothness2': 8, 'compactness2': 7, 'fractal_dimension2': 6, 'texture2': 3}
+Testing configuration with 75 trees and 4 features.
+Configuration: 75 trees, 4 features, Accuracy: 0.92, Feature counts: {'perimeter3': 28, 'area3': 24, 'radius3': 23, 'concave_points3': 21, 'perimeter1': 18, 'area2': 17, 'concave_points1': 16, 'compactness3': 16, 'area1': 15, 'concavity1': 15, 'concavity3': 13, 'texture3': 12, 'radius1': 11, 'smoothness3': 10, 'fractal_dimension3': 9, 'texture1': 9, 'radius2': 8, 'concavity2': 8, 'concave_points2': 7, 'symmetry3': 6, 'perimeter2': 6, 'smoothness1': 6, 'compactness1': 5, 'symmetry2': 5, 'texture2': 4, 'compactness2': 4, 'fractal_dimension2': 3, 'smoothness2': 3, 'symmetry1': 2, 'fractal_dimension1': 1}
+Testing configuration with 75 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 75 trees, -1 features, Accuracy: 0.93, Feature counts: {'perimeter3': 27, 'radius3': 24, 'concave_points3': 20, 'area2': 20, 'concavity3': 18, 'concavity1': 16, 'area3': 16, 'concave_points1': 14, 'compactness3': 13, 'radius2': 13, 'compactness1': 12, 'radius1': 12, 'perimeter2': 11, 'area1': 9, 'perimeter1': 7, 'concave_points2': 7, 'fractal_dimension1': 7, 'texture3': 6, 'symmetry3': 6, 'concavity2': 5, 'symmetry1': 5, 'symmetry2': 5, 'texture1': 5, 'smoothness3': 4, 'compactness2': 4, 'fractal_dimension3': 4, 'smoothness2': 3, 'texture2': 3, 'smoothness1': 2, 'fractal_dimension2': 2}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.94, Feature counts: {'smoothness2': 42, 'concave_points3': 39, 'texture2': 38, 'fractal_dimension2': 38, 'symmetry1': 37, 'symmetry3': 36, 'concavity1': 35, 'symmetry2': 35, 'concave_points1': 33, 'radius2': 33, 'smoothness1': 33, 'texture1': 32, 'area3': 32, 'area2': 32, 'compactness2': 31, 'compactness1': 31, 'concavity3': 31, 'fractal_dimension1': 31, 'perimeter1': 30, 'radius3': 30, 'perimeter2': 29, 'compactness3': 29, 'radius1': 29, 'area1': 29, 'fractal_dimension3': 28, 'concave_points2': 28, 'texture3': 27, 'concavity2': 27, 'smoothness3': 26, 'perimeter3': 26}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 0.93, Feature counts: {'area3': 36, 'radius1': 34, 'perimeter3': 32, 'perimeter1': 32, 'area1': 27, 'radius3': 26, 'concavity3': 26, 'perimeter2': 25, 'concavity1': 24, 'concave_points3': 24, 'area2': 23, 'compactness3': 22, 'concave_points1': 22, 'compactness1': 22, 'smoothness1': 22, 'texture3': 21, 'radius2': 19, 'smoothness3': 19, 'texture1': 18, 'concavity2': 14, 'compactness2': 14, 'fractal_dimension2': 14, 'symmetry3': 13, 'symmetry2': 13, 'fractal_dimension3': 12, 'symmetry1': 10, 'smoothness2': 10, 'texture2': 9, 'concave_points2': 8, 'fractal_dimension1': 8}
+Testing configuration with 100 trees and 4 features.
+Configuration: 100 trees, 4 features, Accuracy: 0.92, Feature counts: {'perimeter3': 36, 'concave_points3': 33, 'radius3': 31, 'radius1': 25, 'area1': 21, 'concavity3': 21, 'area3': 21, 'concavity1': 20, 'perimeter2': 20, 'perimeter1': 19, 'concave_points1': 19, 'compactness3': 17, 'fractal_dimension3': 17, 'radius2': 15, 'area2': 13, 'compactness1': 13, 'compactness2': 9, 'texture1': 9, 'fractal_dimension2': 8, 'fractal_dimension1': 8, 'smoothness3': 8, 'texture2': 6, 'symmetry3': 6, 'concave_points2': 6, 'texture3': 5, 'smoothness2': 5, 'smoothness1': 5, 'concavity2': 4, 'symmetry2': 3, 'symmetry1': 3}
+Testing configuration with 100 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 100 trees, -1 features, Accuracy: 0.92, Feature counts: {'area3': 37, 'perimeter3': 32, 'concave_points3': 31, 'radius3': 28, 'concavity3': 23, 'perimeter1': 21, 'area2': 19, 'area1': 17, 'smoothness3': 14, 'concavity1': 13, 'perimeter2': 12, 'radius2': 12, 'radius1': 12, 'symmetry3': 11, 'compactness3': 11, 'concave_points1': 11, 'compactness1': 9, 'smoothness2': 8, 'fractal_dimension1': 8, 'fractal_dimension3': 7, 'texture3': 7, 'texture1': 6, 'symmetry2': 6, 'smoothness1': 5, 'concavity2': 5, 'symmetry1': 4, 'texture2': 4, 'concave_points2': 3, 'compactness2': 3, 'fractal_dimension2': 3}
+Best configuration: 25 trees, 2 features
+Highest accuracy: 0.9362637362637363
+Feature counts for best configuration: {'area3': 10, 'area2': 9, 'radius1': 9, 'concavity3': 8, 'concavity2': 7, 'area1': 7, 'concave_points3': 7, 'radius3': 7, 'concave_points2': 7, 'compactness1': 7, 'concavity1': 7, 'texture2': 6, 'fractal_dimension3': 6, 'smoothness3': 6, 'perimeter3': 6, 'compactness3': 5, 'smoothness1': 5, 'radius2': 5, 'texture1': 5, 'symmetry3': 5, 'perimeter1': 5, 'texture3': 4, 'perimeter2': 4, 'concave_points1': 4, 'fractal_dimension2': 3, 'fractal_dimension1': 3, 'symmetry2': 3, 'smoothness2': 3, 'compactness2': 2}
+\begin{tabular}{rrrl}
+\toprule
+Number of Trees & Number of Features & Accuracy & Feature Counts \\
+\midrule
+1 & 1 & 0.846154 & {'compactness2': 2, 'fractal_dimension3': 1, 'radius1': 1, 'compactness1': 1, 'area1': 1, 'symmetry3': 1} \\
+1 & 2 & 0.885714 & {'area2': 1, 'perimeter1': 1, 'radius2': 1, 'smoothness3': 1} \\
+1 & 4 & 0.887912 & {'radius3': 1, 'smoothness3': 1, 'area3': 1, 'smoothness2': 1} \\
+1 & -1 & 0.883516 & {'radius3': 1, 'concavity3': 1, 'smoothness3': 1} \\
+10 & 1 & 0.916484 & {'symmetry2': 6, 'area1': 6, 'smoothness3': 5, 'perimeter2': 5, 'compactness1': 5, 'compactness2': 4, 'smoothness1': 4, 'concavity1': 4, 'perimeter1': 4, 'perimeter3': 4, 'texture1': 4, 'fractal_dimension2': 4, 'radius2': 4, 'symmetry1': 3, 'texture3': 3, 'symmetry3': 3, 'concave_points1': 3, 'fractal_dimension3': 3, 'smoothness2': 3, 'concavity3': 3, 'concave_points2': 2, 'area3': 2, 'compactness3': 2, 'fractal_dimension1': 2, 'texture2': 1, 'radius1': 1, 'concave_points3': 1, 'area2': 1, 'radius3': 1, 'concavity2': 1} \\
+10 & 2 & 0.912088 & {'radius3': 7, 'symmetry3': 5, 'radius1': 5, 'concavity2': 5, 'perimeter2': 4, 'concave_points2': 4, 'concave_points1': 4, 'concavity1': 4, 'compactness1': 4, 'texture3': 4, 'symmetry2': 3, 'fractal_dimension3': 3, 'texture1': 3, 'fractal_dimension1': 3, 'compactness2': 2, 'smoothness3': 2, 'area3': 2, 'perimeter1': 2, 'concavity3': 2, 'smoothness2': 1, 'area2': 1, 'area1': 1, 'compactness3': 1, 'radius2': 1, 'symmetry1': 1, 'concave_points3': 1, 'fractal_dimension2': 1} \\
+10 & 4 & 0.912088 & {'area3': 5, 'perimeter3': 4, 'compactness3': 3, 'area2': 3, 'concave_points3': 3, 'area1': 2, 'radius1': 2, 'radius2': 2, 'radius3': 2, 'concavity1': 1, 'compactness1': 1, 'compactness2': 1, 'fractal_dimension3': 1, 'concavity2': 1, 'perimeter2': 1, 'symmetry3': 1, 'smoothness3': 1, 'symmetry1': 1, 'texture3': 1, 'concave_points2': 1, 'concave_points1': 1, 'smoothness2': 1} \\
+10 & -1 & 0.920879 & {'radius3': 5, 'perimeter3': 4, 'concave_points3': 4, 'radius2': 3, 'perimeter1': 3, 'smoothness1': 2, 'fractal_dimension2': 2, 'radius1': 2, 'texture2': 2, 'fractal_dimension1': 1, 'area1': 1, 'compactness3': 1, 'area3': 1, 'symmetry2': 1, 'area2': 1, 'concavity3': 1, 'symmetry3': 1, 'concave_points1': 1, 'smoothness2': 1, 'texture1': 1} \\
+25 & 1 & 0.916484 & {'radius2': 12, 'compactness3': 11, 'smoothness1': 11, 'perimeter2': 11, 'perimeter1': 10, 'concave_points3': 9, 'area2': 9, 'symmetry1': 8, 'area1': 8, 'area3': 8, 'symmetry3': 8, 'concave_points1': 8, 'texture1': 7, 'fractal_dimension3': 7, 'smoothness2': 6, 'radius1': 6, 'concave_points2': 6, 'fractal_dimension1': 6, 'compactness2': 6, 'fractal_dimension2': 5, 'texture2': 5, 'compactness1': 5, 'concavity1': 5, 'smoothness3': 5, 'concavity3': 5, 'perimeter3': 5, 'radius3': 4, 'symmetry2': 4, 'concavity2': 4, 'texture3': 3} \\
+25 & 2 & 0.936264 & {'area3': 10, 'area2': 9, 'radius1': 9, 'concavity3': 8, 'concavity2': 7, 'area1': 7, 'concave_points3': 7, 'radius3': 7, 'concave_points2': 7, 'compactness1': 7, 'concavity1': 7, 'texture2': 6, 'fractal_dimension3': 6, 'smoothness3': 6, 'perimeter3': 6, 'compactness3': 5, 'smoothness1': 5, 'radius2': 5, 'texture1': 5, 'symmetry3': 5, 'perimeter1': 5, 'texture3': 4, 'perimeter2': 4, 'concave_points1': 4, 'fractal_dimension2': 3, 'fractal_dimension1': 3, 'symmetry2': 3, 'smoothness2': 3, 'compactness2': 2} \\
+25 & 4 & 0.916484 & {'concave_points3': 10, 'radius3': 9, 'area3': 9, 'perimeter3': 8, 'fractal_dimension3': 8, 'smoothness3': 7, 'compactness3': 6, 'concavity1': 5, 'compactness1': 5, 'perimeter1': 5, 'compactness2': 3, 'symmetry2': 3, 'radius1': 3, 'perimeter2': 3, 'fractal_dimension2': 3, 'radius2': 3, 'area2': 3, 'concavity3': 2, 'area1': 2, 'smoothness2': 2, 'fractal_dimension1': 2, 'smoothness1': 2, 'texture1': 2, 'texture3': 2, 'concave_points1': 1, 'symmetry3': 1, 'symmetry1': 1, 'concave_points2': 1} \\
+25 & -1 & 0.912088 & {'area3': 10, 'concave_points3': 8, 'radius3': 8, 'radius1': 7, 'compactness3': 7, 'concavity1': 7, 'concavity3': 7, 'fractal_dimension3': 6, 'perimeter2': 5, 'area2': 4, 'perimeter1': 4, 'radius2': 4, 'fractal_dimension2': 3, 'compactness1': 3, 'area1': 3, 'concave_points1': 3, 'perimeter3': 3, 'texture2': 2, 'smoothness3': 2, 'texture3': 2, 'fractal_dimension1': 2, 'symmetry2': 1, 'concave_points2': 1, 'smoothness2': 1} \\
+50 & 1 & 0.931868 & {'fractal_dimension2': 23, 'perimeter3': 21, 'concavity3': 20, 'area1': 19, 'concavity2': 19, 'compactness2': 19, 'fractal_dimension1': 18, 'perimeter2': 18, 'radius1': 18, 'compactness1': 17, 'texture2': 17, 'smoothness3': 16, 'compactness3': 16, 'concave_points2': 15, 'symmetry2': 15, 'fractal_dimension3': 15, 'radius2': 15, 'texture3': 14, 'smoothness2': 14, 'texture1': 13, 'perimeter1': 13, 'concave_points3': 13, 'radius3': 12, 'symmetry3': 12, 'area3': 12, 'smoothness1': 12, 'concavity1': 11, 'symmetry1': 10, 'area2': 10, 'concave_points1': 6} \\
+50 & 2 & 0.936264 & {'concave_points3': 21, 'perimeter3': 19, 'radius1': 16, 'area1': 16, 'perimeter1': 16, 'radius2': 16, 'area3': 15, 'concave_points1': 15, 'area2': 13, 'concavity3': 11, 'fractal_dimension3': 11, 'smoothness1': 11, 'fractal_dimension1': 10, 'compactness1': 10, 'radius3': 10, 'compactness3': 9, 'texture3': 9, 'smoothness3': 9, 'texture1': 8, 'perimeter2': 8, 'compactness2': 8, 'symmetry2': 7, 'concavity1': 7, 'concave_points2': 7, 'symmetry1': 6, 'texture2': 6, 'concavity2': 6, 'symmetry3': 6, 'fractal_dimension2': 3, 'smoothness2': 2} \\
+50 & 4 & 0.918681 & {'perimeter3': 24, 'radius3': 16, 'area3': 16, 'fractal_dimension3': 12, 'concave_points3': 11, 'area1': 10, 'radius1': 10, 'perimeter2': 9, 'area2': 9, 'compactness1': 8, 'perimeter1': 8, 'concave_points1': 8, 'compactness3': 7, 'compactness2': 7, 'concavity3': 7, 'texture3': 7, 'radius2': 7, 'concave_points2': 7, 'smoothness3': 6, 'concavity2': 6, 'concavity1': 6, 'fractal_dimension1': 5, 'symmetry2': 4, 'symmetry1': 4, 'texture2': 3, 'symmetry3': 2, 'smoothness1': 1, 'texture1': 1, 'fractal_dimension2': 1} \\
+50 & -1 & 0.925275 & {'perimeter3': 20, 'radius3': 20, 'area3': 14, 'concavity1': 12, 'compactness3': 12, 'concave_points3': 11, 'concavity3': 11, 'perimeter1': 11, 'fractal_dimension3': 10, 'area2': 9, 'concave_points1': 9, 'radius2': 8, 'smoothness3': 8, 'radius1': 7, 'area1': 6, 'perimeter2': 6, 'symmetry3': 5, 'concave_points2': 4, 'fractal_dimension2': 3, 'texture3': 3, 'concavity2': 3, 'texture1': 2, 'compactness1': 2, 'fractal_dimension1': 1, 'symmetry1': 1, 'smoothness2': 1, 'symmetry2': 1, 'smoothness1': 1} \\
+75 & 1 & 0.931868 & {'concave_points3': 33, 'smoothness2': 33, 'symmetry1': 29, 'radius3': 27, 'area3': 27, 'texture2': 27, 'radius2': 26, 'concavity2': 26, 'perimeter3': 26, 'fractal_dimension2': 24, 'area2': 24, 'concave_points1': 24, 'perimeter2': 24, 'smoothness1': 23, 'concavity1': 22, 'compactness2': 22, 'fractal_dimension1': 22, 'radius1': 21, 'texture3': 21, 'area1': 21, 'texture1': 21, 'smoothness3': 21, 'fractal_dimension3': 21, 'perimeter1': 20, 'symmetry2': 20, 'symmetry3': 19, 'concavity3': 18, 'compactness1': 16, 'compactness3': 16, 'concave_points2': 16} \\
+75 & 2 & 0.929670 & {'perimeter3': 35, 'area3': 25, 'concave_points3': 25, 'radius1': 24, 'concavity1': 23, 'smoothness3': 21, 'radius3': 20, 'perimeter1': 20, 'compactness3': 19, 'concavity2': 17, 'compactness1': 16, 'area2': 16, 'fractal_dimension3': 15, 'concave_points2': 15, 'concavity3': 14, 'concave_points1': 14, 'fractal_dimension1': 13, 'symmetry3': 12, 'area1': 12, 'perimeter2': 12, 'radius2': 12, 'symmetry1': 11, 'texture1': 11, 'symmetry2': 10, 'smoothness1': 10, 'texture3': 10, 'smoothness2': 8, 'compactness2': 7, 'fractal_dimension2': 6, 'texture2': 3} \\
+75 & 4 & 0.916484 & {'perimeter3': 28, 'area3': 24, 'radius3': 23, 'concave_points3': 21, 'perimeter1': 18, 'area2': 17, 'concave_points1': 16, 'compactness3': 16, 'area1': 15, 'concavity1': 15, 'concavity3': 13, 'texture3': 12, 'radius1': 11, 'smoothness3': 10, 'fractal_dimension3': 9, 'texture1': 9, 'radius2': 8, 'concavity2': 8, 'concave_points2': 7, 'symmetry3': 6, 'perimeter2': 6, 'smoothness1': 6, 'compactness1': 5, 'symmetry2': 5, 'texture2': 4, 'compactness2': 4, 'fractal_dimension2': 3, 'smoothness2': 3, 'symmetry1': 2, 'fractal_dimension1': 1} \\
+75 & -1 & 0.931868 & {'perimeter3': 27, 'radius3': 24, 'concave_points3': 20, 'area2': 20, 'concavity3': 18, 'concavity1': 16, 'area3': 16, 'concave_points1': 14, 'compactness3': 13, 'radius2': 13, 'compactness1': 12, 'radius1': 12, 'perimeter2': 11, 'area1': 9, 'perimeter1': 7, 'concave_points2': 7, 'fractal_dimension1': 7, 'texture3': 6, 'symmetry3': 6, 'concavity2': 5, 'symmetry1': 5, 'symmetry2': 5, 'texture1': 5, 'smoothness3': 4, 'compactness2': 4, 'fractal_dimension3': 4, 'smoothness2': 3, 'texture2': 3, 'smoothness1': 2, 'fractal_dimension2': 2} \\
+100 & 1 & 0.936264 & {'smoothness2': 42, 'concave_points3': 39, 'texture2': 38, 'fractal_dimension2': 38, 'symmetry1': 37, 'symmetry3': 36, 'concavity1': 35, 'symmetry2': 35, 'concave_points1': 33, 'radius2': 33, 'smoothness1': 33, 'texture1': 32, 'area3': 32, 'area2': 32, 'compactness2': 31, 'compactness1': 31, 'concavity3': 31, 'fractal_dimension1': 31, 'perimeter1': 30, 'radius3': 30, 'perimeter2': 29, 'compactness3': 29, 'radius1': 29, 'area1': 29, 'fractal_dimension3': 28, 'concave_points2': 28, 'texture3': 27, 'concavity2': 27, 'smoothness3': 26, 'perimeter3': 26} \\
+100 & 2 & 0.931868 & {'area3': 36, 'radius1': 34, 'perimeter3': 32, 'perimeter1': 32, 'area1': 27, 'radius3': 26, 'concavity3': 26, 'perimeter2': 25, 'concavity1': 24, 'concave_points3': 24, 'area2': 23, 'compactness3': 22, 'concave_points1': 22, 'compactness1': 22, 'smoothness1': 22, 'texture3': 21, 'radius2': 19, 'smoothness3': 19, 'texture1': 18, 'concavity2': 14, 'compactness2': 14, 'fractal_dimension2': 14, 'symmetry3': 13, 'symmetry2': 13, 'fractal_dimension3': 12, 'symmetry1': 10, 'smoothness2': 10, 'texture2': 9, 'concave_points2': 8, 'fractal_dimension1': 8} \\
+100 & 4 & 0.920879 & {'perimeter3': 36, 'concave_points3': 33, 'radius3': 31, 'radius1': 25, 'area1': 21, 'concavity3': 21, 'area3': 21, 'concavity1': 20, 'perimeter2': 20, 'perimeter1': 19, 'concave_points1': 19, 'compactness3': 17, 'fractal_dimension3': 17, 'radius2': 15, 'area2': 13, 'compactness1': 13, 'compactness2': 9, 'texture1': 9, 'fractal_dimension2': 8, 'fractal_dimension1': 8, 'smoothness3': 8, 'texture2': 6, 'symmetry3': 6, 'concave_points2': 6, 'texture3': 5, 'smoothness2': 5, 'smoothness1': 5, 'concavity2': 4, 'symmetry2': 3, 'symmetry1': 3} \\
+100 & -1 & 0.916484 & {'area3': 37, 'perimeter3': 32, 'concave_points3': 31, 'radius3': 28, 'concavity3': 23, 'perimeter1': 21, 'area2': 19, 'area1': 17, 'smoothness3': 14, 'concavity1': 13, 'perimeter2': 12, 'radius2': 12, 'radius1': 12, 'symmetry3': 11, 'compactness3': 11, 'concave_points1': 11, 'compactness1': 9, 'smoothness2': 8, 'fractal_dimension1': 8, 'fractal_dimension3': 7, 'texture3': 7, 'texture1': 6, 'symmetry2': 6, 'smoothness1': 5, 'concavity2': 5, 'symmetry1': 4, 'texture2': 4, 'concave_points2': 3, 'compactness2': 3, 'fractal_dimension2': 3} \\
+\bottomrule
+\end{tabular}
+
+Building decision forest for ... wdbc
+Hyperparameter tuning for Decision Forest...
+Testing configuration with 1 trees and 7 features.
+Configuration: 1 trees, 7 features, Accuracy: 0.72, Feature counts: {'compactness1': 21, 'concavity2': 6}
+Testing configuration with 1 trees and 15 features.
+Configuration: 1 trees, 15 features, Accuracy: 0.87, Feature counts: {'fractal_dimension1': 2, 'perimeter3': 1, 'perimeter2': 1, 'fractal_dimension2': 1}
+Testing configuration with 1 trees and 22 features.
+Configuration: 1 trees, 22 features, Accuracy: 0.91, Feature counts: {'area1': 2, 'perimeter3': 1, 'compactness1': 1, 'texture3': 1}
+Testing configuration with 1 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 1 trees, 0 features, Accuracy: 0.89, Feature counts: {'radius3': 2, 'fractal_dimension3': 1, 'smoothness3': 1}
+Testing configuration with 10 trees and 7 features.
+Configuration: 10 trees, 7 features, Accuracy: 0.93, Feature counts: {'fractal_dimension3': 50, 'compactness3': 19, 'texture3': 10, 'concave_points1': 6, 'compactness1': 5, 'perimeter1': 5, 'radius3': 5, 'area3': 4, 'perimeter3': 3, 'radius2': 3, 'symmetry2': 2, 'texture2': 2, 'texture1': 2, 'area2': 2, 'smoothness3': 2, 'fractal_dimension2': 2, 'symmetry3': 2, 'radius1': 1, 'concavity2': 1, 'concave_points3': 1}
+Testing configuration with 10 trees and 15 features.
+Configuration: 10 trees, 15 features, Accuracy: 0.91, Feature counts: {'concavity1': 8, 'perimeter3': 7, 'concave_points3': 7, 'concave_points2': 5, 'symmetry2': 4, 'compactness1': 4, 'perimeter2': 2, 'smoothness1': 2, 'smoothness3': 2, 'compactness2': 2, 'texture1': 2, 'area3': 1, 'compactness3': 1, 'symmetry3': 1, 'fractal_dimension3': 1, 'texture3': 1, 'radius2': 1, 'radius3': 1, 'concavity3': 1, 'area2': 1, 'texture2': 1, 'area1': 1, 'radius1': 1, 'concavity2': 1}
+Testing configuration with 10 trees and 22 features.
+Configuration: 10 trees, 22 features, Accuracy: 0.91, Feature counts: {'fractal_dimension2': 49, 'perimeter3': 4, 'area3': 4, 'concavity3': 4, 'symmetry2': 4, 'smoothness3': 3, 'concave_points3': 3, 'radius1': 3, 'perimeter2': 3, 'fractal_dimension1': 3, 'texture1': 2, 'compactness1': 2, 'compactness3': 1, 'smoothness2': 1, 'texture3': 1, 'perimeter1': 1, 'compactness2': 1, 'texture2': 1, 'radius3': 1}
+Testing configuration with 10 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 10 trees, 0 features, Accuracy: 0.93, Feature counts: {'smoothness1': 49, 'perimeter2': 27, 'area3': 12, 'smoothness2': 11, 'concave_points3': 6, 'concavity1': 5, 'concave_points1': 4, 'area1': 4, 'perimeter3': 3, 'smoothness3': 3, 'fractal_dimension3': 2, 'radius2': 2, 'concavity3': 1, 'fractal_dimension1': 1, 'texture3': 1, 'symmetry1': 1, 'texture1': 1}
+Testing configuration with 25 trees and 7 features.
+Configuration: 25 trees, 7 features, Accuracy: 0.94, Feature counts: {'smoothness2': 103, 'texture1': 33, 'compactness3': 22, 'concave_points1': 16, 'concavity3': 14, 'smoothness1': 13, 'smoothness3': 12, 'symmetry2': 11, 'area2': 9, 'perimeter1': 8, 'concavity1': 8, 'perimeter2': 7, 'perimeter3': 7, 'concavity2': 6, 'fractal_dimension3': 6, 'radius3': 6, 'concave_points2': 5, 'concave_points3': 5, 'area3': 4, 'symmetry1': 4, 'texture2': 3, 'compactness1': 3, 'compactness2': 2, 'fractal_dimension1': 2, 'symmetry3': 2, 'radius2': 2, 'area1': 2, 'fractal_dimension2': 1}
+Testing configuration with 25 trees and 15 features.
+Configuration: 25 trees, 15 features, Accuracy: 0.92, Feature counts: {'texture2': 61, 'concavity1': 30, 'perimeter3': 19, 'compactness1': 18, 'smoothness1': 18, 'smoothness3': 15, 'concavity2': 13, 'concavity3': 13, 'perimeter2': 10, 'area3': 8, 'concave_points3': 7, 'concave_points1': 5, 'perimeter1': 5, 'radius3': 4, 'radius2': 3, 'compactness3': 3, 'symmetry1': 2, 'fractal_dimension2': 2, 'area2': 2, 'area1': 1, 'texture1': 1, 'fractal_dimension3': 1, 'radius1': 1}
+Testing configuration with 25 trees and 22 features.
+Configuration: 25 trees, 22 features, Accuracy: 0.93, Feature counts: {'symmetry2': 27, 'area3': 23, 'symmetry3': 18, 'compactness1': 16, 'fractal_dimension3': 16, 'area2': 14, 'concave_points3': 10, 'smoothness3': 9, 'perimeter1': 6, 'concavity3': 6, 'perimeter3': 5, 'concave_points1': 5, 'radius3': 5, 'area1': 5, 'compactness3': 4, 'symmetry1': 4, 'perimeter2': 4, 'fractal_dimension1': 3, 'texture3': 3, 'radius1': 3, 'compactness2': 2, 'smoothness2': 2, 'concavity2': 2, 'texture1': 1, 'concavity1': 1, 'concave_points2': 1}
+Testing configuration with 25 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 25 trees, 0 features, Accuracy: 0.92, Feature counts: {'texture2': 59, 'compactness2': 50, 'concave_points2': 48, 'area1': 17, 'area3': 15, 'radius3': 13, 'concave_points3': 9, 'symmetry3': 8, 'radius2': 7, 'area2': 6, 'compactness3': 6, 'smoothness3': 6, 'concavity3': 6, 'compactness1': 5, 'perimeter1': 5, 'symmetry2': 4, 'perimeter3': 4, 'fractal_dimension3': 4, 'fractal_dimension1': 2, 'smoothness1': 2, 'texture1': 2, 'radius1': 2, 'smoothness2': 2, 'concave_points1': 1, 'texture3': 1, 'concavity2': 1, 'fractal_dimension2': 1, 'perimeter2': 1}
+Testing configuration with 50 trees and 7 features.
+Configuration: 50 trees, 7 features, Accuracy: 0.92, Feature counts: {'smoothness1': 51, 'symmetry2': 49, 'fractal_dimension1': 45, 'compactness2': 44, 'concave_points2': 44, 'radius1': 33, 'concave_points3': 25, 'area1': 23, 'fractal_dimension2': 22, 'symmetry3': 21, 'texture3': 19, 'concavity1': 17, 'perimeter3': 16, 'area3': 16, 'texture2': 16, 'compactness1': 15, 'area2': 14, 'fractal_dimension3': 13, 'concavity3': 13, 'radius3': 12, 'smoothness3': 12, 'concavity2': 12, 'radius2': 11, 'smoothness2': 11, 'symmetry1': 8, 'texture1': 7, 'perimeter2': 5, 'perimeter1': 5, 'compactness3': 4, 'concave_points1': 3}
+Testing configuration with 50 trees and 15 features.
+Configuration: 50 trees, 15 features, Accuracy: 0.92, Feature counts: {'texture2': 67, 'smoothness2': 56, 'texture3': 45, 'compactness3': 44, 'area1': 28, 'concave_points1': 21, 'concavity3': 19, 'perimeter3': 17, 'area3': 14, 'radius3': 13, 'concave_points3': 13, 'symmetry2': 12, 'radius2': 12, 'smoothness3': 11, 'fractal_dimension1': 11, 'symmetry3': 11, 'concavity1': 10, 'fractal_dimension3': 9, 'perimeter2': 9, 'perimeter1': 9, 'compactness2': 8, 'smoothness1': 7, 'concave_points2': 7, 'area2': 6, 'fractal_dimension2': 3, 'radius1': 2, 'symmetry1': 2, 'concavity2': 2, 'compactness1': 2}
+Testing configuration with 50 trees and 22 features.
+Configuration: 50 trees, 22 features, Accuracy: 0.92, Feature counts: {'radius1': 25, 'area3': 24, 'concave_points1': 23, 'perimeter3': 21, 'perimeter1': 17, 'concave_points3': 16, 'smoothness3': 15, 'concavity1': 13, 'concavity3': 11, 'area1': 11, 'fractal_dimension3': 10, 'texture1': 9, 'compactness3': 9, 'radius3': 8, 'concave_points2': 8, 'perimeter2': 8, 'fractal_dimension2': 7, 'compactness1': 6, 'texture3': 6, 'smoothness2': 5, 'radius2': 5, 'area2': 5, 'symmetry3': 4, 'texture2': 4, 'concavity2': 4, 'compactness2': 4, 'fractal_dimension1': 2, 'symmetry2': 2}
+Testing configuration with 50 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 50 trees, 0 features, Accuracy: 0.92, Feature counts: {'texture2': 62, 'perimeter2': 36, 'concave_points1': 33, 'texture1': 31, 'fractal_dimension2': 27, 'concave_points3': 26, 'area3': 21, 'symmetry3': 21, 'symmetry2': 20, 'concavity2': 20, 'fractal_dimension1': 17, 'perimeter3': 16, 'smoothness1': 16, 'perimeter1': 15, 'compactness1': 15, 'radius1': 14, 'texture3': 14, 'area1': 10, 'radius3': 9, 'compactness3': 9, 'smoothness3': 8, 'compactness2': 7, 'symmetry1': 6, 'concavity3': 5, 'concavity1': 5, 'smoothness2': 4, 'concave_points2': 4, 'fractal_dimension3': 3, 'radius2': 3, 'area2': 3}
+Testing configuration with 75 trees and 7 features.
+Configuration: 75 trees, 7 features, Accuracy: 0.94, Feature counts: {'concavity2': 114, 'texture2': 94, 'texture3': 75, 'smoothness3': 71, 'concave_points1': 53, 'texture1': 41, 'perimeter2': 37, 'area1': 34, 'radius1': 34, 'perimeter1': 33, 'area2': 32, 'area3': 30, 'concave_points2': 30, 'fractal_dimension2': 26, 'compactness2': 26, 'compactness3': 23, 'symmetry1': 22, 'concavity1': 21, 'radius2': 20, 'concave_points3': 19, 'concavity3': 17, 'fractal_dimension1': 17, 'smoothness2': 17, 'perimeter3': 16, 'smoothness1': 16, 'compactness1': 16, 'fractal_dimension3': 13, 'symmetry2': 12, 'radius3': 11, 'symmetry3': 4}
+Testing configuration with 75 trees and 15 features.
+Configuration: 75 trees, 15 features, Accuracy: 0.92, Feature counts: {'fractal_dimension3': 100, 'symmetry3': 66, 'texture3': 53, 'perimeter2': 48, 'concave_points3': 39, 'radius2': 36, 'concave_points2': 35, 'area2': 32, 'perimeter3': 30, 'compactness2': 30, 'texture2': 29, 'smoothness3': 28, 'concavity2': 25, 'radius3': 24, 'concavity3': 22, 'texture1': 22, 'area1': 22, 'concavity1': 21, 'area3': 13, 'concave_points1': 13, 'radius1': 13, 'compactness3': 12, 'compactness1': 9, 'symmetry1': 7, 'fractal_dimension1': 5, 'symmetry2': 2, 'smoothness1': 2, 'smoothness2': 1, 'fractal_dimension2': 1, 'perimeter1': 1}
+Testing configuration with 75 trees and 22 features.
+Configuration: 75 trees, 22 features, Accuracy: 0.92, Feature counts: {'perimeter2': 42, 'fractal_dimension3': 40, 'perimeter3': 37, 'smoothness1': 34, 'texture3': 33, 'smoothness3': 32, 'concave_points3': 30, 'concavity1': 27, 'area3': 25, 'smoothness2': 21, 'texture1': 19, 'radius3': 18, 'symmetry2': 18, 'texture2': 17, 'concave_points1': 14, 'fractal_dimension1': 14, 'symmetry3': 13, 'concave_points2': 11, 'concavity3': 9, 'perimeter1': 9, 'area1': 9, 'compactness3': 9, 'radius2': 8, 'area2': 7, 'compactness2': 5, 'symmetry1': 4, 'radius1': 4, 'compactness1': 3, 'fractal_dimension2': 2, 'concavity2': 1}
+Testing configuration with 75 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 75 trees, 0 features, Accuracy: 0.93, Feature counts: {'symmetry2': 126, 'symmetry1': 110, 'compactness3': 86, 'fractal_dimension2': 66, 'perimeter2': 53, 'smoothness2': 44, 'radius3': 34, 'concavity1': 28, 'concave_points3': 27, 'texture1': 26, 'texture3': 24, 'fractal_dimension3': 23, 'smoothness3': 22, 'compactness2': 22, 'area3': 21, 'perimeter3': 19, 'concave_points1': 17, 'perimeter1': 16, 'concavity3': 15, 'radius2': 14, 'smoothness1': 13, 'fractal_dimension1': 12, 'concave_points2': 12, 'compactness1': 11, 'radius1': 8, 'symmetry3': 8, 'concavity2': 7, 'area1': 6, 'texture2': 5, 'area2': 4}
+Testing configuration with 100 trees and 7 features.
+Configuration: 100 trees, 7 features, Accuracy: 0.93, Feature counts: {'fractal_dimension1': 178, 'smoothness3': 104, 'symmetry2': 86, 'texture3': 84, 'texture2': 82, 'concave_points1': 76, 'symmetry1': 72, 'smoothness2': 66, 'area1': 55, 'symmetry3': 54, 'concave_points3': 50, 'perimeter2': 48, 'compactness2': 48, 'compactness3': 48, 'compactness1': 42, 'perimeter3': 36, 'radius3': 36, 'concavity1': 31, 'area2': 31, 'radius1': 31, 'radius2': 30, 'texture1': 24, 'concave_points2': 23, 'smoothness1': 21, 'concavity2': 20, 'concavity3': 17, 'fractal_dimension2': 16, 'area3': 13, 'fractal_dimension3': 12, 'perimeter1': 10}
+Testing configuration with 100 trees and 15 features.
+Configuration: 100 trees, 15 features, Accuracy: 0.92, Feature counts: {'symmetry3': 73, 'texture2': 67, 'smoothness1': 54, 'concave_points3': 44, 'smoothness3': 42, 'perimeter3': 41, 'area1': 41, 'radius2': 40, 'area3': 39, 'fractal_dimension1': 32, 'concave_points1': 28, 'radius1': 27, 'radius3': 26, 'concavity1': 25, 'concavity2': 23, 'concavity3': 20, 'fractal_dimension3': 18, 'smoothness2': 18, 'texture3': 17, 'perimeter1': 16, 'texture1': 15, 'perimeter2': 15, 'area2': 15, 'compactness1': 13, 'compactness3': 11, 'symmetry1': 11, 'compactness2': 10, 'symmetry2': 5, 'fractal_dimension2': 4, 'concave_points2': 3}
+Testing configuration with 100 trees and 22 features.
+Configuration: 100 trees, 22 features, Accuracy: 0.92, Feature counts: {'smoothness3': 73, 'fractal_dimension2': 56, 'perimeter3': 47, 'concave_points3': 37, 'area3': 29, 'texture2': 26, 'compactness1': 24, 'area1': 24, 'texture1': 23, 'texture3': 22, 'radius3': 20, 'perimeter2': 20, 'fractal_dimension1': 19, 'smoothness1': 19, 'concavity3': 18, 'area2': 18, 'fractal_dimension3': 15, 'concavity1': 15, 'compactness3': 14, 'concave_points1': 14, 'radius2': 13, 'radius1': 13, 'symmetry2': 13, 'compactness2': 12, 'perimeter1': 12, 'smoothness2': 9, 'concavity2': 8, 'concave_points2': 4, 'symmetry3': 3, 'symmetry1': 1}
+Testing configuration with 100 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 100 trees, 0 features, Accuracy: 0.93, Feature counts: {'smoothness1': 94, 'smoothness2': 81, 'smoothness3': 68, 'symmetry2': 67, 'symmetry1': 51, 'concave_points1': 50, 'perimeter3': 47, 'perimeter2': 45, 'concave_points3': 44, 'concavity2': 39, 'compactness2': 34, 'radius3': 32, 'area2': 28, 'compactness3': 26, 'area3': 25, 'area1': 24, 'concave_points2': 24, 'perimeter1': 23, 'radius1': 23, 'symmetry3': 22, 'fractal_dimension1': 22, 'concavity1': 21, 'fractal_dimension3': 15, 'texture2': 15, 'radius2': 12, 'texture1': 12, 'texture3': 12, 'concavity3': 11, 'compactness1': 9, 'fractal_dimension2': 7}
+Best configuration: 25 trees, 7 features
+Highest accuracy: 0.9406593406593406
+Feature counts for best configuration: {'smoothness2': 103, 'texture1': 33, 'compactness3': 22, 'concave_points1': 16, 'concavity3': 14, 'smoothness1': 13, 'smoothness3': 12, 'symmetry2': 11, 'area2': 9, 'perimeter1': 8, 'concavity1': 8, 'perimeter2': 7, 'perimeter3': 7, 'concavity2': 6, 'fractal_dimension3': 6, 'radius3': 6, 'concave_points2': 5, 'concave_points3': 5, 'area3': 4, 'symmetry1': 4, 'texture2': 3, 'compactness1': 3, 'compactness2': 2, 'fractal_dimension1': 2, 'symmetry3': 2, 'radius2': 2, 'area1': 2, 'fractal_dimension2': 1}
+\begin{tabular}{rrrl}
+\toprule
+Number of Trees & Number of Features & Accuracy & Feature Counts \\
+\midrule
+1 & 7 & 0.723077 & {'compactness1': 21, 'concavity2': 6} \\
+1 & 15 & 0.865934 & {'fractal_dimension1': 2, 'perimeter3': 1, 'perimeter2': 1, 'fractal_dimension2': 1} \\
+1 & 22 & 0.914286 & {'area1': 2, 'perimeter3': 1, 'compactness1': 1, 'texture3': 1} \\
+1 & 0 & 0.892308 & {'radius3': 2, 'fractal_dimension3': 1, 'smoothness3': 1} \\
+10 & 7 & 0.925275 & {'fractal_dimension3': 50, 'compactness3': 19, 'texture3': 10, 'concave_points1': 6, 'compactness1': 5, 'perimeter1': 5, 'radius3': 5, 'area3': 4, 'perimeter3': 3, 'radius2': 3, 'symmetry2': 2, 'texture2': 2, 'texture1': 2, 'area2': 2, 'smoothness3': 2, 'fractal_dimension2': 2, 'symmetry3': 2, 'radius1': 1, 'concavity2': 1, 'concave_points3': 1} \\
+10 & 15 & 0.912088 & {'concavity1': 8, 'perimeter3': 7, 'concave_points3': 7, 'concave_points2': 5, 'symmetry2': 4, 'compactness1': 4, 'perimeter2': 2, 'smoothness1': 2, 'smoothness3': 2, 'compactness2': 2, 'texture1': 2, 'area3': 1, 'compactness3': 1, 'symmetry3': 1, 'fractal_dimension3': 1, 'texture3': 1, 'radius2': 1, 'radius3': 1, 'concavity3': 1, 'area2': 1, 'texture2': 1, 'area1': 1, 'radius1': 1, 'concavity2': 1} \\
+10 & 22 & 0.914286 & {'fractal_dimension2': 49, 'perimeter3': 4, 'area3': 4, 'concavity3': 4, 'symmetry2': 4, 'smoothness3': 3, 'concave_points3': 3, 'radius1': 3, 'perimeter2': 3, 'fractal_dimension1': 3, 'texture1': 2, 'compactness1': 2, 'compactness3': 1, 'smoothness2': 1, 'texture3': 1, 'perimeter1': 1, 'compactness2': 1, 'texture2': 1, 'radius3': 1} \\
+10 & 0 & 0.925275 & {'smoothness1': 49, 'perimeter2': 27, 'area3': 12, 'smoothness2': 11, 'concave_points3': 6, 'concavity1': 5, 'concave_points1': 4, 'area1': 4, 'perimeter3': 3, 'smoothness3': 3, 'fractal_dimension3': 2, 'radius2': 2, 'concavity3': 1, 'fractal_dimension1': 1, 'texture3': 1, 'symmetry1': 1, 'texture1': 1} \\
+25 & 7 & 0.940659 & {'smoothness2': 103, 'texture1': 33, 'compactness3': 22, 'concave_points1': 16, 'concavity3': 14, 'smoothness1': 13, 'smoothness3': 12, 'symmetry2': 11, 'area2': 9, 'perimeter1': 8, 'concavity1': 8, 'perimeter2': 7, 'perimeter3': 7, 'concavity2': 6, 'fractal_dimension3': 6, 'radius3': 6, 'concave_points2': 5, 'concave_points3': 5, 'area3': 4, 'symmetry1': 4, 'texture2': 3, 'compactness1': 3, 'compactness2': 2, 'fractal_dimension1': 2, 'symmetry3': 2, 'radius2': 2, 'area1': 2, 'fractal_dimension2': 1} \\
+25 & 15 & 0.923077 & {'texture2': 61, 'concavity1': 30, 'perimeter3': 19, 'compactness1': 18, 'smoothness1': 18, 'smoothness3': 15, 'concavity2': 13, 'concavity3': 13, 'perimeter2': 10, 'area3': 8, 'concave_points3': 7, 'concave_points1': 5, 'perimeter1': 5, 'radius3': 4, 'radius2': 3, 'compactness3': 3, 'symmetry1': 2, 'fractal_dimension2': 2, 'area2': 2, 'area1': 1, 'texture1': 1, 'fractal_dimension3': 1, 'radius1': 1} \\
+25 & 22 & 0.929670 & {'symmetry2': 27, 'area3': 23, 'symmetry3': 18, 'compactness1': 16, 'fractal_dimension3': 16, 'area2': 14, 'concave_points3': 10, 'smoothness3': 9, 'perimeter1': 6, 'concavity3': 6, 'perimeter3': 5, 'concave_points1': 5, 'radius3': 5, 'area1': 5, 'compactness3': 4, 'symmetry1': 4, 'perimeter2': 4, 'fractal_dimension1': 3, 'texture3': 3, 'radius1': 3, 'compactness2': 2, 'smoothness2': 2, 'concavity2': 2, 'texture1': 1, 'concavity1': 1, 'concave_points2': 1} \\
+25 & 0 & 0.923077 & {'texture2': 59, 'compactness2': 50, 'concave_points2': 48, 'area1': 17, 'area3': 15, 'radius3': 13, 'concave_points3': 9, 'symmetry3': 8, 'radius2': 7, 'area2': 6, 'compactness3': 6, 'smoothness3': 6, 'concavity3': 6, 'compactness1': 5, 'perimeter1': 5, 'symmetry2': 4, 'perimeter3': 4, 'fractal_dimension3': 4, 'fractal_dimension1': 2, 'smoothness1': 2, 'texture1': 2, 'radius1': 2, 'smoothness2': 2, 'concave_points1': 1, 'texture3': 1, 'concavity2': 1, 'fractal_dimension2': 1, 'perimeter2': 1} \\
+50 & 7 & 0.920879 & {'smoothness1': 51, 'symmetry2': 49, 'fractal_dimension1': 45, 'compactness2': 44, 'concave_points2': 44, 'radius1': 33, 'concave_points3': 25, 'area1': 23, 'fractal_dimension2': 22, 'symmetry3': 21, 'texture3': 19, 'concavity1': 17, 'perimeter3': 16, 'area3': 16, 'texture2': 16, 'compactness1': 15, 'area2': 14, 'fractal_dimension3': 13, 'concavity3': 13, 'radius3': 12, 'smoothness3': 12, 'concavity2': 12, 'radius2': 11, 'smoothness2': 11, 'symmetry1': 8, 'texture1': 7, 'perimeter2': 5, 'perimeter1': 5, 'compactness3': 4, 'concave_points1': 3} \\
+50 & 15 & 0.923077 & {'texture2': 67, 'smoothness2': 56, 'texture3': 45, 'compactness3': 44, 'area1': 28, 'concave_points1': 21, 'concavity3': 19, 'perimeter3': 17, 'area3': 14, 'radius3': 13, 'concave_points3': 13, 'symmetry2': 12, 'radius2': 12, 'smoothness3': 11, 'fractal_dimension1': 11, 'symmetry3': 11, 'concavity1': 10, 'fractal_dimension3': 9, 'perimeter2': 9, 'perimeter1': 9, 'compactness2': 8, 'smoothness1': 7, 'concave_points2': 7, 'area2': 6, 'fractal_dimension2': 3, 'radius1': 2, 'symmetry1': 2, 'concavity2': 2, 'compactness1': 2} \\
+50 & 22 & 0.920879 & {'radius1': 25, 'area3': 24, 'concave_points1': 23, 'perimeter3': 21, 'perimeter1': 17, 'concave_points3': 16, 'smoothness3': 15, 'concavity1': 13, 'concavity3': 11, 'area1': 11, 'fractal_dimension3': 10, 'texture1': 9, 'compactness3': 9, 'radius3': 8, 'concave_points2': 8, 'perimeter2': 8, 'fractal_dimension2': 7, 'compactness1': 6, 'texture3': 6, 'smoothness2': 5, 'radius2': 5, 'area2': 5, 'symmetry3': 4, 'texture2': 4, 'concavity2': 4, 'compactness2': 4, 'fractal_dimension1': 2, 'symmetry2': 2} \\
+50 & 0 & 0.923077 & {'texture2': 62, 'perimeter2': 36, 'concave_points1': 33, 'texture1': 31, 'fractal_dimension2': 27, 'concave_points3': 26, 'area3': 21, 'symmetry3': 21, 'symmetry2': 20, 'concavity2': 20, 'fractal_dimension1': 17, 'perimeter3': 16, 'smoothness1': 16, 'perimeter1': 15, 'compactness1': 15, 'radius1': 14, 'texture3': 14, 'area1': 10, 'radius3': 9, 'compactness3': 9, 'smoothness3': 8, 'compactness2': 7, 'symmetry1': 6, 'concavity3': 5, 'concavity1': 5, 'smoothness2': 4, 'concave_points2': 4, 'fractal_dimension3': 3, 'radius2': 3, 'area2': 3} \\
+75 & 7 & 0.936264 & {'concavity2': 114, 'texture2': 94, 'texture3': 75, 'smoothness3': 71, 'concave_points1': 53, 'texture1': 41, 'perimeter2': 37, 'area1': 34, 'radius1': 34, 'perimeter1': 33, 'area2': 32, 'area3': 30, 'concave_points2': 30, 'fractal_dimension2': 26, 'compactness2': 26, 'compactness3': 23, 'symmetry1': 22, 'concavity1': 21, 'radius2': 20, 'concave_points3': 19, 'concavity3': 17, 'fractal_dimension1': 17, 'smoothness2': 17, 'perimeter3': 16, 'smoothness1': 16, 'compactness1': 16, 'fractal_dimension3': 13, 'symmetry2': 12, 'radius3': 11, 'symmetry3': 4} \\
+75 & 15 & 0.920879 & {'fractal_dimension3': 100, 'symmetry3': 66, 'texture3': 53, 'perimeter2': 48, 'concave_points3': 39, 'radius2': 36, 'concave_points2': 35, 'area2': 32, 'perimeter3': 30, 'compactness2': 30, 'texture2': 29, 'smoothness3': 28, 'concavity2': 25, 'radius3': 24, 'concavity3': 22, 'texture1': 22, 'area1': 22, 'concavity1': 21, 'area3': 13, 'concave_points1': 13, 'radius1': 13, 'compactness3': 12, 'compactness1': 9, 'symmetry1': 7, 'fractal_dimension1': 5, 'symmetry2': 2, 'smoothness1': 2, 'smoothness2': 1, 'fractal_dimension2': 1, 'perimeter1': 1} \\
+75 & 22 & 0.923077 & {'perimeter2': 42, 'fractal_dimension3': 40, 'perimeter3': 37, 'smoothness1': 34, 'texture3': 33, 'smoothness3': 32, 'concave_points3': 30, 'concavity1': 27, 'area3': 25, 'smoothness2': 21, 'texture1': 19, 'radius3': 18, 'symmetry2': 18, 'texture2': 17, 'concave_points1': 14, 'fractal_dimension1': 14, 'symmetry3': 13, 'concave_points2': 11, 'concavity3': 9, 'perimeter1': 9, 'area1': 9, 'compactness3': 9, 'radius2': 8, 'area2': 7, 'compactness2': 5, 'symmetry1': 4, 'radius1': 4, 'compactness1': 3, 'fractal_dimension2': 2, 'concavity2': 1} \\
+75 & 0 & 0.925275 & {'symmetry2': 126, 'symmetry1': 110, 'compactness3': 86, 'fractal_dimension2': 66, 'perimeter2': 53, 'smoothness2': 44, 'radius3': 34, 'concavity1': 28, 'concave_points3': 27, 'texture1': 26, 'texture3': 24, 'fractal_dimension3': 23, 'smoothness3': 22, 'compactness2': 22, 'area3': 21, 'perimeter3': 19, 'concave_points1': 17, 'perimeter1': 16, 'concavity3': 15, 'radius2': 14, 'smoothness1': 13, 'fractal_dimension1': 12, 'concave_points2': 12, 'compactness1': 11, 'radius1': 8, 'symmetry3': 8, 'concavity2': 7, 'area1': 6, 'texture2': 5, 'area2': 4} \\
+100 & 7 & 0.929670 & {'fractal_dimension1': 178, 'smoothness3': 104, 'symmetry2': 86, 'texture3': 84, 'texture2': 82, 'concave_points1': 76, 'symmetry1': 72, 'smoothness2': 66, 'area1': 55, 'symmetry3': 54, 'concave_points3': 50, 'perimeter2': 48, 'compactness2': 48, 'compactness3': 48, 'compactness1': 42, 'perimeter3': 36, 'radius3': 36, 'concavity1': 31, 'area2': 31, 'radius1': 31, 'radius2': 30, 'texture1': 24, 'concave_points2': 23, 'smoothness1': 21, 'concavity2': 20, 'concavity3': 17, 'fractal_dimension2': 16, 'area3': 13, 'fractal_dimension3': 12, 'perimeter1': 10} \\
+100 & 15 & 0.923077 & {'symmetry3': 73, 'texture2': 67, 'smoothness1': 54, 'concave_points3': 44, 'smoothness3': 42, 'perimeter3': 41, 'area1': 41, 'radius2': 40, 'area3': 39, 'fractal_dimension1': 32, 'concave_points1': 28, 'radius1': 27, 'radius3': 26, 'concavity1': 25, 'concavity2': 23, 'concavity3': 20, 'fractal_dimension3': 18, 'smoothness2': 18, 'texture3': 17, 'perimeter1': 16, 'texture1': 15, 'perimeter2': 15, 'area2': 15, 'compactness1': 13, 'compactness3': 11, 'symmetry1': 11, 'compactness2': 10, 'symmetry2': 5, 'fractal_dimension2': 4, 'concave_points2': 3} \\
+100 & 22 & 0.923077 & {'smoothness3': 73, 'fractal_dimension2': 56, 'perimeter3': 47, 'concave_points3': 37, 'area3': 29, 'texture2': 26, 'compactness1': 24, 'area1': 24, 'texture1': 23, 'texture3': 22, 'radius3': 20, 'perimeter2': 20, 'fractal_dimension1': 19, 'smoothness1': 19, 'concavity3': 18, 'area2': 18, 'fractal_dimension3': 15, 'concavity1': 15, 'compactness3': 14, 'concave_points1': 14, 'radius2': 13, 'radius1': 13, 'symmetry2': 13, 'compactness2': 12, 'perimeter1': 12, 'smoothness2': 9, 'concavity2': 8, 'concave_points2': 4, 'symmetry3': 3, 'symmetry1': 1} \\
+100 & 0 & 0.925275 & {'smoothness1': 94, 'smoothness2': 81, 'smoothness3': 68, 'symmetry2': 67, 'symmetry1': 51, 'concave_points1': 50, 'perimeter3': 47, 'perimeter2': 45, 'concave_points3': 44, 'concavity2': 39, 'compactness2': 34, 'radius3': 32, 'area2': 28, 'compactness3': 26, 'area3': 25, 'area1': 24, 'concave_points2': 24, 'perimeter1': 23, 'radius1': 23, 'symmetry3': 22, 'fractal_dimension1': 22, 'concavity1': 21, 'fractal_dimension3': 15, 'texture2': 15, 'radius2': 12, 'texture1': 12, 'texture3': 12, 'concavity3': 11, 'compactness1': 9, 'fractal_dimension2': 7} \\
+\bottomrule
+\end{tabular}
+
+Reading data from C:/Users/User/git/CART-method_with_randomf-forest_and_decision-forest/Data/mushroom/agaricus-lepiota.csv
+Preprocessing data...
+Splitting data into training and testing sets...
+Building random forest for ... mushroom
+Hyperparameter tuning for Random Forest...
+Testing configuration with 1 trees and 1 features.
+Configuration: 1 trees, 1 features, Accuracy: 0.92, Feature counts: {'ring-number': 1, 'cap-surface': 1, 'ring-type': 1, 'stalk-color-below-ring': 1, 'odor': 1, 'stalk-color-above-ring': 1, 'stalk-root': 1}
+Testing configuration with 1 trees and 2 features.
+Configuration: 1 trees, 2 features, Accuracy: 0.99, Feature counts: {'spore-print-color': 4, 'gill-color': 3, 'stalk-shape': 3, 'stalk-color-below-ring': 2, 'stalk-color-above-ring': 2, 'cap-shape': 2, 'population': 2, 'stalk-surface-below-ring': 2, 'veil-color': 1, 'odor': 1, 'habitat': 1, 'stalk-surface-above-ring': 1, 'cap-color': 1, 'gill-size': 1, 'gill-attachment': 1, 'cap-surface': 1}
+Testing configuration with 1 trees and 4 features.
+Configuration: 1 trees, 4 features, Accuracy: 0.99, Feature counts: {'spore-print-color': 4, 'cap-color': 2, 'stalk-shape': 2, 'gill-size': 2, 'cap-shape': 2, 'odor': 1, 'bruises?': 1, 'ring-type': 1, 'habitat': 1, 'stalk-color-below-ring': 1, 'population': 1, 'gill-spacing': 1, 'cap-surface': 1, 'stalk-root': 1, 'gill-color': 1}
+Testing configuration with 1 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 1 trees, -1 features, Accuracy: 1.00, Feature counts: {'odor': 4, 'cap-color': 3, 'habitat': 3, 'population': 2, 'spore-print-color': 2, 'stalk-surface-above-ring': 1, 'ring-number': 1, 'bruises?': 1, 'cap-surface': 1, 'stalk-root': 1, 'stalk-surface-below-ring': 1, 'stalk-color-above-ring': 1}
+Testing configuration with 10 trees and 1 features.
+Configuration: 10 trees, 1 features, Accuracy: 0.93, Feature counts: {'cap-shape': 10, 'habitat': 10, 'gill-color': 10, 'population': 9, 'cap-color': 9, 'stalk-color-below-ring': 9, 'gill-spacing': 9, 'stalk-surface-above-ring': 8, 'stalk-color-above-ring': 8, 'cap-surface': 8, 'gill-size': 8, 'stalk-shape': 7, 'ring-number': 6, 'odor': 6, 'spore-print-color': 5, 'veil-color': 4, 'stalk-root': 4, 'bruises?': 4, 'stalk-surface-below-ring': 4, 'ring-type': 4, 'gill-attachment': 1}
+Testing configuration with 10 trees and 2 features.
+Configuration: 10 trees, 2 features, Accuracy: 1.00, Feature counts: {'odor': 20, 'population': 18, 'gill-color': 15, 'stalk-root': 15, 'spore-print-color': 15, 'gill-spacing': 13, 'habitat': 12, 'cap-color': 12, 'ring-type': 9, 'stalk-shape': 9, 'cap-shape': 9, 'bruises?': 8, 'ring-number': 8, 'gill-size': 8, 'stalk-surface-below-ring': 7, 'stalk-color-above-ring': 7, 'cap-surface': 7, 'stalk-color-below-ring': 6, 'stalk-surface-above-ring': 5, 'veil-color': 2, 'gill-attachment': 1}
+Testing configuration with 10 trees and 4 features.
+Configuration: 10 trees, 4 features, Accuracy: 1.00, Feature counts: {'population': 25, 'spore-print-color': 23, 'odor': 22, 'gill-color': 17, 'cap-color': 13, 'stalk-color-above-ring': 12, 'gill-size': 12, 'stalk-shape': 12, 'cap-surface': 11, 'habitat': 11, 'ring-type': 11, 'stalk-surface-above-ring': 10, 'gill-spacing': 10, 'stalk-root': 10, 'cap-shape': 8, 'stalk-color-below-ring': 7, 'bruises?': 6, 'stalk-surface-below-ring': 6, 'ring-number': 3}
+Testing configuration with 10 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 10 trees, -1 features, Accuracy: 1.00, Feature counts: {'odor': 19, 'spore-print-color': 18, 'habitat': 13, 'cap-color': 12, 'stalk-surface-below-ring': 11, 'gill-color': 11, 'population': 10, 'stalk-root': 10, 'gill-spacing': 8, 'stalk-shape': 8, 'bruises?': 7, 'stalk-color-above-ring': 7, 'gill-size': 7, 'ring-number': 7, 'stalk-color-below-ring': 6, 'stalk-surface-above-ring': 6, 'ring-type': 6, 'cap-shape': 5, 'cap-surface': 5, 'gill-attachment': 1}
+Testing configuration with 25 trees and 1 features.
+Configuration: 25 trees, 1 features, Accuracy: 0.95, Feature counts: {'habitat': 19, 'gill-color': 18, 'stalk-surface-above-ring': 17, 'spore-print-color': 17, 'ring-type': 17, 'odor': 17, 'gill-size': 16, 'cap-shape': 16, 'stalk-color-below-ring': 16, 'stalk-surface-below-ring': 16, 'stalk-shape': 15, 'population': 15, 'cap-color': 14, 'stalk-color-above-ring': 14, 'bruises?': 14, 'ring-number': 13, 'veil-color': 11, 'cap-surface': 11, 'stalk-root': 10, 'gill-spacing': 10, 'gill-attachment': 6}
+Testing configuration with 25 trees and 2 features.
+Configuration: 25 trees, 2 features, Accuracy: 1.00, Feature counts: {'odor': 47, 'gill-color': 44, 'habitat': 40, 'stalk-root': 36, 'spore-print-color': 34, 'cap-color': 32, 'gill-size': 32, 'cap-shape': 30, 'population': 29, 'stalk-surface-below-ring': 28, 'stalk-color-below-ring': 28, 'stalk-surface-above-ring': 25, 'ring-type': 23, 'cap-surface': 23, 'bruises?': 22, 'stalk-color-above-ring': 20, 'stalk-shape': 19, 'gill-spacing': 17, 'ring-number': 17, 'gill-attachment': 7, 'veil-color': 4}
+Testing configuration with 25 trees and 4 features.
+Configuration: 25 trees, 4 features, Accuracy: 1.00, Feature counts: {'odor': 52, 'spore-print-color': 48, 'cap-color': 33, 'habitat': 32, 'stalk-root': 30, 'population': 28, 'gill-color': 25, 'stalk-shape': 24, 'gill-size': 24, 'cap-surface': 23, 'stalk-color-below-ring': 20, 'stalk-surface-above-ring': 18, 'cap-shape': 17, 'stalk-surface-below-ring': 15, 'ring-type': 15, 'ring-number': 14, 'gill-spacing': 13, 'bruises?': 12, 'stalk-color-above-ring': 7, 'veil-color': 6, 'gill-attachment': 2}
+Testing configuration with 25 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 25 trees, -1 features, Accuracy: 1.00, Feature counts: {'odor': 66, 'spore-print-color': 47, 'habitat': 40, 'gill-color': 38, 'stalk-root': 36, 'cap-color': 34, 'population': 31, 'gill-size': 22, 'stalk-surface-below-ring': 22, 'cap-surface': 22, 'cap-shape': 20, 'stalk-color-below-ring': 20, 'bruises?': 19, 'ring-type': 19, 'stalk-shape': 18, 'gill-spacing': 16, 'stalk-surface-above-ring': 15, 'stalk-color-above-ring': 12, 'ring-number': 9, 'veil-color': 2}
+Testing configuration with 50 trees and 1 features.
+Configuration: 50 trees, 1 features, Accuracy: 0.94, Feature counts: {'cap-surface': 46, 'spore-print-color': 44, 'gill-color': 42, 'stalk-surface-below-ring': 39, 'population': 38, 'odor': 36, 'cap-color': 36, 'cap-shape': 34, 'stalk-shape': 34, 'habitat': 33, 'stalk-color-below-ring': 33, 'stalk-surface-above-ring': 32, 'bruises?': 31, 'ring-type': 31, 'stalk-root': 29, 'gill-spacing': 29, 'stalk-color-above-ring': 27, 'ring-number': 26, 'gill-size': 21, 'veil-color': 17, 'gill-attachment': 11}
+Testing configuration with 50 trees and 2 features.
+Configuration: 50 trees, 2 features, Accuracy: 1.00, Feature counts: {'odor': 91, 'gill-color': 89, 'habitat': 86, 'stalk-root': 84, 'population': 70, 'spore-print-color': 68, 'cap-surface': 63, 'cap-shape': 63, 'cap-color': 63, 'gill-size': 62, 'stalk-surface-below-ring': 59, 'ring-type': 46, 'stalk-color-below-ring': 45, 'stalk-surface-above-ring': 43, 'bruises?': 41, 'gill-spacing': 41, 'stalk-color-above-ring': 40, 'stalk-shape': 39, 'ring-number': 34, 'veil-color': 13, 'gill-attachment': 8}
+Testing configuration with 50 trees and 4 features.
+Configuration: 50 trees, 4 features, Accuracy: 1.00, Feature counts: {'odor': 116, 'spore-print-color': 82, 'habitat': 75, 'cap-color': 67, 'stalk-root': 67, 'gill-color': 66, 'population': 53, 'gill-size': 52, 'stalk-surface-below-ring': 48, 'cap-surface': 43, 'ring-type': 43, 'stalk-color-below-ring': 40, 'stalk-shape': 36, 'ring-number': 35, 'bruises?': 32, 'gill-spacing': 31, 'stalk-surface-above-ring': 30, 'cap-shape': 29, 'stalk-color-above-ring': 29, 'veil-color': 2, 'gill-attachment': 1}
+Testing configuration with 50 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 50 trees, -1 features, Accuracy: 1.00, Feature counts: {'odor': 114, 'spore-print-color': 97, 'stalk-root': 70, 'cap-color': 65, 'habitat': 60, 'gill-color': 59, 'population': 55, 'stalk-surface-below-ring': 49, 'gill-size': 44, 'cap-surface': 42, 'bruises?': 42, 'gill-spacing': 41, 'stalk-color-below-ring': 39, 'ring-type': 37, 'stalk-surface-above-ring': 35, 'cap-shape': 31, 'stalk-shape': 28, 'stalk-color-above-ring': 25, 'ring-number': 23, 'veil-color': 4, 'gill-attachment': 1}
+Testing configuration with 75 trees and 1 features.
+Configuration: 75 trees, 1 features, Accuracy: 0.98, Feature counts: {'stalk-surface-below-ring': 69, 'cap-shape': 68, 'habitat': 60, 'cap-surface': 59, 'odor': 57, 'cap-color': 55, 'spore-print-color': 50, 'gill-color': 49, 'ring-type': 49, 'stalk-root': 49, 'population': 47, 'gill-size': 44, 'gill-spacing': 44, 'stalk-color-above-ring': 44, 'bruises?': 43, 'stalk-surface-above-ring': 42, 'stalk-shape': 39, 'stalk-color-below-ring': 38, 'ring-number': 35, 'gill-attachment': 28, 'veil-color': 24}
+Testing configuration with 75 trees and 2 features.
+Configuration: 75 trees, 2 features, Accuracy: 1.00, Feature counts: {'odor': 140, 'habitat': 109, 'stalk-root': 108, 'spore-print-color': 106, 'population': 98, 'cap-color': 96, 'gill-color': 93, 'cap-shape': 92, 'stalk-color-below-ring': 88, 'stalk-surface-below-ring': 87, 'ring-type': 76, 'gill-size': 72, 'cap-surface': 71, 'stalk-shape': 69, 'stalk-surface-above-ring': 66, 'bruises?': 58, 'stalk-color-above-ring': 57, 'gill-spacing': 49, 'ring-number': 43, 'gill-attachment': 16, 'veil-color': 11}
+Testing configuration with 75 trees and 4 features.
+Configuration: 75 trees, 4 features, Accuracy: 1.00, Feature counts: {'odor': 156, 'spore-print-color': 140, 'stalk-root': 114, 'habitat': 103, 'cap-color': 103, 'gill-color': 85, 'population': 73, 'gill-size': 71, 'stalk-surface-below-ring': 71, 'cap-surface': 65, 'stalk-shape': 61, 'ring-type': 58, 'bruises?': 58, 'cap-shape': 56, 'stalk-color-below-ring': 55, 'stalk-surface-above-ring': 45, 'gill-spacing': 43, 'ring-number': 35, 'stalk-color-above-ring': 35, 'veil-color': 6, 'gill-attachment': 3}
+Testing configuration with 75 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 75 trees, -1 features, Accuracy: 1.00, Feature counts: {'odor': 153, 'spore-print-color': 141, 'habitat': 112, 'gill-color': 101, 'stalk-root': 99, 'cap-color': 96, 'stalk-surface-below-ring': 82, 'population': 81, 'gill-size': 72, 'cap-surface': 71, 'ring-type': 59, 'stalk-color-below-ring': 58, 'gill-spacing': 55, 'stalk-shape': 54, 'bruises?': 52, 'stalk-surface-above-ring': 51, 'cap-shape': 43, 'stalk-color-above-ring': 36, 'ring-number': 34, 'veil-color': 7, 'gill-attachment': 5}
+Testing configuration with 100 trees and 1 features.
+Configuration: 100 trees, 1 features, Accuracy: 0.96, Feature counts: {'cap-color': 68, 'odor': 65, 'stalk-color-below-ring': 64, 'spore-print-color': 63, 'stalk-surface-above-ring': 62, 'gill-color': 57, 'ring-type': 56, 'cap-surface': 55, 'stalk-root': 55, 'cap-shape': 52, 'habitat': 49, 'population': 48, 'bruises?': 47, 'stalk-color-above-ring': 47, 'stalk-surface-below-ring': 47, 'gill-size': 47, 'ring-number': 46, 'stalk-shape': 45, 'gill-spacing': 41, 'gill-attachment': 24, 'veil-color': 21}
+Testing configuration with 100 trees and 2 features.
+Configuration: 100 trees, 2 features, Accuracy: 1.00, Feature counts: {'odor': 180, 'cap-color': 164, 'habitat': 161, 'spore-print-color': 152, 'population': 145, 'gill-color': 141, 'stalk-root': 135, 'stalk-surface-below-ring': 127, 'cap-surface': 107, 'stalk-color-below-ring': 104, 'stalk-color-above-ring': 103, 'cap-shape': 103, 'gill-size': 102, 'stalk-surface-above-ring': 102, 'ring-type': 95, 'bruises?': 87, 'gill-spacing': 75, 'ring-number': 69, 'stalk-shape': 65, 'veil-color': 34, 'gill-attachment': 15}
+Testing configuration with 100 trees and 4 features.
+Configuration: 100 trees, 4 features, Accuracy: 1.00, Feature counts: {'odor': 245, 'spore-print-color': 172, 'habitat': 143, 'stalk-root': 128, 'cap-color': 128, 'gill-color': 119, 'population': 116, 'stalk-surface-below-ring': 103, 'cap-surface': 99, 'gill-size': 87, 'ring-type': 86, 'cap-shape': 83, 'bruises?': 73, 'stalk-color-below-ring': 68, 'stalk-surface-above-ring': 67, 'stalk-shape': 64, 'gill-spacing': 59, 'stalk-color-above-ring': 49, 'ring-number': 49, 'veil-color': 7, 'gill-attachment': 3}
+Testing configuration with 100 trees and -1 features.
+Using the function int(math.sqrt(len(features))) for each node to have a different number of features.
+Configuration: 100 trees, -1 features, Accuracy: 1.00, Feature counts: {'odor': 246, 'spore-print-color': 175, 'habitat': 151, 'population': 122, 'stalk-root': 120, 'cap-color': 118, 'gill-color': 107, 'ring-type': 92, 'gill-size': 89, 'stalk-surface-below-ring': 89, 'cap-surface': 85, 'stalk-surface-above-ring': 84, 'stalk-color-below-ring': 79, 'cap-shape': 79, 'stalk-shape': 68, 'gill-spacing': 62, 'bruises?': 58, 'ring-number': 58, 'stalk-color-above-ring': 45, 'veil-color': 4, 'gill-attachment': 3}
+Best configuration: 50 trees, -1 features
+Highest accuracy: 1.0
+Feature counts for best configuration: {'odor': 114, 'spore-print-color': 97, 'stalk-root': 70, 'cap-color': 65, 'habitat': 60, 'gill-color': 59, 'population': 55, 'stalk-surface-below-ring': 49, 'gill-size': 44, 'cap-surface': 42, 'bruises?': 42, 'gill-spacing': 41, 'stalk-color-below-ring': 39, 'ring-type': 37, 'stalk-surface-above-ring': 35, 'cap-shape': 31, 'stalk-shape': 28, 'stalk-color-above-ring': 25, 'ring-number': 23, 'veil-color': 4, 'gill-attachment': 1}
+\begin{tabular}{rrrl}
+\toprule
+Number of Trees & Number of Features & Accuracy & Feature Counts \\
+\midrule
+1 & 1 & 0.919680 & {'ring-number': 1, 'cap-surface': 1, 'ring-type': 1, 'stalk-color-below-ring': 1, 'odor': 1, 'stalk-color-above-ring': 1, 'stalk-root': 1} \\
+1 & 2 & 0.993537 & {'spore-print-color': 4, 'gill-color': 3, 'stalk-shape': 3, 'stalk-color-below-ring': 2, 'stalk-color-above-ring': 2, 'cap-shape': 2, 'population': 2, 'stalk-surface-below-ring': 2, 'veil-color': 1, 'odor': 1, 'habitat': 1, 'stalk-surface-above-ring': 1, 'cap-color': 1, 'gill-size': 1, 'gill-attachment': 1, 'cap-surface': 1} \\
+1 & 4 & 0.989691 & {'spore-print-color': 4, 'cap-color': 2, 'stalk-shape': 2, 'gill-size': 2, 'cap-shape': 2, 'odor': 1, 'bruises?': 1, 'ring-type': 1, 'habitat': 1, 'stalk-color-below-ring': 1, 'population': 1, 'gill-spacing': 1, 'cap-surface': 1, 'stalk-root': 1, 'gill-color': 1} \\
+1 & -1 & 0.996307 & {'odor': 4, 'cap-color': 3, 'habitat': 3, 'population': 2, 'spore-print-color': 2, 'stalk-surface-above-ring': 1, 'ring-number': 1, 'bruises?': 1, 'cap-surface': 1, 'stalk-root': 1, 'stalk-surface-below-ring': 1, 'stalk-color-above-ring': 1} \\
+10 & 1 & 0.931682 & {'cap-shape': 10, 'habitat': 10, 'gill-color': 10, 'population': 9, 'cap-color': 9, 'stalk-color-below-ring': 9, 'gill-spacing': 9, 'stalk-surface-above-ring': 8, 'stalk-color-above-ring': 8, 'cap-surface': 8, 'gill-size': 8, 'stalk-shape': 7, 'ring-number': 6, 'odor': 6, 'spore-print-color': 5, 'veil-color': 4, 'stalk-root': 4, 'bruises?': 4, 'stalk-surface-below-ring': 4, 'ring-type': 4, 'gill-attachment': 1} \\
+10 & 2 & 0.997692 & {'odor': 20, 'population': 18, 'gill-color': 15, 'stalk-root': 15, 'spore-print-color': 15, 'gill-spacing': 13, 'habitat': 12, 'cap-color': 12, 'ring-type': 9, 'stalk-shape': 9, 'cap-shape': 9, 'bruises?': 8, 'ring-number': 8, 'gill-size': 8, 'stalk-surface-below-ring': 7, 'stalk-color-above-ring': 7, 'cap-surface': 7, 'stalk-color-below-ring': 6, 'stalk-surface-above-ring': 5, 'veil-color': 2, 'gill-attachment': 1} \\
+10 & 4 & 0.998923 & {'population': 25, 'spore-print-color': 23, 'odor': 22, 'gill-color': 17, 'cap-color': 13, 'stalk-color-above-ring': 12, 'gill-size': 12, 'stalk-shape': 12, 'cap-surface': 11, 'habitat': 11, 'ring-type': 11, 'stalk-surface-above-ring': 10, 'gill-spacing': 10, 'stalk-root': 10, 'cap-shape': 8, 'stalk-color-below-ring': 7, 'bruises?': 6, 'stalk-surface-below-ring': 6, 'ring-number': 3} \\
+10 & -1 & 0.999077 & {'odor': 19, 'spore-print-color': 18, 'habitat': 13, 'cap-color': 12, 'stalk-surface-below-ring': 11, 'gill-color': 11, 'population': 10, 'stalk-root': 10, 'gill-spacing': 8, 'stalk-shape': 8, 'bruises?': 7, 'stalk-color-above-ring': 7, 'gill-size': 7, 'ring-number': 7, 'stalk-color-below-ring': 6, 'stalk-surface-above-ring': 6, 'ring-type': 6, 'cap-shape': 5, 'cap-surface': 5, 'gill-attachment': 1} \\
+25 & 1 & 0.945376 & {'habitat': 19, 'gill-color': 18, 'stalk-surface-above-ring': 17, 'spore-print-color': 17, 'ring-type': 17, 'odor': 17, 'gill-size': 16, 'cap-shape': 16, 'stalk-color-below-ring': 16, 'stalk-surface-below-ring': 16, 'stalk-shape': 15, 'population': 15, 'cap-color': 14, 'stalk-color-above-ring': 14, 'bruises?': 14, 'ring-number': 13, 'veil-color': 11, 'cap-surface': 11, 'stalk-root': 10, 'gill-spacing': 10, 'gill-attachment': 6} \\
+25 & 2 & 0.998769 & {'odor': 47, 'gill-color': 44, 'habitat': 40, 'stalk-root': 36, 'spore-print-color': 34, 'cap-color': 32, 'gill-size': 32, 'cap-shape': 30, 'population': 29, 'stalk-surface-below-ring': 28, 'stalk-color-below-ring': 28, 'stalk-surface-above-ring': 25, 'ring-type': 23, 'cap-surface': 23, 'bruises?': 22, 'stalk-color-above-ring': 20, 'stalk-shape': 19, 'gill-spacing': 17, 'ring-number': 17, 'gill-attachment': 7, 'veil-color': 4} \\
+25 & 4 & 0.999538 & {'odor': 52, 'spore-print-color': 48, 'cap-color': 33, 'habitat': 32, 'stalk-root': 30, 'population': 28, 'gill-color': 25, 'stalk-shape': 24, 'gill-size': 24, 'cap-surface': 23, 'stalk-color-below-ring': 20, 'stalk-surface-above-ring': 18, 'cap-shape': 17, 'stalk-surface-below-ring': 15, 'ring-type': 15, 'ring-number': 14, 'gill-spacing': 13, 'bruises?': 12, 'stalk-color-above-ring': 7, 'veil-color': 6, 'gill-attachment': 2} \\
+25 & -1 & 0.999692 & {'odor': 66, 'spore-print-color': 47, 'habitat': 40, 'gill-color': 38, 'stalk-root': 36, 'cap-color': 34, 'population': 31, 'gill-size': 22, 'stalk-surface-below-ring': 22, 'cap-surface': 22, 'cap-shape': 20, 'stalk-color-below-ring': 20, 'bruises?': 19, 'ring-type': 19, 'stalk-shape': 18, 'gill-spacing': 16, 'stalk-surface-above-ring': 15, 'stalk-color-above-ring': 12, 'ring-number': 9, 'veil-color': 2} \\
+50 & 1 & 0.944915 & {'cap-surface': 46, 'spore-print-color': 44, 'gill-color': 42, 'stalk-surface-below-ring': 39, 'population': 38, 'odor': 36, 'cap-color': 36, 'cap-shape': 34, 'stalk-shape': 34, 'habitat': 33, 'stalk-color-below-ring': 33, 'stalk-surface-above-ring': 32, 'bruises?': 31, 'ring-type': 31, 'stalk-root': 29, 'gill-spacing': 29, 'stalk-color-above-ring': 27, 'ring-number': 26, 'gill-size': 21, 'veil-color': 17, 'gill-attachment': 11} \\
+50 & 2 & 0.999385 & {'odor': 91, 'gill-color': 89, 'habitat': 86, 'stalk-root': 84, 'population': 70, 'spore-print-color': 68, 'cap-surface': 63, 'cap-shape': 63, 'cap-color': 63, 'gill-size': 62, 'stalk-surface-below-ring': 59, 'ring-type': 46, 'stalk-color-below-ring': 45, 'stalk-surface-above-ring': 43, 'bruises?': 41, 'gill-spacing': 41, 'stalk-color-above-ring': 40, 'stalk-shape': 39, 'ring-number': 34, 'veil-color': 13, 'gill-attachment': 8} \\
+50 & 4 & 0.999538 & {'odor': 116, 'spore-print-color': 82, 'habitat': 75, 'cap-color': 67, 'stalk-root': 67, 'gill-color': 66, 'population': 53, 'gill-size': 52, 'stalk-surface-below-ring': 48, 'cap-surface': 43, 'ring-type': 43, 'stalk-color-below-ring': 40, 'stalk-shape': 36, 'ring-number': 35, 'bruises?': 32, 'gill-spacing': 31, 'stalk-surface-above-ring': 30, 'cap-shape': 29, 'stalk-color-above-ring': 29, 'veil-color': 2, 'gill-attachment': 1} \\
+50 & -1 & 1.000000 & {'odor': 114, 'spore-print-color': 97, 'stalk-root': 70, 'cap-color': 65, 'habitat': 60, 'gill-color': 59, 'population': 55, 'stalk-surface-below-ring': 49, 'gill-size': 44, 'cap-surface': 42, 'bruises?': 42, 'gill-spacing': 41, 'stalk-color-below-ring': 39, 'ring-type': 37, 'stalk-surface-above-ring': 35, 'cap-shape': 31, 'stalk-shape': 28, 'stalk-color-above-ring': 25, 'ring-number': 23, 'veil-color': 4, 'gill-attachment': 1} \\
+75 & 1 & 0.981228 & {'stalk-surface-below-ring': 69, 'cap-shape': 68, 'habitat': 60, 'cap-surface': 59, 'odor': 57, 'cap-color': 55, 'spore-print-color': 50, 'gill-color': 49, 'ring-type': 49, 'stalk-root': 49, 'population': 47, 'gill-size': 44, 'gill-spacing': 44, 'stalk-color-above-ring': 44, 'bruises?': 43, 'stalk-surface-above-ring': 42, 'stalk-shape': 39, 'stalk-color-below-ring': 38, 'ring-number': 35, 'gill-attachment': 28, 'veil-color': 24} \\
+75 & 2 & 0.999077 & {'odor': 140, 'habitat': 109, 'stalk-root': 108, 'spore-print-color': 106, 'population': 98, 'cap-color': 96, 'gill-color': 93, 'cap-shape': 92, 'stalk-color-below-ring': 88, 'stalk-surface-below-ring': 87, 'ring-type': 76, 'gill-size': 72, 'cap-surface': 71, 'stalk-shape': 69, 'stalk-surface-above-ring': 66, 'bruises?': 58, 'stalk-color-above-ring': 57, 'gill-spacing': 49, 'ring-number': 43, 'gill-attachment': 16, 'veil-color': 11} \\
+75 & 4 & 0.999538 & {'odor': 156, 'spore-print-color': 140, 'stalk-root': 114, 'habitat': 103, 'cap-color': 103, 'gill-color': 85, 'population': 73, 'gill-size': 71, 'stalk-surface-below-ring': 71, 'cap-surface': 65, 'stalk-shape': 61, 'ring-type': 58, 'bruises?': 58, 'cap-shape': 56, 'stalk-color-below-ring': 55, 'stalk-surface-above-ring': 45, 'gill-spacing': 43, 'ring-number': 35, 'stalk-color-above-ring': 35, 'veil-color': 6, 'gill-attachment': 3} \\
+75 & -1 & 0.999538 & {'odor': 153, 'spore-print-color': 141, 'habitat': 112, 'gill-color': 101, 'stalk-root': 99, 'cap-color': 96, 'stalk-surface-below-ring': 82, 'population': 81, 'gill-size': 72, 'cap-surface': 71, 'ring-type': 59, 'stalk-color-below-ring': 58, 'gill-spacing': 55, 'stalk-shape': 54, 'bruises?': 52, 'stalk-surface-above-ring': 51, 'cap-shape': 43, 'stalk-color-above-ring': 36, 'ring-number': 34, 'veil-color': 7, 'gill-attachment': 5} \\
+100 & 1 & 0.964148 & {'cap-color': 68, 'odor': 65, 'stalk-color-below-ring': 64, 'spore-print-color': 63, 'stalk-surface-above-ring': 62, 'gill-color': 57, 'ring-type': 56, 'cap-surface': 55, 'stalk-root': 55, 'cap-shape': 52, 'habitat': 49, 'population': 48, 'bruises?': 47, 'stalk-color-above-ring': 47, 'stalk-surface-below-ring': 47, 'gill-size': 47, 'ring-number': 46, 'stalk-shape': 45, 'gill-spacing': 41, 'gill-attachment': 24, 'veil-color': 21} \\
+100 & 2 & 0.998923 & {'odor': 180, 'cap-color': 164, 'habitat': 161, 'spore-print-color': 152, 'population': 145, 'gill-color': 141, 'stalk-root': 135, 'stalk-surface-below-ring': 127, 'cap-surface': 107, 'stalk-color-below-ring': 104, 'stalk-color-above-ring': 103, 'cap-shape': 103, 'gill-size': 102, 'stalk-surface-above-ring': 102, 'ring-type': 95, 'bruises?': 87, 'gill-spacing': 75, 'ring-number': 69, 'stalk-shape': 65, 'veil-color': 34, 'gill-attachment': 15} \\
+100 & 4 & 0.999538 & {'odor': 245, 'spore-print-color': 172, 'habitat': 143, 'stalk-root': 128, 'cap-color': 128, 'gill-color': 119, 'population': 116, 'stalk-surface-below-ring': 103, 'cap-surface': 99, 'gill-size': 87, 'ring-type': 86, 'cap-shape': 83, 'bruises?': 73, 'stalk-color-below-ring': 68, 'stalk-surface-above-ring': 67, 'stalk-shape': 64, 'gill-spacing': 59, 'stalk-color-above-ring': 49, 'ring-number': 49, 'veil-color': 7, 'gill-attachment': 3} \\
+100 & -1 & 0.999846 & {'odor': 246, 'spore-print-color': 175, 'habitat': 151, 'population': 122, 'stalk-root': 120, 'cap-color': 118, 'gill-color': 107, 'ring-type': 92, 'gill-size': 89, 'stalk-surface-below-ring': 89, 'cap-surface': 85, 'stalk-surface-above-ring': 84, 'stalk-color-below-ring': 79, 'cap-shape': 79, 'stalk-shape': 68, 'gill-spacing': 62, 'bruises?': 58, 'ring-number': 58, 'stalk-color-above-ring': 45, 'veil-color': 4, 'gill-attachment': 3} \\
+\bottomrule
+\end{tabular}
+
+Building decision forest for ... mushroom
+Hyperparameter tuning for Decision Forest...
+Testing configuration with 1 trees and 5 features.
+Configuration: 1 trees, 5 features, Accuracy: 0.95, Feature counts: {'cap-color': 9, 'spore-print-color': 6, 'ring-number': 4, 'veil-color': 1}
+Testing configuration with 1 trees and 11 features.
+Configuration: 1 trees, 11 features, Accuracy: 1.00, Feature counts: {'cap-color': 4, 'odor': 3, 'stalk-root': 3, 'stalk-color-below-ring': 2, 'habitat': 2, 'bruises?': 1}
+Testing configuration with 1 trees and 16 features.
+Configuration: 1 trees, 16 features, Accuracy: 1.00, Feature counts: {'odor': 3, 'habitat': 3, 'gill-color': 3, 'cap-shape': 3, 'stalk-color-above-ring': 2, 'stalk-surface-below-ring': 1, 'gill-size': 1, 'population': 1}
+Testing configuration with 1 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 1 trees, 0 features, Accuracy: 1.00, Feature counts: {'odor': 3, 'spore-print-color': 1, 'stalk-surface-below-ring': 1, 'ring-number': 1, 'habitat': 1, 'cap-color': 1}
+Testing configuration with 10 trees and 5 features.
+Configuration: 10 trees, 5 features, Accuracy: 0.92, Feature counts: {'cap-shape': 46, 'gill-color': 40, 'stalk-surface-below-ring': 19, 'cap-color': 18, 'stalk-root': 14, 'stalk-color-below-ring': 14, 'habitat': 10, 'spore-print-color': 7, 'ring-type': 7, 'ring-number': 6, 'cap-surface': 5, 'odor': 3, 'gill-size': 2, 'gill-spacing': 1}
+Testing configuration with 10 trees and 11 features.
+Configuration: 10 trees, 11 features, Accuracy: 1.00, Feature counts: {'cap-color': 42, 'cap-shape': 17, 'stalk-root': 16, 'stalk-shape': 16, 'bruises?': 14, 'spore-print-color': 12, 'gill-color': 11, 'stalk-color-above-ring': 10, 'habitat': 9, 'population': 8, 'odor': 6, 'stalk-color-below-ring': 6, 'cap-surface': 6, 'ring-type': 5, 'gill-spacing': 4, 'veil-color': 3, 'ring-number': 3, 'stalk-surface-below-ring': 3, 'gill-size': 2, 'gill-attachment': 1}
+Testing configuration with 10 trees and 16 features.
+Configuration: 10 trees, 16 features, Accuracy: 1.00, Feature counts: {'gill-color': 53, 'cap-color': 25, 'habitat': 19, 'cap-shape': 16, 'gill-spacing': 12, 'stalk-color-below-ring': 12, 'population': 11, 'ring-type': 10, 'stalk-root': 10, 'spore-print-color': 9, 'cap-surface': 9, 'odor': 9, 'ring-number': 7, 'stalk-shape': 6, 'stalk-surface-below-ring': 6, 'gill-size': 5, 'stalk-surface-above-ring': 4, 'bruises?': 4, 'gill-attachment': 1}
+Testing configuration with 10 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 10 trees, 0 features, Accuracy: 1.00, Feature counts: {'cap-color': 28, 'stalk-color-below-ring': 19, 'stalk-root': 15, 'spore-print-color': 13, 'odor': 12, 'gill-color': 11, 'ring-type': 11, 'stalk-surface-below-ring': 10, 'bruises?': 9, 'gill-spacing': 8, 'population': 6, 'cap-shape': 6, 'ring-number': 5, 'stalk-shape': 5, 'cap-surface': 4, 'stalk-surface-above-ring': 4, 'habitat': 4, 'gill-size': 3}
+Testing configuration with 25 trees and 5 features.
+Configuration: 25 trees, 5 features, Accuracy: 0.96, Feature counts: {'cap-shape': 60, 'cap-color': 40, 'gill-color': 35, 'population': 33, 'stalk-color-above-ring': 33, 'stalk-surface-below-ring': 27, 'spore-print-color': 23, 'bruises?': 21, 'habitat': 16, 'stalk-root': 14, 'odor': 12, 'cap-surface': 12, 'ring-type': 9, 'stalk-color-below-ring': 9, 'gill-size': 7, 'stalk-surface-above-ring': 6, 'ring-number': 5, 'gill-attachment': 4, 'stalk-shape': 1, 'gill-spacing': 1}
+Testing configuration with 25 trees and 11 features.
+Configuration: 25 trees, 11 features, Accuracy: 1.00, Feature counts: {'gill-color': 103, 'cap-color': 72, 'cap-shape': 52, 'stalk-color-below-ring': 41, 'population': 38, 'habitat': 32, 'stalk-root': 31, 'spore-print-color': 26, 'stalk-color-above-ring': 21, 'odor': 18, 'bruises?': 17, 'ring-number': 16, 'stalk-surface-below-ring': 14, 'gill-spacing': 14, 'cap-surface': 13, 'stalk-shape': 12, 'stalk-surface-above-ring': 8, 'gill-size': 8, 'veil-color': 7, 'ring-type': 4, 'gill-attachment': 2}
+Testing configuration with 25 trees and 16 features.
+Configuration: 25 trees, 16 features, Accuracy: 1.00, Feature counts: {'gill-color': 63, 'habitat': 55, 'cap-color': 47, 'stalk-root': 28, 'spore-print-color': 26, 'odor': 24, 'cap-shape': 23, 'stalk-shape': 17, 'stalk-color-below-ring': 16, 'cap-surface': 16, 'stalk-surface-above-ring': 14, 'ring-type': 14, 'bruises?': 14, 'population': 13, 'stalk-color-above-ring': 12, 'stalk-surface-below-ring': 11, 'gill-spacing': 10, 'gill-size': 7, 'gill-attachment': 4, 'ring-number': 4, 'veil-color': 1}
+Testing configuration with 25 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 25 trees, 0 features, Accuracy: 1.00, Feature counts: {'cap-color': 70, 'cap-surface': 49, 'habitat': 42, 'gill-color': 34, 'stalk-color-above-ring': 26, 'stalk-color-below-ring': 25, 'spore-print-color': 23, 'stalk-root': 23, 'odor': 21, 'population': 20, 'stalk-surface-above-ring': 19, 'stalk-shape': 17, 'cap-shape': 14, 'stalk-surface-below-ring': 13, 'bruises?': 10, 'gill-spacing': 9, 'ring-type': 8, 'ring-number': 8, 'gill-size': 3, 'gill-attachment': 1, 'veil-color': 1}
+Testing configuration with 50 trees and 5 features.
+Configuration: 50 trees, 5 features, Accuracy: 0.93, Feature counts: {'cap-shape': 91, 'cap-color': 65, 'gill-color': 65, 'stalk-color-below-ring': 55, 'stalk-surface-below-ring': 42, 'stalk-surface-above-ring': 36, 'spore-print-color': 35, 'cap-surface': 31, 'odor': 30, 'habitat': 28, 'ring-type': 28, 'gill-spacing': 27, 'stalk-color-above-ring': 22, 'population': 20, 'stalk-shape': 15, 'ring-number': 14, 'gill-size': 11, 'veil-color': 9, 'bruises?': 8, 'gill-attachment': 7}
+Testing configuration with 50 trees and 11 features.
+Configuration: 50 trees, 11 features, Accuracy: 1.00, Feature counts: {'gill-color': 114, 'cap-color': 112, 'cap-shape': 90, 'spore-print-color': 88, 'cap-surface': 73, 'odor': 65, 'habitat': 53, 'population': 51, 'stalk-color-below-ring': 48, 'stalk-surface-below-ring': 47, 'stalk-surface-above-ring': 42, 'gill-spacing': 40, 'stalk-root': 38, 'ring-number': 29, 'stalk-color-above-ring': 24, 'ring-type': 23, 'bruises?': 22, 'gill-size': 16, 'stalk-shape': 12, 'veil-color': 11, 'gill-attachment': 5}
+Testing configuration with 50 trees and 16 features.
+Configuration: 50 trees, 16 features, Accuracy: 1.00, Feature counts: {'gill-color': 110, 'cap-color': 93, 'cap-shape': 71, 'habitat': 65, 'stalk-surface-below-ring': 56, 'spore-print-color': 55, 'odor': 52, 'cap-surface': 52, 'stalk-root': 51, 'gill-spacing': 45, 'population': 38, 'stalk-color-below-ring': 33, 'bruises?': 30, 'ring-type': 29, 'stalk-surface-above-ring': 25, 'stalk-shape': 23, 'ring-number': 22, 'stalk-color-above-ring': 22, 'gill-size': 13, 'gill-attachment': 8, 'veil-color': 4}
+Testing configuration with 50 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 50 trees, 0 features, Accuracy: 1.00, Feature counts: {'gill-color': 103, 'cap-color': 99, 'cap-shape': 79, 'spore-print-color': 58, 'habitat': 57, 'stalk-root': 49, 'population': 42, 'odor': 38, 'cap-surface': 33, 'gill-spacing': 26, 'ring-number': 24, 'ring-type': 24, 'bruises?': 22, 'stalk-color-above-ring': 20, 'stalk-surface-below-ring': 20, 'stalk-surface-above-ring': 17, 'stalk-color-below-ring': 16, 'stalk-shape': 11, 'gill-size': 11, 'veil-color': 6, 'gill-attachment': 5}
+Testing configuration with 75 trees and 5 features.
+Configuration: 75 trees, 5 features, Accuracy: 0.96, Feature counts: {'gill-color': 218, 'cap-color': 174, 'spore-print-color': 118, 'cap-shape': 102, 'population': 91, 'habitat': 78, 'stalk-surface-below-ring': 56, 'stalk-root': 51, 'stalk-color-above-ring': 41, 'stalk-surface-above-ring': 35, 'stalk-color-below-ring': 34, 'cap-surface': 32, 'bruises?': 32, 'ring-type': 27, 'stalk-shape': 26, 'odor': 23, 'gill-size': 18, 'ring-number': 18, 'veil-color': 14, 'gill-spacing': 12, 'gill-attachment': 10}
+Testing configuration with 75 trees and 11 features.
+Configuration: 75 trees, 11 features, Accuracy: 1.00, Feature counts: {'gill-color': 188, 'cap-color': 161, 'cap-shape': 129, 'cap-surface': 93, 'stalk-surface-below-ring': 85, 'habitat': 80, 'spore-print-color': 71, 'ring-number': 66, 'population': 56, 'odor': 56, 'stalk-color-below-ring': 54, 'stalk-root': 54, 'ring-type': 53, 'stalk-surface-above-ring': 53, 'bruises?': 40, 'stalk-color-above-ring': 33, 'gill-size': 30, 'gill-spacing': 30, 'stalk-shape': 29, 'veil-color': 16, 'gill-attachment': 10}
+Testing configuration with 75 trees and 16 features.
+Configuration: 75 trees, 16 features, Accuracy: 1.00, Feature counts: {'gill-color': 168, 'cap-color': 156, 'population': 105, 'spore-print-color': 104, 'cap-surface': 91, 'odor': 90, 'cap-shape': 77, 'stalk-color-below-ring': 74, 'stalk-surface-below-ring': 71, 'habitat': 68, 'stalk-root': 64, 'ring-type': 63, 'stalk-surface-above-ring': 55, 'stalk-color-above-ring': 40, 'bruises?': 40, 'ring-number': 36, 'gill-spacing': 32, 'stalk-shape': 31, 'gill-size': 20, 'gill-attachment': 5, 'veil-color': 4}
+Testing configuration with 75 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 75 trees, 0 features, Accuracy: 1.00, Feature counts: {'gill-color': 194, 'cap-color': 137, 'cap-shape': 131, 'habitat': 92, 'population': 79, 'cap-surface': 76, 'stalk-root': 73, 'stalk-color-above-ring': 59, 'spore-print-color': 54, 'odor': 53, 'bruises?': 53, 'gill-spacing': 46, 'ring-type': 42, 'stalk-shape': 40, 'stalk-surface-above-ring': 39, 'stalk-color-below-ring': 39, 'ring-number': 36, 'stalk-surface-below-ring': 35, 'gill-size': 15, 'gill-attachment': 9, 'veil-color': 3}
+Testing configuration with 100 trees and 5 features.
+Configuration: 100 trees, 5 features, Accuracy: 0.97, Feature counts: {'cap-color': 220, 'gill-color': 167, 'cap-shape': 144, 'cap-surface': 125, 'stalk-color-below-ring': 98, 'habitat': 93, 'spore-print-color': 82, 'ring-type': 74, 'stalk-surface-below-ring': 74, 'stalk-color-above-ring': 71, 'stalk-surface-above-ring': 71, 'population': 70, 'stalk-root': 62, 'ring-number': 55, 'odor': 51, 'gill-spacing': 48, 'bruises?': 37, 'stalk-shape': 32, 'gill-size': 26, 'veil-color': 22, 'gill-attachment': 16}
+Testing configuration with 100 trees and 11 features.
+Configuration: 100 trees, 11 features, Accuracy: 1.00, Feature counts: {'cap-color': 316, 'gill-color': 278, 'cap-shape': 184, 'spore-print-color': 143, 'habitat': 137, 'cap-surface': 124, 'population': 106, 'stalk-surface-below-ring': 104, 'stalk-color-below-ring': 90, 'stalk-root': 87, 'stalk-color-above-ring': 69, 'ring-type': 68, 'gill-spacing': 61, 'odor': 61, 'bruises?': 55, 'stalk-shape': 52, 'ring-number': 51, 'stalk-surface-above-ring': 51, 'gill-size': 31, 'gill-attachment': 10, 'veil-color': 4}
+Testing configuration with 100 trees and 16 features.
+Configuration: 100 trees, 16 features, Accuracy: 1.00, Feature counts: {'gill-color': 251, 'cap-color': 201, 'habitat': 195, 'cap-shape': 135, 'cap-surface': 130, 'odor': 108, 'population': 104, 'stalk-root': 104, 'stalk-surface-below-ring': 103, 'spore-print-color': 99, 'stalk-surface-above-ring': 93, 'bruises?': 85, 'ring-type': 77, 'gill-spacing': 64, 'ring-number': 57, 'stalk-color-below-ring': 53, 'stalk-shape': 49, 'gill-size': 36, 'stalk-color-above-ring': 29, 'veil-color': 12, 'gill-attachment': 5}
+Testing configuration with 100 trees and 0 features.
+Using the function random.randint(1, max(1,len(data.columns)-1)) for each tree
+Configuration: 100 trees, 0 features, Accuracy: 1.00, Feature counts: {'gill-color': 313, 'cap-shape': 194, 'cap-color': 152, 'spore-print-color': 130, 'habitat': 120, 'cap-surface': 116, 'population': 100, 'odor': 93, 'stalk-root': 80, 'bruises?': 75, 'stalk-color-below-ring': 69, 'stalk-color-above-ring': 61, 'stalk-surface-above-ring': 60, 'ring-number': 50, 'stalk-surface-below-ring': 43, 'gill-spacing': 36, 'stalk-shape': 32, 'gill-size': 31, 'ring-type': 29, 'gill-attachment': 12, 'veil-color': 10}
+Best configuration: 1 trees, 11 features
+Highest accuracy: 1.0
+Feature counts for best configuration: {'cap-color': 4, 'odor': 3, 'stalk-root': 3, 'stalk-color-below-ring': 2, 'habitat': 2, 'bruises?': 1}
+\begin{tabular}{rrrl}
+\toprule
+Number of Trees & Number of Features & Accuracy & Feature Counts \\
+\midrule
+1 & 5 & 0.948915 & {'cap-color': 9, 'spore-print-color': 6, 'ring-number': 4, 'veil-color': 1} \\
+1 & 11 & 1.000000 & {'cap-color': 4, 'odor': 3, 'stalk-root': 3, 'stalk-color-below-ring': 2, 'habitat': 2, 'bruises?': 1} \\
+1 & 16 & 0.999077 & {'odor': 3, 'habitat': 3, 'gill-color': 3, 'cap-shape': 3, 'stalk-color-above-ring': 2, 'stalk-surface-below-ring': 1, 'gill-size': 1, 'population': 1} \\
+1 & 0 & 1.000000 & {'odor': 3, 'spore-print-color': 1, 'stalk-surface-below-ring': 1, 'ring-number': 1, 'habitat': 1, 'cap-color': 1} \\
+10 & 5 & 0.917987 & {'cap-shape': 46, 'gill-color': 40, 'stalk-surface-below-ring': 19, 'cap-color': 18, 'stalk-root': 14, 'stalk-color-below-ring': 14, 'habitat': 10, 'spore-print-color': 7, 'ring-type': 7, 'ring-number': 6, 'cap-surface': 5, 'odor': 3, 'gill-size': 2, 'gill-spacing': 1} \\
+10 & 11 & 0.996153 & {'cap-color': 42, 'cap-shape': 17, 'stalk-root': 16, 'stalk-shape': 16, 'bruises?': 14, 'spore-print-color': 12, 'gill-color': 11, 'stalk-color-above-ring': 10, 'habitat': 9, 'population': 8, 'odor': 6, 'stalk-color-below-ring': 6, 'cap-surface': 6, 'ring-type': 5, 'gill-spacing': 4, 'veil-color': 3, 'ring-number': 3, 'stalk-surface-below-ring': 3, 'gill-size': 2, 'gill-attachment': 1} \\
+10 & 16 & 0.999538 & {'gill-color': 53, 'cap-color': 25, 'habitat': 19, 'cap-shape': 16, 'gill-spacing': 12, 'stalk-color-below-ring': 12, 'population': 11, 'ring-type': 10, 'stalk-root': 10, 'spore-print-color': 9, 'cap-surface': 9, 'odor': 9, 'ring-number': 7, 'stalk-shape': 6, 'stalk-surface-below-ring': 6, 'gill-size': 5, 'stalk-surface-above-ring': 4, 'bruises?': 4, 'gill-attachment': 1} \\
+10 & 0 & 0.998461 & {'cap-color': 28, 'stalk-color-below-ring': 19, 'stalk-root': 15, 'spore-print-color': 13, 'odor': 12, 'gill-color': 11, 'ring-type': 11, 'stalk-surface-below-ring': 10, 'bruises?': 9, 'gill-spacing': 8, 'population': 6, 'cap-shape': 6, 'ring-number': 5, 'stalk-shape': 5, 'cap-surface': 4, 'stalk-surface-above-ring': 4, 'habitat': 4, 'gill-size': 3} \\
+25 & 5 & 0.958147 & {'cap-shape': 60, 'cap-color': 40, 'gill-color': 35, 'population': 33, 'stalk-color-above-ring': 33, 'stalk-surface-below-ring': 27, 'spore-print-color': 23, 'bruises?': 21, 'habitat': 16, 'stalk-root': 14, 'odor': 12, 'cap-surface': 12, 'ring-type': 9, 'stalk-color-below-ring': 9, 'gill-size': 7, 'stalk-surface-above-ring': 6, 'ring-number': 5, 'gill-attachment': 4, 'stalk-shape': 1, 'gill-spacing': 1} \\
+25 & 11 & 1.000000 & {'gill-color': 103, 'cap-color': 72, 'cap-shape': 52, 'stalk-color-below-ring': 41, 'population': 38, 'habitat': 32, 'stalk-root': 31, 'spore-print-color': 26, 'stalk-color-above-ring': 21, 'odor': 18, 'bruises?': 17, 'ring-number': 16, 'stalk-surface-below-ring': 14, 'gill-spacing': 14, 'cap-surface': 13, 'stalk-shape': 12, 'stalk-surface-above-ring': 8, 'gill-size': 8, 'veil-color': 7, 'ring-type': 4, 'gill-attachment': 2} \\
+25 & 16 & 0.999538 & {'gill-color': 63, 'habitat': 55, 'cap-color': 47, 'stalk-root': 28, 'spore-print-color': 26, 'odor': 24, 'cap-shape': 23, 'stalk-shape': 17, 'stalk-color-below-ring': 16, 'cap-surface': 16, 'stalk-surface-above-ring': 14, 'ring-type': 14, 'bruises?': 14, 'population': 13, 'stalk-color-above-ring': 12, 'stalk-surface-below-ring': 11, 'gill-spacing': 10, 'gill-size': 7, 'gill-attachment': 4, 'ring-number': 4, 'veil-color': 1} \\
+25 & 0 & 0.999077 & {'cap-color': 70, 'cap-surface': 49, 'habitat': 42, 'gill-color': 34, 'stalk-color-above-ring': 26, 'stalk-color-below-ring': 25, 'spore-print-color': 23, 'stalk-root': 23, 'odor': 21, 'population': 20, 'stalk-surface-above-ring': 19, 'stalk-shape': 17, 'cap-shape': 14, 'stalk-surface-below-ring': 13, 'bruises?': 10, 'gill-spacing': 9, 'ring-type': 8, 'ring-number': 8, 'gill-size': 3, 'gill-attachment': 1, 'veil-color': 1} \\
+50 & 5 & 0.933836 & {'cap-shape': 91, 'cap-color': 65, 'gill-color': 65, 'stalk-color-below-ring': 55, 'stalk-surface-below-ring': 42, 'stalk-surface-above-ring': 36, 'spore-print-color': 35, 'cap-surface': 31, 'odor': 30, 'habitat': 28, 'ring-type': 28, 'gill-spacing': 27, 'stalk-color-above-ring': 22, 'population': 20, 'stalk-shape': 15, 'ring-number': 14, 'gill-size': 11, 'veil-color': 9, 'bruises?': 8, 'gill-attachment': 7} \\
+50 & 11 & 0.999385 & {'gill-color': 114, 'cap-color': 112, 'cap-shape': 90, 'spore-print-color': 88, 'cap-surface': 73, 'odor': 65, 'habitat': 53, 'population': 51, 'stalk-color-below-ring': 48, 'stalk-surface-below-ring': 47, 'stalk-surface-above-ring': 42, 'gill-spacing': 40, 'stalk-root': 38, 'ring-number': 29, 'stalk-color-above-ring': 24, 'ring-type': 23, 'bruises?': 22, 'gill-size': 16, 'stalk-shape': 12, 'veil-color': 11, 'gill-attachment': 5} \\
+50 & 16 & 0.999538 & {'gill-color': 110, 'cap-color': 93, 'cap-shape': 71, 'habitat': 65, 'stalk-surface-below-ring': 56, 'spore-print-color': 55, 'odor': 52, 'cap-surface': 52, 'stalk-root': 51, 'gill-spacing': 45, 'population': 38, 'stalk-color-below-ring': 33, 'bruises?': 30, 'ring-type': 29, 'stalk-surface-above-ring': 25, 'stalk-shape': 23, 'ring-number': 22, 'stalk-color-above-ring': 22, 'gill-size': 13, 'gill-attachment': 8, 'veil-color': 4} \\
+50 & 0 & 0.998923 & {'gill-color': 103, 'cap-color': 99, 'cap-shape': 79, 'spore-print-color': 58, 'habitat': 57, 'stalk-root': 49, 'population': 42, 'odor': 38, 'cap-surface': 33, 'gill-spacing': 26, 'ring-number': 24, 'ring-type': 24, 'bruises?': 22, 'stalk-color-above-ring': 20, 'stalk-surface-below-ring': 20, 'stalk-surface-above-ring': 17, 'stalk-color-below-ring': 16, 'stalk-shape': 11, 'gill-size': 11, 'veil-color': 6, 'gill-attachment': 5} \\
+75 & 5 & 0.959532 & {'gill-color': 218, 'cap-color': 174, 'spore-print-color': 118, 'cap-shape': 102, 'population': 91, 'habitat': 78, 'stalk-surface-below-ring': 56, 'stalk-root': 51, 'stalk-color-above-ring': 41, 'stalk-surface-above-ring': 35, 'stalk-color-below-ring': 34, 'cap-surface': 32, 'bruises?': 32, 'ring-type': 27, 'stalk-shape': 26, 'odor': 23, 'gill-size': 18, 'ring-number': 18, 'veil-color': 14, 'gill-spacing': 12, 'gill-attachment': 10} \\
+75 & 11 & 0.996307 & {'gill-color': 188, 'cap-color': 161, 'cap-shape': 129, 'cap-surface': 93, 'stalk-surface-below-ring': 85, 'habitat': 80, 'spore-print-color': 71, 'ring-number': 66, 'population': 56, 'odor': 56, 'stalk-color-below-ring': 54, 'stalk-root': 54, 'ring-type': 53, 'stalk-surface-above-ring': 53, 'bruises?': 40, 'stalk-color-above-ring': 33, 'gill-size': 30, 'gill-spacing': 30, 'stalk-shape': 29, 'veil-color': 16, 'gill-attachment': 10} \\
+75 & 16 & 0.999538 & {'gill-color': 168, 'cap-color': 156, 'population': 105, 'spore-print-color': 104, 'cap-surface': 91, 'odor': 90, 'cap-shape': 77, 'stalk-color-below-ring': 74, 'stalk-surface-below-ring': 71, 'habitat': 68, 'stalk-root': 64, 'ring-type': 63, 'stalk-surface-above-ring': 55, 'stalk-color-above-ring': 40, 'bruises?': 40, 'ring-number': 36, 'gill-spacing': 32, 'stalk-shape': 31, 'gill-size': 20, 'gill-attachment': 5, 'veil-color': 4} \\
+75 & 0 & 0.997384 & {'gill-color': 194, 'cap-color': 137, 'cap-shape': 131, 'habitat': 92, 'population': 79, 'cap-surface': 76, 'stalk-root': 73, 'stalk-color-above-ring': 59, 'spore-print-color': 54, 'odor': 53, 'bruises?': 53, 'gill-spacing': 46, 'ring-type': 42, 'stalk-shape': 40, 'stalk-surface-above-ring': 39, 'stalk-color-below-ring': 39, 'ring-number': 36, 'stalk-surface-below-ring': 35, 'gill-size': 15, 'gill-attachment': 9, 'veil-color': 3} \\
+100 & 5 & 0.974150 & {'cap-color': 220, 'gill-color': 167, 'cap-shape': 144, 'cap-surface': 125, 'stalk-color-below-ring': 98, 'habitat': 93, 'spore-print-color': 82, 'ring-type': 74, 'stalk-surface-below-ring': 74, 'stalk-color-above-ring': 71, 'stalk-surface-above-ring': 71, 'population': 70, 'stalk-root': 62, 'ring-number': 55, 'odor': 51, 'gill-spacing': 48, 'bruises?': 37, 'stalk-shape': 32, 'gill-size': 26, 'veil-color': 22, 'gill-attachment': 16} \\
+100 & 11 & 0.998615 & {'cap-color': 316, 'gill-color': 278, 'cap-shape': 184, 'spore-print-color': 143, 'habitat': 137, 'cap-surface': 124, 'population': 106, 'stalk-surface-below-ring': 104, 'stalk-color-below-ring': 90, 'stalk-root': 87, 'stalk-color-above-ring': 69, 'ring-type': 68, 'gill-spacing': 61, 'odor': 61, 'bruises?': 55, 'stalk-shape': 52, 'ring-number': 51, 'stalk-surface-above-ring': 51, 'gill-size': 31, 'gill-attachment': 10, 'veil-color': 4} \\
+100 & 16 & 1.000000 & {'gill-color': 251, 'cap-color': 201, 'habitat': 195, 'cap-shape': 135, 'cap-surface': 130, 'odor': 108, 'population': 104, 'stalk-root': 104, 'stalk-surface-below-ring': 103, 'spore-print-color': 99, 'stalk-surface-above-ring': 93, 'bruises?': 85, 'ring-type': 77, 'gill-spacing': 64, 'ring-number': 57, 'stalk-color-below-ring': 53, 'stalk-shape': 49, 'gill-size': 36, 'stalk-color-above-ring': 29, 'veil-color': 12, 'gill-attachment': 5} \\
+100 & 0 & 0.999385 & {'gill-color': 313, 'cap-shape': 194, 'cap-color': 152, 'spore-print-color': 130, 'habitat': 120, 'cap-surface': 116, 'population': 100, 'odor': 93, 'stalk-root': 80, 'bruises?': 75, 'stalk-color-below-ring': 69, 'stalk-color-above-ring': 61, 'stalk-surface-above-ring': 60, 'ring-number': 50, 'stalk-surface-below-ring': 43, 'gill-spacing': 36, 'stalk-shape': 32, 'gill-size': 31, 'ring-type': 29, 'gill-attachment': 12, 'veil-color': 10} \\
+\bottomrule
+\end{tabular}
+
+Total time taken: 2478.56 seconds
